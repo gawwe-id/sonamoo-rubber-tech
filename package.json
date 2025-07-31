@@ -1,10 +1,10 @@
 {
-  "name": "dokto",
+  "name": "srt",
   "type": "module",
   "version": "1.4.0",
   "private": true,
   "author": {
-    "name": "cssninjaStudio <hello@cssninja.io> (https://cssninja.io)"
+    "name": "Oknum Studio <panjiggm@gmail.com> (https://oknum.studio)"
   },
   "engines": {
     "node": ">=18",
