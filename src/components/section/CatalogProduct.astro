@@ -1,0 +1,38 @@
+---
+import Description from "@components/content/doctors/grid/Description.astro";
+import Grid from "@components/content/doctors/grid/Grid.astro";
+import Toolbar from "@components/content/doctors/grid/Toolbar.astro";
+import Container from "@components/section/Container.astro";
+import SectionMuted from "@components/section/SectionMuted.astro";
+import SectionTitle from "@components/section/SectionTitle.astro";
+---
+
+  <SectionMuted class="'border-b border-muted-200 dark:border-muted-800'">
+    <Container>
+      <SectionTitle
+        title="Katalog Produk Karet"
+        subtitle="Jelajahi berbagai produk karet berkualitas tinggi kami untuk industri otomotif, kereta api, dan aplikasi industri lainnya."
+        minititle="Product Catalog"
+        class="'mx-auto text-center'"
+      />
+
+      <div id="doctors" x-data="doctors()"  x-intersect="activeStep = 'spy-1'">
+        <Toolbar />
+
+        <!--Grid wrapper-->
+        <div class="py-10">
+          <div class="grid grid-cols-12 md:gap-12 pb-20">
+            <!--Filters-->
+            <div class="hidden lg:block col-span-12 lg:col-span-3">
+              <Description />
+            </div>
+            <!--Content-->
+            <div class="col-span-12 lg:col-span-9">
+              <!--Subgrid-->
+              <Grid />
+            </div>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </SectionMuted>
