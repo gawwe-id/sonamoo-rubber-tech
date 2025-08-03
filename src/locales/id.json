@@ -13,7 +13,8 @@
   "hero": {
     "title": "Solusi Produk Karet Berkualitas Tinggi",
     "subtitle": "PT. Sonamoo Rubber Tech menyediakan berbagai produk karet untuk industri otomotif, kereta api, dan industri lainnya dengan teknologi Korea yang handal.",
-    "minititle": "Specialist Rubber Product"
+    "see_product": "Specialist Rubber Product",
+    "about": "Tentang Kami"
   },
   "common": {
     "read_more": "Baca Selengkapnya",
@@ -60,7 +61,7 @@
       "grid": {
         "categories": {
           "otomotif": "Otomotif",
-          "railway": "Railway", 
+          "railway": "Railway",
           "industrial": "Industrial"
         },
         "products": {
@@ -69,7 +70,7 @@
             "description": "Pembatas parkir mobil dengan desain hazard strip untuk area parkir komersial."
           },
           "tire_stopper": {
-            "title": "Tire Stopper", 
+            "title": "Tire Stopper",
             "description": "Pembatas roda dengan ukuran (1kg, 3kg, 8kg) untuk kendaraan ringan hingga berat."
           },
           "speed_bump": {

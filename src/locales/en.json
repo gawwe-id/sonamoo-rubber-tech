@@ -13,7 +13,8 @@
   "hero": {
     "title": "High Quality Rubber Product Solutions",
     "subtitle": "PT. Sonamoo Rubber Tech provides various rubber products for automotive, railway, and other industries with reliable Korean technology.",
-    "minititle": "Specialist Rubber Product"
+    "see_product": "See Products",
+    "about": "About Us"
   },
   "about": {
     "hero_subtitle": "Specialist Rubber Product - producing rubber products for Automotive, Railway and Other Industries",
@@ -91,7 +92,7 @@
       "grid": {
         "categories": {
           "otomotif": "Automotive",
-          "railway": "Railway", 
+          "railway": "Railway",
           "industrial": "Industrial"
         },
         "products": {
@@ -100,7 +101,7 @@
             "description": "Parking barrier for cars with hazard strip design for commercial parking areas."
           },
           "tire_stopper": {
-            "title": "Tire Stopper", 
+            "title": "Tire Stopper",
             "description": "Wheel barriers with sizes (1kg, 3kg, 8kg) for light to heavy vehicles."
           },
           "speed_bump": {

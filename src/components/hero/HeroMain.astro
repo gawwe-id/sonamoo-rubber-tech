@@ -1,6 +1,8 @@
 ---
 import ButtonMain from "@components/base/ButtonMain.astro";
 import ButtonSub from "@components/base/ButtonSub.astro";
+import { t, getCurrentLocale } from "@utils/i18n";
+const currentLocale = getCurrentLocale(Astro.url);
 ---
 
 <div
@@ -26,18 +28,18 @@ import ButtonSub from "@components/base/ButtonSub.astro";
             <h1
               class="font-black text-4xl ptablet:text-5xl lg:text-6xl text-muted-800 dark:text-white"
             >
-              Spesialist Rubber Products untuk Industri Modern
+              {t(currentLocale, 'hero.title')}
             </h1>
             <p class="text-muted-500 text-lg dark:text-muted-400">
-              Solusi komprehensif produk karet berkualitas tinggi untuk industri otomotif, kereta api, elektronik, dan aplikasi industri lainnya
+              {t(currentLocale, 'hero.subtitle')}
             </p>
             <div
               class="w-full flex items-center justify-center ltablet:justify-start lg:justify-start gap-2"
             >
-              <ButtonMain to={"#products"} class="'min-w-[130px]'"
-                >Lihat Produk</ButtonMain
+              <ButtonMain to={"/products"} class="'min-w-[130px]'"
+                >{t(currentLocale, 'hero.see_product')}</ButtonMain
               >
-              <ButtonSub to={"#about"} class="'min-w-[130px]'">Tentang Kami</ButtonSub
+              <ButtonSub to={"/about"} class="'min-w-[130px]'">{t(currentLocale, 'hero.about')}</ButtonSub
               >
             </div>
           </div>
