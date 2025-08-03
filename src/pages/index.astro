@@ -14,6 +14,8 @@ import SideStatsLeft from "@components/content/features/SideStatsLeft.astro";
 import Pricing from "@components/content/Pricing.astro";
 import Cta from "@components/content/Cta.astro";
 import Testimonials from "@components/content/Testimonials.astro";
+import Products from "./products.astro";
+import ProductsCategory from "@components/content/ProductsCategory.astro";
 ---
 
 <Layout title="Home">
@@ -22,87 +24,97 @@ import Testimonials from "@components/content/Testimonials.astro";
   <SectionMuted>
     <Container>
       <SectionTitle
-        title="Forget about the hassle"
-        subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tibi hoc incredibile, quod beatissimum."
-        minititle="On-Demand Healthcare"
-      />
+  title="Solusi Produk Karet Berkualitas Tinggi"
+  subtitle="PT. Sonamoo Rubber Tech menyediakan berbagai produk karet untuk industri otomotif, kereta api, dan industri lainnya dengan teknologi Korea yang handal."
+  minititle="Specialist Rubber Product"
+/>
 
       <div class="grid md:grid-cols-3 ltablet:grid-cols-4 lg:grid-cols-4 gap-x-6 gap-y-12" x-intersect="activeStep = ''">
-        <!-- Item -->
+        <!-- Item 1 -->
         <div>
           <IconBlock
-            title="Save time & effort"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tibi hoc incredibile, quod beatissimum."
-            icon="ph:timer-duotone"
+            title="Fast Response"
+            text="Respon cepat untuk kebutuhan pelanggan dengan layanan konsultasi teknis yang profesional."
+            icon="ph:lightning-duotone"
             class="'text-primary-600'"
           />
         </div>
-        <!-- Item -->
+
+        <!-- Item 2 -->
         <div>
           <IconBlock
-            title="Curated professionals"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tibi hoc incredibile, quod beatissimum."
-            icon="ph:first-aid-duotone"
+            title="Competitive Price" 
+            text="Harga yang kompetitif dengan kualitas terjamin melalui efisiensi produksi dan teknologi Korea."
+            icon="ph:coins-duotone"
             class="'text-rose-500'"
           />
         </div>
-        <!-- Item -->
+
+        <!-- Item 3 -->
         <div>
           <IconBlock
-            title="24/24 Emergencies"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tibi hoc incredibile, quod beatissimum."
-            icon="ph:first-aid-kit-duotone"
+            title="Best Product"
+            text="Produk berkualitas tinggi dengan standar internasional untuk industri otomotif dan kereta api."
+            icon="ph:medal-duotone"
             class="'text-primary-600'"
           />
         </div>
-        <!-- Item -->
+
+        <!-- Item 4 -->
         <div>
           <IconBlock
-            title="Connected services"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tibi hoc incredibile, quod beatissimum."
-            icon="ph:heartbeat-duotone"
+            title="Fast Delivery"
+            text="Pengiriman cepat dan akurat dengan sistem produksi yang efisien dan terpercaya."
+            icon="ph:truck-duotone"
             class="'text-rose-500'"
           />
         </div>
-        <!-- Item -->
+
+        <!-- Item 5 -->
         <div>
           <IconBlock
-            title="Video consultations"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tibi hoc incredibile, quod beatissimum."
-            icon="ph:video-camera-duotone"
+            title="Automotive Components"
+            text="Spesialisasi produk karet otomotif seperti tire stopper, speed bump, dan rubber step floor."
+            icon="ph:car-duotone"
             class="'text-primary-600'"
           />
         </div>
-        <!-- Item -->
+
+        <!-- Item 6 -->
         <div>
           <IconBlock
-            title="Audio consultations"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tibi hoc incredibile, quod beatissimum."
-            icon="ph:phone-duotone"
+            title="Railway Solutions"
+            text="Produk khusus untuk industri kereta api termasuk duct dan corrugated bellow berkualitas tinggi."
+            icon="ph:train-duotone"
             class="'text-primary-600'"
           />
         </div>
-        <!-- Item -->
+
+        <!-- Item 7 -->
         <div>
           <IconBlock
-            title="Appointements"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tibi hoc incredibile, quod beatissimum."
-            icon="ph:calendar-duotone"
+            title="Korean Technology"
+            text="Kerjasama teknis dengan DH Industry Co.,Ltd Korea untuk teknologi dan kualitas terdepan."
+            icon="ph:gear-duotone"
             class="'text-primary-600'"
           />
         </div>
-        <!-- Item -->
+
+        <!-- Item 8 -->
         <div>
           <IconBlock
-            title="Medicine"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tibi hoc incredibile, quod beatissimum."
-            icon="ph:pill-duotone"
+            title="Custom Manufacturing"
+            text="Produksi kustom sesuai spesifikasi dengan fasilitas lengkap dan teknologi modern."
+            icon="ph:wrench-duotone"
             class="'text-primary-600'"
           />
         </div>
       </div>
     </Container>
   </SectionMuted>
+
+  <!-- Products Category -->
+  <ProductsCategory />
 
   <SectionMuted class="'border-b border-muted-200 dark:border-muted-800'">
     <Container>

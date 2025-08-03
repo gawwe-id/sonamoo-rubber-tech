@@ -1,0 +1,476 @@
+---
+import Layout from "@layouts/Default.astro";
+import Container from "@components/section/Container.astro";
+import SectionMuted from "@components/section/SectionMuted.astro";
+import Section from "@components/section/Section.astro";
+import SectionTitle from "@components/section/SectionTitle.astro";
+import Card from "@components/base/Card.astro";
+import ButtonMain from "@components/base/ButtonMain.astro";
+import ButtonSub from "@components/base/ButtonSub.astro";
+---
+
+<Layout title="Products">
+  <!-- Hero Section -->
+  <div class="min-h-[70vh] w-full overflow-hidden bg-gradient-to-br from-primary-900 via-primary-800 to-primary-700 relative">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent transform -skew-y-12"></div>
+    </div>
+    
+    <Container>
+      <div class="min-h-[70vh] flex items-center justify-center px-4">
+        <div class="text-center space-y-6 animate-fadeIn">
+          <div class="inline-block">
+            <span class="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-white/90 text-sm font-medium border border-white/20 animate-pulse">
+              Specialist Rubber Products
+            </span>
+          </div>
+          <h1 class="font-heading font-black text-5xl md:text-6xl lg:text-7xl text-white leading-tight">
+            Premium Rubber Solutions
+          </h1>
+          <p class="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed">
+            Solusi komprehensif produk karet berkualitas tinggi untuk industri otomotif, kereta api, elektronik, dan aplikasi industri lainnya
+          </p>
+        </div>
+      </div>
+    </Container>
+  </div>
+
+  <!-- Company Highlights -->
+  <SectionMuted>
+    <Container>
+      <div class="py-16">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-muted-800 dark:text-white mb-4">
+            Mengapa Memilih Sonamoo Rubber Tech?
+          </h2>
+          <p class="text-lg text-muted-600 dark:text-muted-400 max-w-2xl mx-auto">
+            Dipercaya oleh industri dengan teknologi Korea dan komitmen kualitas terbaik
+          </p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="group text-center p-6 rounded-xl hover:bg-white dark:hover:bg-muted-800 transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+            <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-primary-100 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <iconify-icon class="iconify w-8 h-8 text-primary-600" icon="ph:lightning-duotone"></iconify-icon>
+            </div>
+            <h3 class="font-semibold text-lg text-muted-800 dark:text-white mb-2">Fast Response</h3>
+            <p class="text-muted-600 dark:text-muted-400 text-sm">Respon cepat untuk setiap kebutuhan pelanggan</p>
+          </div>
+
+          <div class="group text-center p-6 rounded-xl hover:bg-white dark:hover:bg-muted-800 transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+            <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-green-100 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <iconify-icon class="iconify w-8 h-8 text-green-600" icon="ph:currency-dollar-duotone"></iconify-icon>
+            </div>
+            <h3 class="font-semibold text-lg text-muted-800 dark:text-white mb-2">Competitive Price</h3>
+            <p class="text-muted-600 dark:text-muted-400 text-sm">Harga kompetitif dengan kualitas terjamin</p>
+          </div>
+
+          <div class="group text-center p-6 rounded-xl hover:bg-white dark:hover:bg-muted-800 transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+            <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-blue-100 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <iconify-icon class="iconify w-8 h-8 text-blue-600" icon="ph:medal-duotone"></iconify-icon>
+            </div>
+            <h3 class="font-semibold text-lg text-muted-800 dark:text-white mb-2">Best Product</h3>
+            <p class="text-muted-600 dark:text-muted-400 text-sm">Produk berkualitas tinggi dengan teknologi Korea</p>
+          </div>
+
+          <div class="group text-center p-6 rounded-xl hover:bg-white dark:hover:bg-muted-800 transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+            <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-orange-100 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <iconify-icon class="iconify w-8 h-8 text-orange-600" icon="ph:truck-duotone"></iconify-icon>
+            </div>
+            <h3 class="font-semibold text-lg text-muted-800 dark:text-white mb-2">Fast Delivery</h3>
+            <p class="text-muted-600 dark:text-muted-400 text-sm">Pengiriman cepat dan akurat ke seluruh Indonesia</p>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </SectionMuted>
+
+  <!-- Product Categories -->
+  <Section id="products">
+    <Container>
+      <SectionTitle
+        title="Kategori Produk Kami"
+        subtitle="Solusi lengkap produk karet untuk berbagai kebutuhan industri dengan kualitas internasional"
+        minititle="Product Categories"
+        class="'text-center mx-auto'"
+      />
+
+      <div class="grid lg:grid-cols-3 gap-8 mb-16">
+        <!-- Automotive Products -->
+        <Card class="'group p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 bg-gradient-to-br from-white to-primary-50 dark:from-muted-900 dark:to-muted-800 overflow-hidden relative'">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-primary-100 rounded-full -translate-y-16 translate-x-16 group-hover:scale-150 transition-transform duration-700"></div>
+          <div class="relative z-10">
+            <div class="w-16 h-16 bg-primary-600 rounded-xl flex items-center justify-center mb-6 group-hover:rotate-12 transition-transform duration-300">
+              <iconify-icon class="iconify w-8 h-8 text-white" icon="ph:car-duotone"></iconify-icon>
+            </div>
+            <h3 class="text-2xl font-bold text-muted-800 dark:text-white mb-4">Produk Otomotif</h3>
+            <p class="text-muted-600 dark:text-muted-400 mb-6 leading-relaxed">
+              Komponen karet berkualitas tinggi untuk industri otomotif termasuk ganjalan ban, speed bump, dan aksesori kendaraan.
+            </p>
+            <div class="space-y-2 mb-6">
+              <div class="flex items-center text-sm text-muted-600 dark:text-muted-400">
+                <iconify-icon class="iconify w-4 h-4 text-primary-600 mr-2" icon="lucide:check"></iconify-icon>
+                Car & Tire Stopper
+              </div>
+              <div class="flex items-center text-sm text-muted-600 dark:text-muted-400">
+                <iconify-icon class="iconify w-4 h-4 text-primary-600 mr-2" icon="lucide:check"></iconify-icon>
+                Speed Bump & Connecting Rod
+              </div>
+              <div class="flex items-center text-sm text-muted-600 dark:text-muted-400">
+                <iconify-icon class="iconify w-4 h-4 text-primary-600 mr-2" icon="lucide:check"></iconify-icon>
+                Rubber Step Floor
+              </div>
+            </div>
+            <ButtonSub to="#automotive" class="'group-hover:bg-primary-600 group-hover:text-white transition-all duration-300'">
+              <span>Lihat Detail</span>
+              <iconify-icon class="iconify w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" icon="lucide:arrow-right"></iconify-icon>
+            </ButtonSub>
+          </div>
+        </Card>
+
+        <!-- Railway Products -->
+        <Card class="'group p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 bg-gradient-to-br from-white to-green-50 dark:from-muted-900 dark:to-muted-800 overflow-hidden relative'">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-green-100 rounded-full -translate-y-16 translate-x-16 group-hover:scale-150 transition-transform duration-700"></div>
+          <div class="relative z-10">
+            <div class="w-16 h-16 bg-green-600 rounded-xl flex items-center justify-center mb-6 group-hover:rotate-12 transition-transform duration-300">
+              <iconify-icon class="iconify w-8 h-8 text-white" icon="ph:train-duotone"></iconify-icon>
+            </div>
+            <h3 class="text-2xl font-bold text-muted-800 dark:text-white mb-4">Produk Kereta Api</h3>
+            <p class="text-muted-600 dark:text-muted-400 mb-6 leading-relaxed">
+              Komponen khusus untuk industri perkeretaapian dengan standar keamanan dan kualitas tinggi.
+            </p>
+            <div class="space-y-2 mb-6">
+              <div class="flex items-center text-sm text-muted-600 dark:text-muted-400">
+                <iconify-icon class="iconify w-4 h-4 text-green-600 mr-2" icon="lucide:check"></iconify-icon>
+                Duct for Railway Vehicles
+              </div>
+              <div class="flex items-center text-sm text-muted-600 dark:text-muted-400">
+                <iconify-icon class="iconify w-4 h-4 text-green-600 mr-2" icon="lucide:check"></iconify-icon>
+                Corrugated Bellow
+              </div>
+              <div class="flex items-center text-sm text-muted-600 dark:text-muted-400">
+                <iconify-icon class="iconify w-4 h-4 text-green-600 mr-2" icon="lucide:check"></iconify-icon>
+                Replacement Components
+              </div>
+            </div>
+            <ButtonSub to="#railway" class="'group-hover:bg-green-600 group-hover:text-white transition-all duration-300'">
+              <span>Lihat Detail</span>
+              <iconify-icon class="iconify w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" icon="lucide:arrow-right"></iconify-icon>
+            </ButtonSub>
+          </div>
+        </Card>
+
+        <!-- Industrial Products -->
+        <Card class="'group p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 bg-gradient-to-br from-white to-orange-50 dark:from-muted-900 dark:to-muted-800 overflow-hidden relative'">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-orange-100 rounded-full -translate-y-16 translate-x-16 group-hover:scale-150 transition-transform duration-700"></div>
+          <div class="relative z-10">
+            <div class="w-16 h-16 bg-orange-600 rounded-xl flex items-center justify-center mb-6 group-hover:rotate-12 transition-transform duration-300">
+              <iconify-icon class="iconify w-8 h-8 text-white" icon="ph:factory-duotone"></iconify-icon>
+            </div>
+            <h3 class="text-2xl font-bold text-muted-800 dark:text-white mb-4">Produk Industri</h3>
+            <p class="text-muted-600 dark:text-muted-400 mb-6 leading-relaxed">
+              Solusi karet untuk berbagai aplikasi industri berat, elektronik, dan peralatan khusus.
+            </p>
+            <div class="space-y-2 mb-6">
+              <div class="flex items-center text-sm text-muted-600 dark:text-muted-400">
+                <iconify-icon class="iconify w-4 h-4 text-orange-600 mr-2" icon="lucide:check"></iconify-icon>
+                Silicon O-Ring & Seals
+              </div>
+              <div class="flex items-center text-sm text-muted-600 dark:text-muted-400">
+                <iconify-icon class="iconify w-4 h-4 text-orange-600 mr-2" icon="lucide:check"></iconify-icon>
+                NBR Float & Connectors
+              </div>
+              <div class="flex items-center text-sm text-muted-600 dark:text-muted-400">
+                <iconify-icon class="iconify w-4 h-4 text-orange-600 mr-2" icon="lucide:check"></iconify-icon>
+                Electronic Components
+              </div>
+            </div>
+            <ButtonSub to="#industrial" class="'group-hover:bg-orange-600 group-hover:text-white transition-all duration-300'">
+              <span>Lihat Detail</span>
+              <iconify-icon class="iconify w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" icon="lucide:arrow-right"></iconify-icon>
+            </ButtonSub>
+          </div>
+        </Card>
+      </div>
+    </Container>
+  </Section>
+
+  <!-- Featured Products -->
+  <SectionMuted id="automotive">
+    <Container>
+      <div class="py-16">
+        <SectionTitle
+          title="Produk Unggulan Otomotif"
+          subtitle="Produk utama yang diproduksi dengan teknologi Korea dan standar kualitas internasional"
+          minititle="Featured Products"
+          class="'text-center mx-auto'"
+        />
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <!-- Car Stopper -->
+          <Card class="'group p-6 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 bg-white dark:bg-muted-800'">
+            <div class="aspect-square bg-gradient-to-br from-primary-100 to-primary-200 rounded-lg mb-4 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+              <iconify-icon class="iconify w-16 h-16 text-primary-600" icon="ph:car-duotone"></iconify-icon>
+            </div>
+            <h4 class="font-semibold text-lg text-muted-800 dark:text-white mb-2">Car Stopper</h4>
+            <p class="text-sm text-muted-600 dark:text-muted-400 mb-4">
+              Ganjalan ban mobil dengan kualitas premium dan daya tahan tinggi
+            </p>
+            <div class="flex items-center justify-between">
+              <span class="text-xs px-2 py-1 bg-primary-100 text-primary-700 rounded-full">Premium</span>
+              <ButtonSub to="#contact" class="'text-xs px-3 py-1 hover:scale-105 transition-transform duration-200'">
+                Inquiry
+              </ButtonSub>
+            </div>
+          </Card>
+
+          <!-- Tire Stopper -->
+          <Card class="'group p-6 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 bg-white dark:bg-muted-800'">
+            <div class="aspect-square bg-gradient-to-br from-green-100 to-green-200 rounded-lg mb-4 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+              <iconify-icon class="iconify w-16 h-16 text-green-600" icon="ph:tire-duotone"></iconify-icon>
+            </div>
+            <h4 class="font-semibold text-lg text-muted-800 dark:text-white mb-2">Tire Stopper</h4>
+            <p class="text-sm text-muted-600 dark:text-muted-400 mb-4">
+              Tersedia dalam varian 1kg, 3kg, dan 5kg sesuai kebutuhan
+            </p>
+            <div class="flex items-center justify-between">
+              <span class="text-xs px-2 py-1 bg-green-100 text-green-700 rounded-full">Varian</span>
+              <ButtonSub to="#contact" class="'text-xs px-3 py-1 hover:scale-105 transition-transform duration-200'">
+                Inquiry
+              </ButtonSub>
+            </div>
+          </Card>
+
+          <!-- Speed Bump -->
+          <Card class="'group p-6 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 bg-white dark:bg-muted-800'">
+            <div class="aspect-square bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg mb-4 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+              <iconify-icon class="iconify w-16 h-16 text-yellow-600" icon="ph:road-horizon-duotone"></iconify-icon>
+            </div>
+            <h4 class="font-semibold text-lg text-muted-800 dark:text-white mb-2">Speed Bump</h4>
+            <p class="text-sm text-muted-600 dark:text-muted-400 mb-4">
+              Polisi tidur karet dengan desain ergonomis dan anti-slip
+            </p>
+            <div class="flex items-center justify-between">
+              <span class="text-xs px-2 py-1 bg-yellow-100 text-yellow-700 rounded-full">Safety</span>
+              <ButtonSub to="#contact" class="'text-xs px-3 py-1 hover:scale-105 transition-transform duration-200'">
+                Inquiry
+              </ButtonSub>
+            </div>
+          </Card>
+
+          <!-- Rubber Step -->
+          <Card class="'group p-6 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 bg-white dark:bg-muted-800'">
+            <div class="aspect-square bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg mb-4 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+              <iconify-icon class="iconify w-16 h-16 text-blue-600" icon="ph:motorcycle-duotone"></iconify-icon>
+            </div>
+            <h4 class="font-semibold text-lg text-muted-800 dark:text-white mb-2">Step Floor Motor</h4>
+            <p class="text-sm text-muted-600 dark:text-muted-400 mb-4">
+              Untuk berbagai tipe motor: Vario, Scoopy, Beat, dan lainnya
+            </p>
+            <div class="flex items-center justify-between">
+              <span class="text-xs px-2 py-1 bg-blue-100 text-blue-700 rounded-full">Universal</span>
+              <ButtonSub to="#contact" class="'text-xs px-3 py-1 hover:scale-105 transition-transform duration-200'">
+                Inquiry
+              </ButtonSub>
+            </div>
+          </Card>
+        </div>
+
+        <!-- Technology Partnership -->
+        <div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-8 text-center text-white">
+          <div class="max-w-3xl mx-auto">
+            <h3 class="text-2xl font-bold mb-4">Teknologi Korea, Kualitas Dunia</h3>
+            <p class="text-lg mb-6 opacity-90">
+              Bekerjasama dengan DH Industry Co.,Ltd Korea untuk menghadirkan teknologi terdepan dan kualitas internasional
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <ButtonMain to="#contact" class="'bg-white text-primary-600 hover:bg-gray-100 hover:scale-105 transition-all duration-300'">
+                Konsultasi Produk
+              </ButtonMain>
+              <ButtonSub to="#facility" class="'border-white text-white hover:bg-white/10 transition-all duration-300'">
+                Lihat Fasilitas
+              </ButtonSub>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </SectionMuted>
+
+  <!-- Industrial & Railway Products -->
+  <Section id="industrial">
+    <Container>
+      <div class="py-16">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <!-- Content -->
+          <div class="space-y-6">
+            <div>
+              <span class="px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm font-medium">
+                Industrial Solutions
+              </span>
+            </div>
+            <h2 class="text-4xl font-bold text-muted-800 dark:text-white leading-tight">
+              Solusi Industri 
+              <span class="text-primary-600">Terpadu</span>
+            </h2>
+            <p class="text-lg text-muted-600 dark:text-muted-400 leading-relaxed">
+              Dari komponen kereta api hingga aplikasi elektronik, kami menyediakan solusi karet yang dapat diandalkan untuk berbagai kebutuhan industri dengan standar kualitas internasional.
+            </p>
+            
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div class="flex items-start space-x-3 p-4 rounded-lg hover:bg-primary-50 dark:hover:bg-muted-800 transition-colors duration-300">
+                <div class="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center mt-1">
+                  <iconify-icon class="iconify w-4 h-4 text-white" icon="lucide:check"></iconify-icon>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-muted-800 dark:text-white">NBR Float</h4>
+                  <p class="text-sm text-muted-600 dark:text-muted-400">Komponen berkualitas tinggi</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start space-x-3 p-4 rounded-lg hover:bg-primary-50 dark:hover:bg-muted-800 transition-colors duration-300">
+                <div class="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center mt-1">
+                  <iconify-icon class="iconify w-4 h-4 text-white" icon="lucide:check"></iconify-icon>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-muted-800 dark:text-white">Silicon O-Ring</h4>
+                  <p class="text-sm text-muted-600 dark:text-muted-400">Tekanan sangat tinggi</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start space-x-3 p-4 rounded-lg hover:bg-primary-50 dark:hover:bg-muted-800 transition-colors duration-300">
+                <div class="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center mt-1">
+                  <iconify-icon class="iconify w-4 h-4 text-white" icon="lucide:check"></iconify-icon>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-muted-800 dark:text-white">Grommet</h4>
+                  <p class="text-sm text-muted-600 dark:text-muted-400">Aplikasi elektronik</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start space-x-3 p-4 rounded-lg hover:bg-primary-50 dark:hover:bg-muted-800 transition-colors duration-300">
+                <div class="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center mt-1">
+                  <iconify-icon class="iconify w-4 h-4 text-white" icon="lucide:check"></iconify-icon>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-muted-800 dark:text-white">Bellows</h4>
+                  <p class="text-sm text-muted-600 dark:text-muted-400">Komponen otomotif</p>
+                </div>
+              </div>
+            </div>
+
+            <ButtonMain to="#contact" class="'group hover:scale-105 transition-all duration-300'">
+              <span>Konsultasi Kebutuhan</span>
+              <iconify-icon class="iconify w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" icon="lucide:arrow-right"></iconify-icon>
+            </ButtonMain>
+          </div>
+
+          <!-- Visual Grid -->
+          <div class="grid grid-cols-2 gap-4">
+            <div class="space-y-4">
+              <Card class="'p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 bg-gradient-to-br from-blue-50 to-blue-100 dark:from-muted-800 dark:to-muted-700'">
+                <iconify-icon class="iconify w-12 h-12 text-blue-600 mb-3" icon="ph:train-duotone"></iconify-icon>
+                <h4 class="font-semibold text-muted-800 dark:text-white mb-2">Railway Components</h4>
+                <p class="text-sm text-muted-600 dark:text-muted-400">Duct & Corrugated Bellow</p>
+              </Card>
+              
+              <Card class="'p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 bg-gradient-to-br from-green-50 to-green-100 dark:from-muted-800 dark:to-muted-700'">
+                <iconify-icon class="iconify w-12 h-12 text-green-600 mb-3" icon="ph-lightning-duotone"></iconify-icon>
+                <h4 class="font-semibold text-muted-800 dark:text-white mb-2">Electronic Parts</h4>
+                <p class="text-sm text-muted-600 dark:text-muted-400">Grommet & Implant</p>
+              </Card>
+            </div>
+            
+            <div class="space-y-4 mt-8">
+              <Card class="'p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 bg-gradient-to-br from-purple-50 to-purple-100 dark:from-muted-800 dark:to-muted-700'">
+                <iconify-icon class="iconify w-12 h-12 text-purple-600 mb-3" icon="ph:gear-duotone"></iconify-icon>
+                <h4 class="font-semibold text-muted-800 dark:text-white mb-2">Industrial Seals</h4>
+                <p class="text-sm text-muted-600 dark:text-muted-400">O-Ring & Connectors</p>
+              </Card>
+              
+              <Card class="'p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 bg-gradient-to-br from-orange-50 to-orange-100 dark:from-muted-800 dark:to-muted-700'">
+                <iconify-icon class="iconify w-12 h-12 text-orange-600 mb-3" icon="ph:wrench-duotone"></iconify-icon>
+                <h4 class="font-semibold text-muted-800 dark:text-white mb-2">Custom Solutions</h4>
+                <p class="text-sm text-muted-600 dark:text-muted-400">Sesuai spesifikasi</p>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </Section>
+
+  <!-- Call to Action -->
+  <SectionMuted>
+    <Container>
+      <div class="py-16">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-4xl font-bold text-muted-800 dark:text-white mb-6">
+            Siap Berkolaborasi dengan 
+            <span class="text-primary-600">Sonamoo Rubber Tech?</span>
+          </h2>
+          <p class="text-xl text-muted-600 dark:text-muted-400 mb-8 leading-relaxed">
+            Hubungi tim ahli kami untuk konsultasi produk, penawaran khusus, atau diskusi kebutuhan kustom Anda. 
+            Kami siap menjadi partner terpercaya untuk solusi karet berkualitas tinggi.
+          </p>
+          
+          <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+            <ButtonMain to="#contact" class="'group text-lg px-8 py-4 hover:scale-105 hover:shadow-xl transition-all duration-300'">
+              <iconify-icon class="iconify w-5 h-5 group-hover:rotate-12 transition-transform duration-300" icon="ph:phone-duotone"></iconify-icon>
+              <span>Hubungi Sekarang</span>
+            </ButtonMain>
+            <ButtonSub to="/about" class="'text-lg px-8 py-4 hover:scale-105 transition-all duration-300'">
+              <span>Tentang Kami</span>
+              <iconify-icon class="iconify w-5 h-5" icon="lucide:arrow-right"></iconify-icon>
+            </ButtonSub>
+          </div>
+
+
+        </div>
+      </div>
+    </Container>
+  </SectionMuted>
+</Layout>
+
+<style>
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .animate-fadeIn {
+    animation: fadeIn 1s ease-out;
+  }
+
+  .animate-slideInRight {
+    animation: slideInRight 0.8s ease-out;
+  }
+
+  /* Custom hover effects */
+  .hover-lift {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+</style>
