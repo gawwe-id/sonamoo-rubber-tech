@@ -2,7 +2,7 @@
 import Card from "@components/base/Card.astro";
 ---
 
-<div class="grid md:grid-cols-3 ltablet:grid-cols-3 lg:grid-cols-3 gap-x-6 ptablet:gap-x-4 gap-y-16 pt-10" x-data="{ activeCategory: 'all', activeRating: 'all', activeApplication: 'all' }">
+<div class="grid md:grid-cols-3 ltablet:grid-cols-3 lg:grid-cols-3 gap-x-6 ptablet:gap-x-4 gap-y-16 pt-10" x-data="{ activeCategory: 'all', activeRating: 'all', activeApplication: 'all', showModal: false, modalImage: '', modalAlt: '' }">
   <!-- Otomotif Products -->
   <div x-show="(activeCategory === 'all' || activeCategory === 'otomotif') && (activeRating === 'all' || (activeRating === '4.5+' && 4.8 >= 4.5) || (activeRating === '4.8+' && 4.8 >= 4.8)) && (activeApplication === 'all' || activeApplication === 'parking')" data-category="otomotif" data-rating="4.8" data-application="parking">
     <Card class="'p-4'">
@@ -10,9 +10,10 @@ import Card from "@components/base/Card.astro";
         class="relative w-full h-40 rounded-lg overflow-hidden"
       >
         <img
-          class="w-full h-full object-cover"
+          class="w-full h-full object-cover cursor-pointer hover:opacity-90 transition-opacity duration-300"
           src="/img/products/oto-carstopper.png"
           alt="Car Stopper"
+          @click="showModal = true; modalImage = '/img/products/oto-carstopper.png'; modalAlt = 'Car Stopper'"
         />
       </div>
       <div class="font-sans mt-3">
@@ -60,9 +61,10 @@ import Card from "@components/base/Card.astro";
         class="relative w-full h-40 rounded-lg overflow-hidden"
       >
         <img
-          class="w-full h-full object-cover"
+          class="w-full h-full object-cover cursor-pointer hover:opacity-90 transition-opacity duration-300"
           src="/img/products/oto-tirestopper.png"
           alt="Tire Stopper"
+          @click="showModal = true; modalImage = '/img/products/oto-tirestopper.png'; modalAlt = 'Tire Stopper'"
         />
       </div>
       <div class="font-sans mt-3">
@@ -110,9 +112,10 @@ import Card from "@components/base/Card.astro";
         class="relative w-full h-40 rounded-lg overflow-hidden"
       >
         <img
-          class="w-full h-full object-cover"
+          class="w-full h-full object-cover cursor-pointer hover:opacity-90 transition-opacity duration-300"
           src="/img/products/oto-speedbump.png"
           alt="Speed Bump"
+          @click="showModal = true; modalImage = '/img/products/oto-speedbump.png'; modalAlt = 'Speed Bump'"
         />
       </div>
       <div class="font-sans mt-3">
@@ -160,9 +163,10 @@ import Card from "@components/base/Card.astro";
         class="relative w-full h-40 rounded-lg overflow-hidden"
       >
         <img
-          class="w-full h-full object-cover"
+          class="w-full h-full object-cover cursor-pointer hover:opacity-90 transition-opacity duration-300"
           src="/img/products/oto-connectingrod.png"
           alt="Connecting Rod"
+          @click="showModal = true; modalImage = '/img/products/oto-connectingrod.png'; modalAlt = 'Connecting Rod'"
         />
       </div>
       <div class="font-sans mt-3">
@@ -210,9 +214,10 @@ import Card from "@components/base/Card.astro";
         class="relative w-full h-40 rounded-lg overflow-hidden"
       >
         <img
-          class="w-full h-full object-cover"
+          class="w-full h-full object-cover cursor-pointer hover:opacity-90 transition-opacity duration-300"
           src="/img/products/oto-stepfloor.jpg"
           alt="Rubber Step Floor"
+          @click="showModal = true; modalImage = '/img/products/oto-stepfloor.jpg'; modalAlt = 'Rubber Step Floor'"
         />
       </div>
       <div class="font-sans mt-3">
@@ -260,9 +265,10 @@ import Card from "@components/base/Card.astro";
         class="relative w-full h-40 rounded-lg overflow-hidden"
       >
         <img
-          class="w-full h-full object-cover"
+          class="w-full h-full object-cover cursor-pointer hover:opacity-90 transition-opacity duration-300"
           src="/img/products/oto-dumper.png"
           alt="Dumper Components"
+          @click="showModal = true; modalImage = '/img/products/oto-dumper.png'; modalAlt = 'Dumper Components'"
         />
       </div>
       <div class="font-sans mt-3">
@@ -311,9 +317,10 @@ import Card from "@components/base/Card.astro";
         class="relative w-full h-40 rounded-lg overflow-hidden"
       >
         <img
-          class="w-full h-full object-cover"
+          class="w-full h-full object-cover cursor-pointer hover:opacity-90 transition-opacity duration-300"
           src="/img/products/railway-duct.png"
           alt="Railway Duct"
+          @click="showModal = true; modalImage = '/img/products/railway-duct.png'; modalAlt = 'Railway Duct'"
         />
       </div>
       <div class="font-sans mt-3">
@@ -361,9 +368,10 @@ import Card from "@components/base/Card.astro";
         class="relative w-full h-40 rounded-lg overflow-hidden"
       >
         <img
-          class="w-full h-full object-cover"
+          class="w-full h-full object-cover cursor-pointer hover:opacity-90 transition-opacity duration-300"
           src="/img/products/railway-connecting.png"
           alt="Railway Connecting Components"
+          @click="showModal = true; modalImage = '/img/products/railway-connecting.png'; modalAlt = 'Railway Connecting Components'"
         />
       </div>
       <div class="font-sans mt-3">
@@ -412,9 +420,10 @@ import Card from "@components/base/Card.astro";
         class="relative w-full h-40 rounded-lg overflow-hidden"
       >
         <img
-          class="w-full h-full object-cover"
+          class="w-full h-full object-cover cursor-pointer hover:opacity-90 transition-opacity duration-300"
           src="/img/products/industrial-oring.png"
           alt="O-Ring"
+          @click="showModal = true; modalImage = '/img/products/industrial-oring.png'; modalAlt = 'O-Ring'"
         />
       </div>
       <div class="font-sans mt-3">
@@ -462,9 +471,10 @@ import Card from "@components/base/Card.astro";
         class="relative w-full h-40 rounded-lg overflow-hidden"
       >
         <img
-          class="w-full h-full object-cover"
+          class="w-full h-full object-cover cursor-pointer hover:opacity-90 transition-opacity duration-300"
           src="/img/products/industrial-nbrfloat.png"
           alt="NBR Float"
+          @click="showModal = true; modalImage = '/img/products/industrial-nbrfloat.png'; modalAlt = 'NBR Float'"
         />
       </div>
       <div class="font-sans mt-3">
@@ -512,9 +522,10 @@ import Card from "@components/base/Card.astro";
         class="relative w-full h-40 rounded-lg overflow-hidden"
       >
         <img
-          class="w-full h-full object-cover"
+          class="w-full h-full object-cover cursor-pointer hover:opacity-90 transition-opacity duration-300"
           src="/img/products/industrial-siliconseal.png"
           alt="Silicon Seal"
+          @click="showModal = true; modalImage = '/img/products/industrial-siliconseal.png'; modalAlt = 'Silicon Seal'"
         />
       </div>
       <div class="font-sans mt-3">
@@ -554,5 +565,45 @@ import Card from "@components/base/Card.astro";
         </div>
       </div>
     </Card>
+  </div>
+
+  <!-- Image Modal -->
+  <div 
+    x-show="showModal" 
+    x-transition:enter="transition ease-out duration-300"
+    x-transition:enter-start="opacity-0"
+    x-transition:enter-end="opacity-100"
+    x-transition:leave="transition ease-in duration-200"
+    x-transition:leave-start="opacity-100"
+    x-transition:leave-end="opacity-0"
+    class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75 p-4"
+    @click="showModal = false"
+    @keydown.escape.window="showModal = false"
+  >
+    <div 
+      class="relative max-w-4xl max-h-full"
+      @click.stop
+    >
+      <!-- Close Button -->
+      <button
+        @click="showModal = false"
+        class="absolute -top-10 right-0 text-white hover:text-gray-300 transition-colors duration-200 z-10"
+      >
+        <iconify-icon class="iconify w-8 h-8" icon="ph:x-bold"></iconify-icon>
+      </button>
+      
+      <!-- Image -->
+      <img
+        :src="modalImage"
+        :alt="modalAlt"
+        class="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl"
+        loading="lazy"
+      />
+      
+      <!-- Image Title -->
+      <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4 rounded-b-lg">
+        <h3 class="text-lg font-semibold" x-text="modalAlt"></h3>
+      </div>
+    </div>
   </div>
 </div>
