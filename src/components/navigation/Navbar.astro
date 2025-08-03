@@ -4,13 +4,14 @@ import ButtonMain from "@components/base/ButtonMain.astro";
 import Hamburger from "@components/base/Hamburger.astro";
 import LanguageToggle from "@components/base/LanguageToggle.astro";
 import { getRelativeLocaleUrl } from 'astro:i18n';
+import { t, getCurrentLocale } from "@utils/i18n";
 
 // Check if current page has dark hero
 const currentPath = Astro.url.pathname;
 const isDarkHeroPage = currentPath === '/products' || currentPath === '/about' || currentPath === '/contact' || currentPath === '/en/products' || currentPath === '/en/about' || currentPath === '/en/contact';
 
 // Detect current locale
-const currentLocale = currentPath.startsWith('/en') ? 'en' : 'id';
+const currentLocale = getCurrentLocale(Astro.url);
 
 // Generate localized URLs
 const homeUrl = getRelativeLocaleUrl(currentLocale, '/');
@@ -81,7 +82,7 @@ const contactUrl = getRelativeLocaleUrl(currentLocale, '/contact');
         }`}
           x-bind:class="scrolled ? 'scrolled' : ''"
         >
-          <a href={homeUrl}>Home</a>
+          <a href={homeUrl}>{t(currentLocale, 'nav.home')}</a>
         </div>
         <div class={`relative py-3 lg:py-5 after:content-[''] after:absolute after:-bottom-1.5 after:left-0 after:h-[3px] after:rounded-t-full after:transition-all after:duration-300 transition-colors duration-300 ${
           isDarkHeroPage 
@@ -90,7 +91,7 @@ const contactUrl = getRelativeLocaleUrl(currentLocale, '/contact');
         }`}
           x-bind:class="scrolled ? 'scrolled' : ''"
         >
-          <a href={productsUrl}>Products</a>
+          <a href={productsUrl}>{t(currentLocale, 'nav.products')}</a>
         </div>
         <div class={`relative py-3 lg:py-5 transition-colors duration-300 ${
           isDarkHeroPage 
@@ -99,7 +100,7 @@ const contactUrl = getRelativeLocaleUrl(currentLocale, '/contact');
         }`}
           x-bind:class="scrolled ? 'scrolled' : ''"
         >
-          <a href={aboutUrl}>About</a>
+          <a href={aboutUrl}>{t(currentLocale, 'nav.about')}</a>
         </div>
       </div>
       <div class="flex flex-col lg:flex-row items-center gap-4 w-full md:w-auto">
@@ -108,7 +109,7 @@ const contactUrl = getRelativeLocaleUrl(currentLocale, '/contact');
         </div>
         <div class="order-1 lg:order-2 w-full md:w-auto">
           <ButtonMain to={contactUrl} class="'w-full md:w-[240px] lg:w-[110px]'"
-            >Contact Us</ButtonMain
+            >{t(currentLocale, 'nav.contact_us')}</ButtonMain
           >
         </div>
       </div>
