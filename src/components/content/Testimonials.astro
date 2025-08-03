@@ -8,11 +8,11 @@ const testimonials = tArray(currentLocale, 'content.testimonials.reviews');
 <div x-cloak class="relative overflow-hidden" x-intersect="activeStep = ''">
   <div x-data="swiper()" class="carousel-container">
     <div class="carousel-controls flex items-center justify-end mb-4">
-      <button class="w-10 h-10 flex items-center justify-center rounded-xl text-muted-600 hover:text-primary-600 dark:text-muted-300 dark:hover:text-muted-100 hover:bg-muted-200 dark:hover:bg-muted-900 transition-colors duration-300" @click="swiper.slidePrev()">
+      <button class="w-10 h-10 flex items-center justify-center rounded-xl text-muted-600 hover:text-primary-600   hover:bg-muted-200  transition-colors duration-300" @click="swiper.slidePrev()">
         <iconify-icon class="iconify" icon="lucide:arrow-left"></iconify-icon>
       </button>
 
-      <button class="w-10 h-10 flex items-center justify-center rounded-xl text-muted-600 hover:text-primary-600 dark:text-muted-300 dark:hover:text-muted-100 hover:bg-muted-200 dark:hover:bg-muted-900 transition-colors duration-300" @click="swiper.slideNext()">
+      <button class="w-10 h-10 flex items-center justify-center rounded-xl text-muted-600 hover:text-primary-600   hover:bg-muted-200  transition-colors duration-300" @click="swiper.slideNext()">
         <iconify-icon class="iconify" icon="lucide:arrow-right"></iconify-icon>
       </button>
     </div>
@@ -22,16 +22,16 @@ const testimonials = tArray(currentLocale, 'content.testimonials.reviews');
           <div class="swiper-slide">
             <Card class="'p-6'">
               <div class="w-full flex flex-col gap-8 font-sans">
-                <iconify-icon class="iconify w-8 h-8 flex items-center justify-center text-3xl text-primary-600 dark:text-rose-500" icon="fa6-solid:quote-left"></iconify-icon>
-                <p class="text-muted-500 dark:text-muted-300">
+                <iconify-icon class="iconify w-8 h-8 flex items-center justify-center text-3xl text-primary-600" icon="fa6-solid:quote-left"></iconify-icon>
+                <p class="text-muted-500 ">
                   {testimonial.text}
                 </p>
                 <div class="w-full flex items-center gap-3">
-                  <div class="shrink-0 inline-flex relative w-10 h-10 bg-primary-100 dark:bg-primary-900 rounded-full items-center justify-center">
-                    <iconify-icon class="iconify text-primary-600 dark:text-primary-400" icon="lucide:user"></iconify-icon>
+                  <div class="shrink-0 inline-flex relative w-10 h-10 bg-primary-100  rounded-full items-center justify-center">
+                    <iconify-icon class="iconify text-primary-600" icon="lucide:user"></iconify-icon>
                   </div>
                   <div>
-                    <h4 class="font-medium text-sm text-muted-800 dark:text-muted-100">
+                    <h4 class="font-medium text-sm text-muted-800 ">
                       {testimonial.name}
                     </h4>
                     <p class="text-xs text-muted-400">{testimonial.position}</p>

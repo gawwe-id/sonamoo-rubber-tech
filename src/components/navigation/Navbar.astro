@@ -25,7 +25,7 @@ const contactUrl = getRelativeLocaleUrl(currentLocale, '/contact');
 ---
 
 <!-- Top Contact Bar -->
-<div class="fixed top-0 left-0 w-full z-50 bg-primary-600 dark:bg-primary-700 text-white py-1 text-sm">
+<div class="fixed top-0 left-0 w-full z-50 bg-primary-600 text-white py-1 text-sm">
   <div class="w-full max-w-7xl mx-auto px-4 flex items-center justify-between">
     <div class="flex items-center gap-6">
       <a href="mailto:mfgsonamoorubbertech@gmail.com" class="flex items-center gap-2 hover:text-primary-200 transition-colors duration-300">
@@ -49,7 +49,7 @@ const contactUrl = getRelativeLocaleUrl(currentLocale, '/contact');
   x-data="navbar()"
   x-on:scroll.window="scroll()"
   class="fixed top-[20px] md:top-6 left-0 w-full z-40 transition-all duration-300"
-  :class="scrolled || $store.app.mobileOpen ? 'bg-white dark:bg-muted-900 shadow-lg shadow-muted-300/30 dark:shadow-muted-900/40' : ''"
+  :class="scrolled || $store.app.mobileOpen ? 'bg-white shadow-lg shadow-muted-300/30' : ''"
 >
   <div
     class="w-full max-w-7xl mx-auto flex items-center justify-between pl-4 pr-0 lg:pr-4 font-sans"
@@ -63,8 +63,8 @@ const contactUrl = getRelativeLocaleUrl(currentLocale, '/contact');
         <span
           class={`font-sans text-4xl font-black transition-colors duration-300 ${
             isDarkHeroPage 
-              ? 'text-white [&.scrolled]:text-primary-700 dark:[&.scrolled]:text-muted-100' 
-              : 'text-primary-700 dark:text-muted-100'
+              ? 'text-white [&.scrolled]:text-primary-700' 
+              : 'text-primary-700'
           }`}
           x-bind:class="scrolled ? 'scrolled' : ''"
           >SRT</span>
@@ -76,13 +76,13 @@ const contactUrl = getRelativeLocaleUrl(currentLocale, '/contact');
     <!-- Right -->
     <div
       class="flex-col items-center lg:justify-end gap-x-6"
-      :class="$store.app.mobileOpen ? 'absolute top-[80px] left-0 w-full flex text-center px-6 pt-2 pb-6 border-t border-muted-200 dark:border-muted-800 bg-white dark:bg-muted-900 shadow-lg shadow-muted-300/40 dark:shadow-muted-900/50' : 'hidden lg:flex lg:flex-row'"
+      :class="$store.app.mobileOpen ? 'absolute top-[80px] left-0 w-full flex text-center px-6 pt-2 pb-6 border-t border-muted-200 bg-white shadow-lg shadow-muted-300/40' : 'hidden lg:flex lg:flex-row'"
     >
       <div class="flex flex-col lg:flex-row items-center gap-x-6 lg:gap-x-10">
         <div class={`relative py-3 lg:py-5 after:content-[''] after:absolute after:-bottom-1.5 after:left-0 after:h-[3px] after:rounded-t-full after:transition-all after:duration-300 transition-colors duration-300 ${
           isDarkHeroPage 
-            ? 'text-white/90 hover:text-white [&.scrolled]:text-slate-500 dark:[&.scrolled]:text-slate-400 [&.scrolled]:hover:text-muted-700 dark:[&.scrolled]:hover:text-muted-100 after:w-0' 
-            : 'text-slate-500 dark:text-slate-400 hover:text-muted-700 dark:hover:text-muted-100 after:w-0'
+            ? 'text-white/90 hover:text-white [&.scrolled]:text-slate-500 [&.scrolled]:hover:text-muted-700 after:w-0' 
+            : 'text-slate-500 hover:text-muted-700 after:w-0'
         }`}
           x-bind:class="scrolled ? 'scrolled' : ''"
         >
@@ -90,8 +90,8 @@ const contactUrl = getRelativeLocaleUrl(currentLocale, '/contact');
         </div>
         <div class={`relative py-3 lg:py-5 after:content-[''] after:absolute after:-bottom-1.5 after:left-0 after:h-[3px] after:rounded-t-full after:transition-all after:duration-300 transition-colors duration-300 ${
           isDarkHeroPage 
-            ? 'text-white/90 hover:text-white [&.scrolled]:text-slate-500 dark:[&.scrolled]:text-slate-400 [&.scrolled]:hover:text-muted-700 dark:[&.scrolled]:hover:text-muted-100 after:w-0' 
-            : 'text-slate-500 dark:text-slate-400 hover:text-muted-700 dark:hover:text-muted-100 after:w-0'
+            ? 'text-white/90 hover:text-white [&.scrolled]:text-slate-500 [&.scrolled]:hover:text-muted-700 after:w-0' 
+            : 'text-slate-500 hover:text-muted-700 after:w-0'
         }`}
           x-bind:class="scrolled ? 'scrolled' : ''"
         >
@@ -99,8 +99,8 @@ const contactUrl = getRelativeLocaleUrl(currentLocale, '/contact');
         </div>
         <div class={`relative py-3 lg:py-5 transition-colors duration-300 ${
           isDarkHeroPage 
-            ? 'text-white/90 hover:text-white [&.scrolled]:text-slate-500 dark:[&.scrolled]:text-slate-400 [&.scrolled]:hover:text-muted-700 dark:[&.scrolled]:hover:text-muted-100' 
-            : 'text-slate-500 dark:text-slate-400 hover:text-muted-700 dark:hover:text-muted-100'
+            ? 'text-white/90 hover:text-white [&.scrolled]:text-slate-500 [&.scrolled]:hover:text-muted-700' 
+            : 'text-slate-500 hover:text-muted-700'
         }`}
           x-bind:class="scrolled ? 'scrolled' : ''"
         >

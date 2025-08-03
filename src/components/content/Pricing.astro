@@ -4,13 +4,13 @@ const currentLocale = getCurrentLocale(Astro.url);
 ---
 
 <div id="quote-request" class="w-full max-w-6xl mx-auto" x-intersect="activeStep = 'spy-3'">
-  <div class="p-6 md:p-10 rounded-2xl bg-muted-200 dark:bg-muted-900">
+  <div class="p-6 md:p-10 rounded-2xl bg-muted-200">
     <div class="grid md:grid-cols-2 ltablet:grid-cols-3 lg:grid-cols-3 gap-6">
       <div class="ptablet:hidden">
         <div class="h-full flex items-center justify-center">
           <div class="font-sans md:px-4">
-            <h3 class="text-2xl mb-3 text-muted-800 dark:text-muted-100">{t(currentLocale, 'content.pricing.title')}</h3>
-            <p class="mb-3 text-sm text-muted-500 dark:text-muted-400">
+            <h3 class="text-2xl mb-3 text-muted-800 ">{t(currentLocale, 'content.pricing.title')}</h3>
+            <p class="mb-3 text-sm text-muted-500 ">
               {t(currentLocale, 'content.pricing.description')}
             </p>
             <a
@@ -29,37 +29,37 @@ const currentLocale = getCurrentLocale(Astro.url);
       <!-- Standard Quote -->
       <div>
         <div
-          class="w-full rounded-xl px-6 md:px-8 pt-6 md:pt-8 pb-4 border border-muted-200 dark:border-muted-700 bg-white dark:bg-muted-800 transition-colors duration-300"
+          class="w-full rounded-xl px-6 md:px-8 pt-6 md:pt-8 pb-4 border border-muted-200  bg-white  transition-colors duration-300"
         >
           <div class="flex items-center -mt-2">
             <div
-              class="flex items-center justify-center h-12 w-12 border border-muted-200 dark:border-muted-700 rounded-full bg-white dark:bg-muted-800 mr-2"
+              class="flex items-center justify-center h-12 w-12 border border-muted-200  rounded-full bg-white  mr-2"
             >
               <div
-                class="flex items-center justify-center h-10 w-10 bg-rose-100 dark:bg-rose-100/10 rounded-full"
+                class="flex items-center justify-center h-10 w-10 bg-rose-100 rounded-full"
               >
                 <iconify-icon class="iconify w-5 h-5 flex items-center justify-center text-2xl text-rose-500" icon="ph:note-duotone"></iconify-icon>
               </div>
             </div>
             <h3
-              class="font-heading text-2xl font-medium text-muted-800 dark:text-white"
+              class="font-heading text-2xl font-medium text-muted-800 "
             >
               {t(currentLocale, 'content.pricing.standard_quote.title')}
             </h3>
           </div>
 
           <p
-            class="font-sans text-sm py-2 mt-1 text-muted-500 dark:text-muted-400"
+            class="font-sans text-sm py-2 mt-1 text-muted-500 "
           >
             {t(currentLocale, 'content.pricing.standard_quote.description')}
           </p>
           <div class="flex items-center mt-2 mb-4">
             <h4
-              class="font-heading text-3xl font-semibold text-muted-800 dark:text-white mr-4"
+              class="font-heading text-3xl font-semibold text-muted-800  mr-4"
             >
               {t(currentLocale, 'content.pricing.standard_quote.price_label')}
             </h4>
-            <span class="font-sans text-xs text-muted-500 dark:text-muted-400">
+            <span class="font-sans text-xs text-muted-500 ">
               <span>{t(currentLocale, 'content.pricing.standard_quote.price_sublabel')}</span>
             </span>
           </div>
@@ -85,7 +85,7 @@ const currentLocale = getCurrentLocale(Astro.url);
           </a>
           <a
             href="/pdf/company-profile-2025.pdf"
-            class="block w-full text-sm text-center font-sans mb-2 py-4 font-medium text-muted-500 hover:text-muted-600 dark:text-muted-300 dark:hover:text-muted-100 rounded-lg border border-solid border-transparent hover:bg-muted-100 dark:hover:bg-muted-700 transition-colors duration-300"
+            class="block w-full text-sm text-center font-sans mb-2 py-4 font-medium text-muted-500 hover:text-muted-600   rounded-lg border border-solid border-transparent hover:bg-muted-100  transition-colors duration-300"
             download
           >
             {t(currentLocale, 'content.pricing.standard_quote.secondary_button')}
@@ -96,37 +96,37 @@ const currentLocale = getCurrentLocale(Astro.url);
       <!-- Custom Quote -->
       <div>
         <div
-          class="w-full rounded-xl px-6 md:px-8 pt-6 md:pt-8 pb-4 border border-muted-200 dark:border-muted-700 bg-white dark:bg-muted-800 transition-colors duration-300"
+          class="w-full rounded-xl px-6 md:px-8 pt-6 md:pt-8 pb-4 border border-muted-200  bg-white  transition-colors duration-300"
         >
           <div class="flex items-center -mt-2">
             <div
-              class="flex items-center justify-center h-12 w-12 border border-muted-200 dark:border-muted-700 rounded-full bg-white dark:bg-muted-800 mr-2"
+              class="flex items-center justify-center h-12 w-12 border border-muted-200  rounded-full bg-white  mr-2"
             >
               <div
-                class="flex items-center justify-center h-10 w-10 bg-primary-100 dark:bg-primary-100/10 rounded-full"
+                class="flex items-center justify-center h-10 w-10 bg-primary-100 rounded-full"
               >
                 <iconify-icon class="iconify w-5 h-5 flex items-center justify-center text-2xl text-primary-500" icon="ph:gear-duotone"></iconify-icon>
               </div>
             </div>
             <h3
-              class="font-heading text-2xl font-medium text-muted-800 dark:text-white"
+              class="font-heading text-2xl font-medium text-muted-800 "
             >
               {t(currentLocale, 'content.pricing.custom_quote.title')}
             </h3>
           </div>
 
           <p
-            class="font-sans text-sm py-2 mt-1 text-muted-500 dark:text-muted-400"
+            class="font-sans text-sm py-2 mt-1 text-muted-500 "
           >
             {t(currentLocale, 'content.pricing.custom_quote.description')}
           </p>
           <div class="flex items-center mt-2 mb-4">
             <h4
-              class="font-heading text-3xl font-semibold text-muted-800 dark:text-white mr-4"
+              class="font-heading text-3xl font-semibold text-muted-800  mr-4"
             >
               {t(currentLocale, 'content.pricing.custom_quote.price_label')}
             </h4>
-            <span class="font-sans text-xs text-muted-500 dark:text-muted-400">
+            <span class="font-sans text-xs text-muted-500 ">
               <span>{t(currentLocale, 'content.pricing.custom_quote.price_sublabel')}</span>
             </span>
           </div>
@@ -152,7 +152,7 @@ const currentLocale = getCurrentLocale(Astro.url);
           </a>
           <a
              href="/contact"
-            class="block w-full text-sm text-center font-sans mb-2 py-4 font-medium text-muted-500 hover:text-muted-600 dark:text-muted-300 dark:hover:text-muted-100 rounded-lg border border-solid border-transparent hover:bg-muted-100 dark:hover:bg-muted-700 transition-colors duration-300"
+            class="block w-full text-sm text-center font-sans mb-2 py-4 font-medium text-muted-500 hover:text-muted-600   rounded-lg border border-solid border-transparent hover:bg-muted-100  transition-colors duration-300"
           >
             {t(currentLocale, 'content.pricing.custom_quote.secondary_button')}
           </a>

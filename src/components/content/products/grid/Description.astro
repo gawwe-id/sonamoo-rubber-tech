@@ -5,47 +5,47 @@ const currentLocale = getCurrentLocale(Astro.url);
 
 <div class="px-2">
   <!-- Product Description Section -->
-  <div class="pb-6 border-b border-muted-200 dark:border-muted-800">
-    <h3 class="font-sans font-light text-lg mb-4 text-muted-800 dark:text-muted-100">
+  <div class="pb-6 border-b border-muted-200 ">
+    <h3 class="font-sans font-light text-lg mb-4 text-muted-800 ">
       {t(currentLocale, 'content.products.descriptions.title')}
     </h3>
     
     <!-- All Products Description -->
     <div x-show="activeCategory === 'all'" class="space-y-3">
-      <p class="text-sm text-muted-600 dark:text-muted-300 leading-relaxed">
+      <p class="text-sm text-muted-600  leading-relaxed">
         {t(currentLocale, 'content.products.descriptions.categories.all.paragraph1')}
       </p>
-      <p class="text-sm text-muted-600 dark:text-muted-300 leading-relaxed">
+      <p class="text-sm text-muted-600  leading-relaxed">
         {t(currentLocale, 'content.products.descriptions.categories.all.paragraph2')}
       </p>
     </div>
 
     <!-- Otomotif Category Description -->
     <div x-show="activeCategory === 'otomotif'" class="space-y-3">
-      <p class="text-sm text-muted-600 dark:text-muted-300 leading-relaxed">
+      <p class="text-sm text-muted-600  leading-relaxed">
         {t(currentLocale, 'content.products.descriptions.categories.otomotif.paragraph1')}
       </p>
-      <p class="text-sm text-muted-600 dark:text-muted-300 leading-relaxed">
+      <p class="text-sm text-muted-600  leading-relaxed">
         {t(currentLocale, 'content.products.descriptions.categories.otomotif.paragraph2')}
       </p>
     </div>
 
     <!-- Railway Category Description -->
     <div x-show="activeCategory === 'railway'" class="space-y-3">
-      <p class="text-sm text-muted-600 dark:text-muted-300 leading-relaxed">
+      <p class="text-sm text-muted-600  leading-relaxed">
         {t(currentLocale, 'content.products.descriptions.categories.railway.paragraph1')}
       </p>
-      <p class="text-sm text-muted-600 dark:text-muted-300 leading-relaxed">
+      <p class="text-sm text-muted-600  leading-relaxed">
         {t(currentLocale, 'content.products.descriptions.categories.railway.paragraph2')}
       </p>
     </div>
 
     <!-- Industrial Category Description -->
     <div x-show="activeCategory === 'industrial'" class="space-y-3">
-      <p class="text-sm text-muted-600 dark:text-muted-300 leading-relaxed">
+      <p class="text-sm text-muted-600  leading-relaxed">
         {t(currentLocale, 'content.products.descriptions.categories.industrial.paragraph1')}
       </p>
-      <p class="text-sm text-muted-600 dark:text-muted-300 leading-relaxed">
+      <p class="text-sm text-muted-600  leading-relaxed">
         {t(currentLocale, 'content.products.descriptions.categories.industrial.paragraph2')}
       </p>
     </div>

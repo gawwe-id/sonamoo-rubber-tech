@@ -14,10 +14,6 @@ Alpine.plugin(intersect);
 Alpine.plugin(persist);
 //Init store
 Alpine.store("app", {
-  init() {
-    this.isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  },
-  isDark: Alpine.$persist(false),
   isLoggedIn: Alpine.$persist(false),
 });
 //Start Alpine JS
