@@ -2,7 +2,6 @@
 import Logo from "@components/base/Logo.astro";
 import ButtonMain from "@components/base/ButtonMain.astro";
 import Hamburger from "@components/base/Hamburger.astro";
-import NavbarSearchFilters from "@components/navigation/NavbarSearchFilters.astro";
 
 // Check if current page has dark hero
 const currentPath = Astro.url.pathname;
@@ -54,21 +53,6 @@ const isDarkHeroPage = currentPath === '/products' || currentPath === '/about';
           x-bind:class="scrolled ? 'scrolled' : ''"
           >SRT</span>
       </a>
-      <div
-        role="button"
-        class="hidden md:block relative"
-        @click.away="closeFilters()"
-      >
-        <button
-          type="button"
-          class="flex items-center justify-center gap-2 px-4 py-2 h-10 text-sm leading-5 font-sans w-full rounded-xl bg-white text-slate-600 border border-slate-300 hover:shadow-lg hover:shadow-slate-300/50 dark:hover:shadow-slate-800/50 dark:bg-slate-800 dark:text-slate-200 dark:border-slate-700 outline-none focus-visible:outline-2 focus-visible:outline-dashed focus-visible:outline-slate-300 dark:focus-visible:outline-slate-600 focus-visible:outline-offset-2 disabled:opacity-60 disabled:cursor-not-allowed transition-all duration-300"
-          @click="openFilters()"
-        >
-          <span class="text-slate-400 dark:text-slate-500">Layanan kami</span>
-          <iconify-icon class="iconify w-4 h-4 text-slate-400 hover:text-primary-500 transition-colors duration-300" icon="lucide:chevron-down"></iconify-icon>
-        </button>
-        <NavbarSearchFilters />
-      </div>
       <div class="flex items-center justify-center h-20 w-20 lg:hidden ml-auto">
         <Hamburger />
       </div>
