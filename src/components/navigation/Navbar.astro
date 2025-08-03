@@ -5,7 +5,7 @@ import Hamburger from "@components/base/Hamburger.astro";
 
 // Check if current page has dark hero
 const currentPath = Astro.url.pathname;
-const isDarkHeroPage = currentPath === '/products' || currentPath === '/about';
+const isDarkHeroPage = currentPath === '/products' || currentPath === '/about' || currentPath === '/contact';
 ---
 
 <!-- Top Contact Bar -->
@@ -70,7 +70,7 @@ const isDarkHeroPage = currentPath === '/products' || currentPath === '/about';
         }`}
           x-bind:class="scrolled ? 'scrolled' : ''"
         >
-          <a href="#doctors">Doctors</a>
+          <a href="/">Home</a>
         </div>
         <div class={`relative py-3 lg:py-5 after:content-[''] after:absolute after:-bottom-1.5 after:left-0 after:h-[3px] after:rounded-t-full after:transition-all after:duration-300 transition-colors duration-300 ${
           isDarkHeroPage 
@@ -80,15 +80,6 @@ const isDarkHeroPage = currentPath === '/products' || currentPath === '/about';
           x-bind:class="scrolled ? 'scrolled' : ''"
         >
           <a href="/products">Products</a>
-        </div>
-        <div class={`relative py-3 lg:py-5 after:content-[''] after:absolute after:-bottom-1.5 after:left-0 after:h-[3px] after:rounded-t-full after:transition-all after:duration-300 transition-colors duration-300 ${
-          isDarkHeroPage 
-            ? 'text-white/90 hover:text-white [&.scrolled]:text-slate-500 dark:[&.scrolled]:text-slate-400 [&.scrolled]:hover:text-muted-700 dark:[&.scrolled]:hover:text-muted-100 after:w-0' 
-            : 'text-slate-500 dark:text-slate-400 hover:text-muted-700 dark:hover:text-muted-100 after:w-0'
-        }`}
-          x-bind:class="scrolled ? 'scrolled' : ''"
-        >
-          <a href="#pricing">Pricing</a>
         </div>
         <div class={`relative py-3 lg:py-5 transition-colors duration-300 ${
           isDarkHeroPage 
@@ -101,7 +92,7 @@ const isDarkHeroPage = currentPath === '/products' || currentPath === '/about';
         </div>
       </div>
       <div class="w-full md:w-auto">
-        <ButtonMain to={"#"} class="'w-full md:w-[240px] lg:w-[110px]'"
+        <ButtonMain to={"/contact"} class="'w-full md:w-[240px] lg:w-[110px]'"
           >Contact Us</ButtonMain
         >
       </div>
