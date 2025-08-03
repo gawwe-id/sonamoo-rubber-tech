@@ -7,6 +7,7 @@ import SectionTitle from "@components/section/SectionTitle.astro";
 import Card from "@components/base/Card.astro";
 import ButtonMain from "@components/base/ButtonMain.astro";
 import ButtonSub from "@components/base/ButtonSub.astro";
+import CatalogProduct from "@components/section/CatalogProduct.astro";
 ---
 
 <Layout title="Products">
@@ -86,107 +87,8 @@ import ButtonSub from "@components/base/ButtonSub.astro";
     </Container>
   </SectionMuted>
 
-  <!-- Featured Products -->
-  <SectionMuted id="automotive">
-    <Container>
-      <div class="py-16">
-        <SectionTitle
-          title="Produk Unggulan Otomotif"
-          subtitle="Produk utama yang diproduksi dengan teknologi Korea dan standar kualitas internasional"
-          minititle="Featured Products"
-          class="'text-center mx-auto'"
-        />
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-          <!-- Car Stopper -->
-          <Card class="'group p-6 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 bg-white dark:bg-muted-800'">
-            <div class="aspect-square bg-gradient-to-br from-primary-100 to-primary-200 rounded-lg mb-4 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
-              <iconify-icon class="iconify w-16 h-16 text-primary-600" icon="ph:car-duotone"></iconify-icon>
-            </div>
-            <h4 class="font-semibold text-lg text-muted-800 dark:text-white mb-2">Car Stopper</h4>
-            <p class="text-sm text-muted-600 dark:text-muted-400 mb-4">
-              Ganjalan ban mobil dengan kualitas premium dan daya tahan tinggi
-            </p>
-            <div class="flex items-center justify-between">
-              <span class="text-xs px-2 py-1 bg-primary-100 text-primary-700 rounded-full">Premium</span>
-              <ButtonSub to="#contact" class="'text-xs px-3 py-1 hover:scale-105 transition-transform duration-200'">
-                Inquiry
-              </ButtonSub>
-            </div>
-          </Card>
-
-          <!-- Tire Stopper -->
-          <Card class="'group p-6 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 bg-white dark:bg-muted-800'">
-            <div class="aspect-square bg-gradient-to-br from-green-100 to-green-200 rounded-lg mb-4 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
-              <iconify-icon class="iconify w-16 h-16 text-green-600" icon="ph:tire-duotone"></iconify-icon>
-            </div>
-            <h4 class="font-semibold text-lg text-muted-800 dark:text-white mb-2">Tire Stopper</h4>
-            <p class="text-sm text-muted-600 dark:text-muted-400 mb-4">
-              Tersedia dalam varian 1kg, 3kg, dan 5kg sesuai kebutuhan
-            </p>
-            <div class="flex items-center justify-between">
-              <span class="text-xs px-2 py-1 bg-green-100 text-green-700 rounded-full">Varian</span>
-              <ButtonSub to="#contact" class="'text-xs px-3 py-1 hover:scale-105 transition-transform duration-200'">
-                Inquiry
-              </ButtonSub>
-            </div>
-          </Card>
-
-          <!-- Speed Bump -->
-          <Card class="'group p-6 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 bg-white dark:bg-muted-800'">
-            <div class="aspect-square bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg mb-4 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
-              <iconify-icon class="iconify w-16 h-16 text-yellow-600" icon="ph:road-horizon-duotone"></iconify-icon>
-            </div>
-            <h4 class="font-semibold text-lg text-muted-800 dark:text-white mb-2">Speed Bump</h4>
-            <p class="text-sm text-muted-600 dark:text-muted-400 mb-4">
-              Polisi tidur karet dengan desain ergonomis dan anti-slip
-            </p>
-            <div class="flex items-center justify-between">
-              <span class="text-xs px-2 py-1 bg-yellow-100 text-yellow-700 rounded-full">Safety</span>
-              <ButtonSub to="#contact" class="'text-xs px-3 py-1 hover:scale-105 transition-transform duration-200'">
-                Inquiry
-              </ButtonSub>
-            </div>
-          </Card>
-
-          <!-- Rubber Step -->
-          <Card class="'group p-6 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 bg-white dark:bg-muted-800'">
-            <div class="aspect-square bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg mb-4 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
-              <iconify-icon class="iconify w-16 h-16 text-blue-600" icon="ph:motorcycle-duotone"></iconify-icon>
-            </div>
-            <h4 class="font-semibold text-lg text-muted-800 dark:text-white mb-2">Step Floor Motor</h4>
-            <p class="text-sm text-muted-600 dark:text-muted-400 mb-4">
-              Untuk berbagai tipe motor: Vario, Scoopy, Beat, dan lainnya
-            </p>
-            <div class="flex items-center justify-between">
-              <span class="text-xs px-2 py-1 bg-blue-100 text-blue-700 rounded-full">Universal</span>
-              <ButtonSub to="#contact" class="'text-xs px-3 py-1 hover:scale-105 transition-transform duration-200'">
-                Inquiry
-              </ButtonSub>
-            </div>
-          </Card>
-        </div>
-
-        <!-- Technology Partnership -->
-        <div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-8 text-center text-white">
-          <div class="max-w-3xl mx-auto">
-            <h3 class="text-2xl font-bold mb-4">Teknologi Korea, Kualitas Dunia</h3>
-            <p class="text-lg mb-6 opacity-90">
-              Bekerjasama dengan DH Industry Co.,Ltd Korea untuk menghadirkan teknologi terdepan dan kualitas internasional
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-              <ButtonMain to="#contact" class="'bg-white text-primary-600 hover:bg-gray-100 hover:scale-105 transition-all duration-300'">
-                Konsultasi Produk
-              </ButtonMain>
-              <ButtonSub to="#facility" class="'border-white text-white hover:bg-white/10 transition-all duration-300'">
-                Lihat Fasilitas
-              </ButtonSub>
-            </div>
-          </div>
-        </div>
-      </div>
-    </Container>
-  </SectionMuted>
+ <!-- Catalog Section -->
+  <CatalogProduct />
 
   <!-- Industrial & Railway Products -->
   <Section id="industrial">
@@ -250,7 +152,7 @@ import ButtonSub from "@components/base/ButtonSub.astro";
               </div>
             </div>
 
-            <ButtonMain to="#contact" class="'group hover:scale-105 transition-all duration-300'">
+            <ButtonMain to="/contact" class="'group hover:scale-105 transition-all duration-300'">
               <span>Konsultasi Kebutuhan</span>
               <iconify-icon class="iconify w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" icon="lucide:arrow-right"></iconify-icon>
             </ButtonMain>
@@ -306,7 +208,7 @@ import ButtonSub from "@components/base/ButtonSub.astro";
           </p>
           
           <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-            <ButtonMain to="#contact" class="'group text-lg px-8 py-4 hover:scale-105 hover:shadow-xl transition-all duration-300'">
+            <ButtonMain to="/contact" class="'group text-lg px-8 py-4 hover:scale-105 hover:shadow-xl transition-all duration-300'">
               <iconify-icon class="iconify w-5 h-5 group-hover:rotate-12 transition-transform duration-300" icon="ph:phone-duotone"></iconify-icon>
               <span>Hubungi Sekarang</span>
             </ButtonMain>
