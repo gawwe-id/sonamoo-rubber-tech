@@ -16,6 +16,57 @@
     "see_product": "See Products",
     "about": "About Us"
   },
+  "home": {
+    "features": {
+      "title": "High Quality Rubber Product Solutions",
+      "subtitle": "PT. Sonamoo Rubber Tech provides various rubber products for automotive, railway, and other industries with reliable Korean technology.",
+      "minititle": "Specialist Rubber Product",
+      "items": {
+        "fast_response": {
+          "title": "Fast Response",
+          "text": "Quick response for customer needs with professional technical consultation services."
+        },
+        "competitive_price": {
+          "title": "Competitive Price",
+          "text": "Competitive pricing with guaranteed quality through production efficiency and Korean technology."
+        },
+        "best_product": {
+          "title": "Best Product",
+          "text": "High-quality products with international standards for automotive and railway industries."
+        },
+        "fast_delivery": {
+          "title": "Fast Delivery",
+          "text": "Fast and accurate delivery with efficient and reliable production systems."
+        },
+        "automotive_components": {
+          "title": "Automotive Components",
+          "text": "Specializing in automotive rubber products such as tire stoppers, speed bumps, and rubber step floors."
+        },
+        "railway_solutions": {
+          "title": "Railway Solutions",
+          "text": "Special products for railway industry including high-quality ducts and corrugated bellows."
+        },
+        "korean_technology": {
+          "title": "Korean Technology",
+          "text": "Technical cooperation with DH Industry Co.,Ltd Korea for leading technology and quality."
+        },
+        "custom_manufacturing": {
+          "title": "Custom Manufacturing",
+          "text": "Custom production according to specifications with complete facilities and modern technology."
+        }
+      }
+    },
+    "pricing_section": {
+      "title": "Request Rubber Product Quote",
+      "subtitle": "Get the best price quotes for your high-quality rubber product needs with specifications that match your industry.",
+      "minititle": "Custom Quote"
+    },
+    "testimonials_section": {
+      "title": "Customer Testimonials",
+      "subtitle": "Customer trust and satisfaction are our top priority. Here are testimonials from various industries that have used products from PT Sonamoo Rubber Tech.",
+      "minititle": "Client Reviews"
+    }
+  },
   "about": {
     "hero_subtitle": "Specialist Rubber Product - producing rubber products for Automotive, Railway and Other Industries",
     "company_title": "About Our Company",

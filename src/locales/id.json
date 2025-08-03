@@ -16,6 +16,57 @@
     "see_product": "Specialist Rubber Product",
     "about": "Tentang Kami"
   },
+  "home": {
+    "features": {
+      "title": "Solusi Produk Karet Berkualitas Tinggi",
+      "subtitle": "PT. Sonamoo Rubber Tech menyediakan berbagai produk karet untuk industri otomotif, kereta api, dan industri lainnya dengan teknologi Korea yang handal.",
+      "minititle": "Specialist Rubber Product",
+      "items": {
+        "fast_response": {
+          "title": "Fast Response",
+          "text": "Respon cepat untuk kebutuhan pelanggan dengan layanan konsultasi teknis yang profesional."
+        },
+        "competitive_price": {
+          "title": "Competitive Price",
+          "text": "Harga yang kompetitif dengan kualitas terjamin melalui efisiensi produksi dan teknologi Korea."
+        },
+        "best_product": {
+          "title": "Best Product",
+          "text": "Produk berkualitas tinggi dengan standar internasional untuk industri otomotif dan kereta api."
+        },
+        "fast_delivery": {
+          "title": "Fast Delivery",
+          "text": "Pengiriman cepat dan akurat dengan sistem produksi yang efisien dan terpercaya."
+        },
+        "automotive_components": {
+          "title": "Automotive Components",
+          "text": "Spesialisasi produk karet otomotif seperti tire stopper, speed bump, dan rubber step floor."
+        },
+        "railway_solutions": {
+          "title": "Railway Solutions",
+          "text": "Produk khusus untuk industri kereta api termasuk duct dan corrugated bellow berkualitas tinggi."
+        },
+        "korean_technology": {
+          "title": "Korean Technology",
+          "text": "Kerjasama teknis dengan DH Industry Co.,Ltd Korea untuk teknologi dan kualitas terdepan."
+        },
+        "custom_manufacturing": {
+          "title": "Custom Manufacturing",
+          "text": "Produksi kustom sesuai spesifikasi dengan fasilitas lengkap dan teknologi modern."
+        }
+      }
+    },
+    "pricing_section": {
+      "title": "Request Quote Produk Karet",
+      "subtitle": "Dapatkan penawaran harga terbaik untuk kebutuhan produk karet berkualitas tinggi dengan spesifikasi yang sesuai dengan industri Anda.",
+      "minititle": "Custom Quote"
+    },
+    "testimonials_section": {
+      "title": "Testimoni Pelanggan",
+      "subtitle": "Kepercayaan dan kepuasan pelanggan adalah prioritas utama kami. Berikut testimoni dari berbagai industri yang telah menggunakan produk dari PT Sonamoo Rubber Tech.",
+      "minititle": "Client Reviews"
+    }
+  },
   "common": {
     "read_more": "Baca Selengkapnya",
     "contact_us": "Hubungi Kami",

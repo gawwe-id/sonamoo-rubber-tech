@@ -13,6 +13,9 @@ import Testimonials from "@components/content/Testimonials.astro";
 import ProductsCategory from "@components/content/ProductsCategory.astro";
 import FAQ from "@components/content/FAQ.astro";
 import CatalogProduct from "@components/section/CatalogProduct.astro";
+import { t, getCurrentLocale } from "@utils/i18n";
+
+const currentLocale = getCurrentLocale(Astro.url);
 ---
 
 <Layout title="Home">
@@ -21,17 +24,17 @@ import CatalogProduct from "@components/section/CatalogProduct.astro";
   <SectionMuted>
     <Container>
       <SectionTitle
-  title="Solusi Produk Karet Berkualitas Tinggi"
-  subtitle="PT. Sonamoo Rubber Tech menyediakan berbagai produk karet untuk industri otomotif, kereta api, dan industri lainnya dengan teknologi Korea yang handal."
-  minititle="Specialist Rubber Product"
-/>
+        title={t(currentLocale, 'home.features.title')}
+        subtitle={t(currentLocale, 'home.features.subtitle')}
+        minititle={t(currentLocale, 'home.features.minititle')}
+      />
 
       <div class="grid md:grid-cols-3 ltablet:grid-cols-4 lg:grid-cols-4 gap-x-6 gap-y-12" x-intersect="activeStep = ''">
         <!-- Item 1 -->
         <div>
           <IconBlock
-            title="Fast Response"
-            text="Respon cepat untuk kebutuhan pelanggan dengan layanan konsultasi teknis yang profesional."
+            title={t(currentLocale, 'home.features.items.fast_response.title')}
+            text={t(currentLocale, 'home.features.items.fast_response.text')}
             icon="ph:lightning-duotone"
             class="'text-primary-600'"
           />
@@ -40,8 +43,8 @@ import CatalogProduct from "@components/section/CatalogProduct.astro";
         <!-- Item 2 -->
         <div>
           <IconBlock
-            title="Competitive Price" 
-            text="Harga yang kompetitif dengan kualitas terjamin melalui efisiensi produksi dan teknologi Korea."
+            title={t(currentLocale, 'home.features.items.competitive_price.title')}
+            text={t(currentLocale, 'home.features.items.competitive_price.text')}
             icon="ph:coins-duotone"
             class="'text-rose-500'"
           />
@@ -50,8 +53,8 @@ import CatalogProduct from "@components/section/CatalogProduct.astro";
         <!-- Item 3 -->
         <div>
           <IconBlock
-            title="Best Product"
-            text="Produk berkualitas tinggi dengan standar internasional untuk industri otomotif dan kereta api."
+            title={t(currentLocale, 'home.features.items.best_product.title')}
+            text={t(currentLocale, 'home.features.items.best_product.text')}
             icon="ph:medal-duotone"
             class="'text-primary-600'"
           />
@@ -60,8 +63,8 @@ import CatalogProduct from "@components/section/CatalogProduct.astro";
         <!-- Item 4 -->
         <div>
           <IconBlock
-            title="Fast Delivery"
-            text="Pengiriman cepat dan akurat dengan sistem produksi yang efisien dan terpercaya."
+            title={t(currentLocale, 'home.features.items.fast_delivery.title')}
+            text={t(currentLocale, 'home.features.items.fast_delivery.text')}
             icon="ph:truck-duotone"
             class="'text-rose-500'"
           />
@@ -70,8 +73,8 @@ import CatalogProduct from "@components/section/CatalogProduct.astro";
         <!-- Item 5 -->
         <div>
           <IconBlock
-            title="Automotive Components"
-            text="Spesialisasi produk karet otomotif seperti tire stopper, speed bump, dan rubber step floor."
+            title={t(currentLocale, 'home.features.items.automotive_components.title')}
+            text={t(currentLocale, 'home.features.items.automotive_components.text')}
             icon="ph:car-duotone"
             class="'text-primary-600'"
           />
@@ -80,8 +83,8 @@ import CatalogProduct from "@components/section/CatalogProduct.astro";
         <!-- Item 6 -->
         <div>
           <IconBlock
-            title="Railway Solutions"
-            text="Produk khusus untuk industri kereta api termasuk duct dan corrugated bellow berkualitas tinggi."
+            title={t(currentLocale, 'home.features.items.railway_solutions.title')}
+            text={t(currentLocale, 'home.features.items.railway_solutions.text')}
             icon="ph:train-duotone"
             class="'text-primary-600'"
           />
@@ -90,8 +93,8 @@ import CatalogProduct from "@components/section/CatalogProduct.astro";
         <!-- Item 7 -->
         <div>
           <IconBlock
-            title="Korean Technology"
-            text="Kerjasama teknis dengan DH Industry Co.,Ltd Korea untuk teknologi dan kualitas terdepan."
+            title={t(currentLocale, 'home.features.items.korean_technology.title')}
+            text={t(currentLocale, 'home.features.items.korean_technology.text')}
             icon="ph:gear-duotone"
             class="'text-primary-600'"
           />
@@ -100,8 +103,8 @@ import CatalogProduct from "@components/section/CatalogProduct.astro";
         <!-- Item 8 -->
         <div>
           <IconBlock
-            title="Custom Manufacturing"
-            text="Produksi kustom sesuai spesifikasi dengan fasilitas lengkap dan teknologi modern."
+            title={t(currentLocale, 'home.features.items.custom_manufacturing.title')}
+            text={t(currentLocale, 'home.features.items.custom_manufacturing.text')}
             icon="ph:wrench-duotone"
             class="'text-primary-600'"
           />
@@ -128,9 +131,9 @@ import CatalogProduct from "@components/section/CatalogProduct.astro";
   <SectionMuted>
     <Container>
       <SectionTitle
-        title="Request Quote Produk Karet"
-        subtitle="Dapatkan penawaran harga terbaik untuk kebutuhan produk karet berkualitas tinggi dengan spesifikasi yang sesuai dengan industri Anda."
-        minititle="Custom Quote"
+        title={t(currentLocale, 'home.pricing_section.title')}
+        subtitle={t(currentLocale, 'home.pricing_section.subtitle')}
+        minititle={t(currentLocale, 'home.pricing_section.minititle')}
         class="'mx-auto text-center'"
       />
       <Pricing />
@@ -140,9 +143,9 @@ import CatalogProduct from "@components/section/CatalogProduct.astro";
   <SectionMuted>
     <Container>
       <SectionTitle
-        title="Testimoni Pelanggan"
-        subtitle="Kepercayaan dan kepuasan pelanggan adalah prioritas utama kami. Berikut testimoni dari berbagai industri yang telah menggunakan produk dari PT Sonamoo Rubber Tech."
-        minititle="Client Reviews"
+        title={t(currentLocale, 'home.testimonials_section.title')}
+        subtitle={t(currentLocale, 'home.testimonials_section.subtitle')}
+        minititle={t(currentLocale, 'home.testimonials_section.minititle')}
         class="'mx-auto text-center'"
       />
       <Testimonials />
