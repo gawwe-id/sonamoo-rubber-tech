@@ -8,7 +8,11 @@ import { t, getCurrentLocale } from "@utils/i18n";
 
 // Check if current page has dark hero
 const currentPath = Astro.url.pathname;
-const isDarkHeroPage = currentPath === '/products' || currentPath === '/about' || currentPath === '/contact' || currentPath === '/en/products' || currentPath === '/en/about' || currentPath === '/en/contact';
+
+// Check for dark hero pages (products, about, contact) in any locale
+const isDarkHeroPage = currentPath.includes('/products') || 
+                       currentPath.includes('/about') || 
+                       currentPath.includes('/contact');
 
 // Detect current locale
 const currentLocale = getCurrentLocale(Astro.url);
