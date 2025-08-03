@@ -1,0 +1,59 @@
+---
+import { getRelativeLocaleUrl } from 'astro:i18n';
+
+const currentPath = Astro.url.pathname;
+const currentLocale = currentPath.startsWith('/en') ? 'en' : 'id';
+
+// Get the path without locale prefix
+const pathWithoutLocale = currentPath.startsWith('/en/') 
+  ? currentPath.replace('/en', '') 
+  : currentPath.startsWith('/en') && currentPath === '/en'
+  ? '/'
+  : currentPath;
+
+// Generate URLs for both locales
+const idUrl = getRelativeLocaleUrl('id', pathWithoutLocale);
+const enUrl = getRelativeLocaleUrl('en', pathWithoutLocale);
+
+// Check if current page has dark hero for styling
+const isDarkHeroPage = currentPath.includes('/products') || currentPath.includes('/about') || currentPath.includes('/contact');
+---
+
+<div 
+  class={`relative inline-flex items-center rounded-full p-1 transition-all duration-300 ${
+    isDarkHeroPage 
+      ? 'bg-white/20 backdrop-blur-sm [&.scrolled]:bg-muted-100 dark:[&.scrolled]:bg-muted-800' 
+      : 'bg-muted-100 dark:bg-muted-800'
+  }`}
+  x-bind:class="scrolled ? 'scrolled' : ''"
+>
+  <a 
+    href={idUrl}
+    class={`flex items-center gap-1 px-3 py-1.5 rounded-full text-xs font-medium transition-all duration-300 ${
+      currentLocale === 'id' 
+        ? 'bg-primary-600 text-white shadow-sm' 
+        : isDarkHeroPage 
+          ? 'text-white/70 hover:text-white [&.scrolled]:text-muted-600 dark:[&.scrolled]:text-muted-300' 
+          : 'text-muted-600 dark:text-muted-300 hover:text-muted-700 dark:hover:text-muted-200'
+    }`}
+    x-bind:class="scrolled ? 'scrolled' : ''"
+  >
+    <iconify-icon icon="emojione:flag-for-indonesia" class="w-4 h-4"></iconify-icon>
+    <span>ID</span>
+  </a>
+  
+  <a 
+    href={enUrl}
+    class={`flex items-center gap-1 px-3 py-1.5 rounded-full text-xs font-medium transition-all duration-300 ${
+      currentLocale === 'en' 
+        ? 'bg-primary-600 text-white shadow-sm' 
+        : isDarkHeroPage 
+          ? 'text-white/70 hover:text-white [&.scrolled]:text-muted-600 dark:[&.scrolled]:text-muted-300' 
+          : 'text-muted-600 dark:text-muted-300 hover:text-muted-700 dark:hover:text-muted-200'
+    }`}
+    x-bind:class="scrolled ? 'scrolled' : ''"
+  >
+    <iconify-icon icon="emojione:flag-for-united-states" class="w-4 h-4"></iconify-icon>
+    <span>EN</span>
+  </a>
+</div>

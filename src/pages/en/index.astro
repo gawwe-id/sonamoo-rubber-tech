@@ -1,0 +1,160 @@
+---
+import Layout from "@layouts/Default.astro";
+import HeroMain from "@components/hero/HeroMain.astro";
+import SectionMuted from "@components/section/SectionMuted.astro";
+import Container from "@components/section/Container.astro";
+import SectionTitle from "@components/section/SectionTitle.astro";
+import IconBlock from "@components/content/IconBlock.astro";
+import SideStatsRight from "@components/content/features/SideStatsRight.astro";
+import SideStatsLeft from "@components/content/features/SideStatsLeft.astro";
+import Pricing from "@components/content/Pricing.astro";
+import Cta from "@components/content/Cta.astro";
+import Testimonials from "@components/content/Testimonials.astro";
+import ProductsCategory from "@components/content/ProductsCategory.astro";
+import FAQ from "@components/content/FAQ.astro";
+import CatalogProduct from "@components/section/CatalogProduct.astro";
+---
+
+<Layout title="Home">
+  <HeroMain />
+
+  <SectionMuted>
+    <Container>
+      <SectionTitle
+  title="Solusi Produk Karet Berkualitas Tinggi"
+  subtitle="PT. Sonamoo Rubber Tech menyediakan berbagai produk karet untuk industri otomotif, kereta api, dan industri lainnya dengan teknologi Korea yang handal."
+  minititle="Specialist Rubber Product"
+/>
+
+      <div class="grid md:grid-cols-3 ltablet:grid-cols-4 lg:grid-cols-4 gap-x-6 gap-y-12" x-intersect="activeStep = ''">
+        <!-- Item 1 -->
+        <div>
+          <IconBlock
+            title="Fast Response"
+            text="Respon cepat untuk kebutuhan pelanggan dengan layanan konsultasi teknis yang profesional."
+            icon="ph:lightning-duotone"
+            class="'text-primary-600'"
+          />
+        </div>
+
+        <!-- Item 2 -->
+        <div>
+          <IconBlock
+            title="Competitive Price" 
+            text="Harga yang kompetitif dengan kualitas terjamin melalui efisiensi produksi dan teknologi Korea."
+            icon="ph:coins-duotone"
+            class="'text-rose-500'"
+          />
+        </div>
+
+        <!-- Item 3 -->
+        <div>
+          <IconBlock
+            title="Best Product"
+            text="Produk berkualitas tinggi dengan standar internasional untuk industri otomotif dan kereta api."
+            icon="ph:medal-duotone"
+            class="'text-primary-600'"
+          />
+        </div>
+
+        <!-- Item 4 -->
+        <div>
+          <IconBlock
+            title="Fast Delivery"
+            text="Pengiriman cepat dan akurat dengan sistem produksi yang efisien dan terpercaya."
+            icon="ph:truck-duotone"
+            class="'text-rose-500'"
+          />
+        </div>
+
+        <!-- Item 5 -->
+        <div>
+          <IconBlock
+            title="Automotive Components"
+            text="Spesialisasi produk karet otomotif seperti tire stopper, speed bump, dan rubber step floor."
+            icon="ph:car-duotone"
+            class="'text-primary-600'"
+          />
+        </div>
+
+        <!-- Item 6 -->
+        <div>
+          <IconBlock
+            title="Railway Solutions"
+            text="Produk khusus untuk industri kereta api termasuk duct dan corrugated bellow berkualitas tinggi."
+            icon="ph:train-duotone"
+            class="'text-primary-600'"
+          />
+        </div>
+
+        <!-- Item 7 -->
+        <div>
+          <IconBlock
+            title="Korean Technology"
+            text="Kerjasama teknis dengan DH Industry Co.,Ltd Korea untuk teknologi dan kualitas terdepan."
+            icon="ph:gear-duotone"
+            class="'text-primary-600'"
+          />
+        </div>
+
+        <!-- Item 8 -->
+        <div>
+          <IconBlock
+            title="Custom Manufacturing"
+            text="Produksi kustom sesuai spesifikasi dengan fasilitas lengkap dan teknologi modern."
+            icon="ph:wrench-duotone"
+            class="'text-primary-600'"
+          />
+        </div>
+      </div>
+    </Container>
+  </SectionMuted>
+
+  <!-- Products Category -->
+  <ProductsCategory />
+
+  <!-- Catalog Section -->
+  <CatalogProduct />
+
+  <SectionMuted class="'overflow-hidden'">
+    <Container>
+      <div class="py-10">
+        <SideStatsRight />
+        <SideStatsLeft />
+      </div>
+    </Container>
+  </SectionMuted>
+
+  <SectionMuted>
+    <Container>
+      <SectionTitle
+        title="Request Quote Produk Karet"
+        subtitle="Dapatkan penawaran harga terbaik untuk kebutuhan produk karet berkualitas tinggi dengan spesifikasi yang sesuai dengan industri Anda."
+        minititle="Custom Quote"
+        class="'mx-auto text-center'"
+      />
+      <Pricing />
+    </Container>
+  </SectionMuted>
+
+  <SectionMuted>
+    <Container>
+      <SectionTitle
+        title="Testimoni Pelanggan"
+        subtitle="Kepercayaan dan kepuasan pelanggan adalah prioritas utama kami. Berikut testimoni dari berbagai industri yang telah menggunakan produk dari PT Sonamoo Rubber Tech."
+        minititle="Client Reviews"
+        class="'mx-auto text-center'"
+      />
+      <Testimonials />
+    </Container>
+  </SectionMuted>
+
+  <SectionMuted>
+    <Container>
+      <Cta />
+    </Container>
+  </SectionMuted>
+
+  <!-- FAQ Section -->
+   <FAQ />
+</Layout>

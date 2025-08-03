@@ -1,6 +1,9 @@
 ---
 import Polka from "@components/base/Polka.astro";
 import Card from "@components/base/Card.astro";
+import { tArray, getCurrentLocale } from '@utils/i18n';
+const currentLocale = getCurrentLocale(Astro.url);
+const testimonials = tArray(currentLocale, 'content.testimonials.reviews');
 ---
 
 <div x-cloak class="relative overflow-hidden" x-intersect="activeStep = ''">
@@ -16,143 +19,29 @@ import Card from "@components/base/Card.astro";
     </div>
     <div class="swiper-container" x-ref="container">
       <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-          <Card class="'p-6'">
-            <div class="w-full flex flex-col gap-8 font-sans">
-              <iconify-icon class="iconify w-8 h-8 flex items-center justify-center text-3xl text-primary-600 dark:text-rose-500" icon="fa6-solid:quote-left"></iconify-icon>
-              <p class="text-muted-500 dark:text-muted-300">
-                Kualitas produk karet dari PT Sonamoo sangat memuaskan. Delivery tepat waktu 
-                dan spesifikasi sesuai dengan kebutuhan industri kami. Highly recommended!
-              </p>
-              <div class="w-full flex items-center gap-3">
-                <div class="shrink-0 inline-flex relative w-10 h-10 bg-primary-100 dark:bg-primary-900 rounded-full items-center justify-center">
-                  <iconify-icon class="iconify text-primary-600 dark:text-primary-400" icon="lucide:user"></iconify-icon>
-                </div>
-                <div>
-                  <h4 class="font-medium text-sm text-muted-800 dark:text-muted-100">
-                    Budi Santoso
-                  </h4>
-                  <p class="text-xs text-muted-400">Direktur Operasi, PT Automotive Jaya</p>
-                </div>
-              </div>
-            </div>
-          </Card>
-        </div>
-        <!-- Slides -->
-        <div class="swiper-slide">
-          <Card class="'p-6'">
-            <div class="w-full flex flex-col gap-8 font-sans">
-              <iconify-icon class="iconify w-8 h-8 flex items-center justify-center text-3xl text-primary-600 dark:text-rose-500" icon="fa6-solid:quote-left"></iconify-icon>
-              <p class="text-muted-500 dark:text-muted-300">
-                Sudah 5 tahun bekerja sama dengan PT Sonamoo untuk kebutuhan seal dan gasket. 
-                Produknya tahan lama dan service excellent. Partner terpercaya!
-              </p>
-              <div class="w-full flex items-center gap-3">
-                <div class="shrink-0 inline-flex relative w-10 h-10 bg-primary-100 dark:bg-primary-900 rounded-full items-center justify-center">
-                  <iconify-icon class="iconify text-primary-600 dark:text-primary-400" icon="lucide:user"></iconify-icon>
-                </div>
-                <div>
-                  <h4 class="font-medium text-sm text-muted-800 dark:text-muted-100">
-                    Sari Wahyuni
-                  </h4>
-                  <p class="text-xs text-muted-400">Procurement, PT Industri Mesin</p>
+        {testimonials.map((testimonial) => (
+          <div class="swiper-slide">
+            <Card class="'p-6'">
+              <div class="w-full flex flex-col gap-8 font-sans">
+                <iconify-icon class="iconify w-8 h-8 flex items-center justify-center text-3xl text-primary-600 dark:text-rose-500" icon="fa6-solid:quote-left"></iconify-icon>
+                <p class="text-muted-500 dark:text-muted-300">
+                  {testimonial.text}
+                </p>
+                <div class="w-full flex items-center gap-3">
+                  <div class="shrink-0 inline-flex relative w-10 h-10 bg-primary-100 dark:bg-primary-900 rounded-full items-center justify-center">
+                    <iconify-icon class="iconify text-primary-600 dark:text-primary-400" icon="lucide:user"></iconify-icon>
+                  </div>
+                  <div>
+                    <h4 class="font-medium text-sm text-muted-800 dark:text-muted-100">
+                      {testimonial.name}
+                    </h4>
+                    <p class="text-xs text-muted-400">{testimonial.position}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </Card>
-        </div>
-        <!-- Slides -->
-        <div class="swiper-slide">
-          <Card class="'p-6'">
-            <div class="w-full flex flex-col gap-8 font-sans">
-              <iconify-icon class="iconify w-8 h-8 flex items-center justify-center text-3xl text-primary-600 dark:text-rose-500" icon="fa6-solid:quote-left"></iconify-icon>
-              <p class="text-muted-500 dark:text-muted-300">
-                Tim technical support yang sangat membantu dalam pemilihan material karet 
-                yang tepat untuk aplikasi high temperature. Hasil akhirnya sangat memuaskan.
-              </p>
-              <div class="w-full flex items-center gap-3">
-                <div class="shrink-0 inline-flex relative w-10 h-10 bg-primary-100 dark:bg-primary-900 rounded-full items-center justify-center">
-                  <iconify-icon class="iconify text-primary-600 dark:text-primary-400" icon="lucide:user"></iconify-icon>
-                </div>
-                <div>
-                  <h4 class="font-medium text-sm text-muted-800 dark:text-muted-100">
-                    Ahmad Hidayat
-                  </h4>
-                  <p class="text-xs text-muted-400">Engineering Manager, PT Kimia Farma</p>
-                </div>
-              </div>
-            </div>
-          </Card>
-        </div>
-        <!-- Slides -->
-        <div class="swiper-slide">
-          <Card class="'p-6'">
-            <div class="w-full flex flex-col gap-8 font-sans">
-              <iconify-icon class="iconify w-8 h-8 flex items-center justify-center text-3xl text-primary-600 dark:text-rose-500" icon="fa6-solid:quote-left"></iconify-icon>
-              <p class="text-muted-500 dark:text-muted-300">
-                Produk rubber sheet dengan berbagai ketebalan tersedia lengkap. 
-                Kualitas konsisten dan harga kompetitif. Sangat puas dengan pelayanannya.
-              </p>
-              <div class="w-full flex items-center gap-3">
-                <div class="shrink-0 inline-flex relative w-10 h-10 bg-primary-100 dark:bg-primary-900 rounded-full items-center justify-center">
-                  <iconify-icon class="iconify text-primary-600 dark:text-primary-400" icon="lucide:user"></iconify-icon>
-                </div>
-                <div>
-                  <h4 class="font-medium text-sm text-muted-800 dark:text-muted-100">
-                    Rina Sari
-                  </h4>
-                  <p class="text-xs text-muted-400">Purchasing, PT Elektronik Indonesia</p>
-                </div>
-              </div>
-            </div>
-          </Card>
-        </div>
-        <!-- Slides -->
-        <div class="swiper-slide">
-          <Card class="'p-6'">
-            <div class="w-full flex flex-col gap-8 font-sans">
-              <iconify-icon class="iconify w-8 h-8 flex items-center justify-center text-3xl text-primary-600 dark:text-rose-500" icon="fa6-solid:quote-left"></iconify-icon>
-              <p class="text-muted-500 dark:text-muted-300">
-                Custom rubber parts sesuai drawing yang kami berikan. 
-                Toleransi presisi dan finishing yang baik. Recommended untuk industrial needs.
-              </p>
-              <div class="w-full flex items-center gap-3">
-                <div class="shrink-0 inline-flex relative w-10 h-10 bg-primary-100 dark:bg-primary-900 rounded-full items-center justify-center">
-                  <iconify-icon class="iconify text-primary-600 dark:text-primary-400" icon="lucide:user"></iconify-icon>
-                </div>
-                <div>
-                  <h4 class="font-medium text-sm text-muted-800 dark:text-muted-100">
-                    Dedi Kurniawan
-                  </h4>
-                  <p class="text-xs text-muted-400">Tech Lead, PT Manufacturing Solution</p>
-                </div>
-              </div>
-            </div>
-          </Card>
-        </div>
-        <div class="swiper-slide">
-          <Card class="'p-6'">
-            <div class="w-full flex flex-col gap-8 font-sans">
-              <iconify-icon class="iconify w-8 h-8 flex items-center justify-center text-3xl text-primary-600 dark:text-rose-500" icon="fa6-solid:quote-left"></iconify-icon>
-              <p class="text-muted-500 dark:text-muted-300">
-                Supplier terpercaya untuk kebutuhan rubber compound berbagai grade. 
-                Response time cepat dan ready stock untuk item-item yang sering dibutuhkan.
-              </p>
-              <div class="w-full flex items-center gap-3">
-                <div class="shrink-0 inline-flex relative w-10 h-10 bg-primary-100 dark:bg-primary-900 rounded-full items-center justify-center">
-                  <iconify-icon class="iconify text-primary-600 dark:text-primary-400" icon="lucide:user"></iconify-icon>
-                </div>
-                <div>
-                  <h4 class="font-medium text-sm text-muted-800 dark:text-muted-100">
-                    Indra Wijaya
-                  </h4>
-                  <p class="text-xs text-muted-400">Operations, PT Heavy Machinery</p>
-                </div>
-              </div>
-            </div>
-          </Card>
-        </div>
+            </Card>
+          </div>
+        ))}
       </div>
     </div>
   </div>

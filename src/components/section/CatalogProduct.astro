@@ -1,18 +1,20 @@
 ---
-import Description from "@components/content/doctors/grid/Description.astro";
-import Grid from "@components/content/doctors/grid/Grid.astro";
-import Toolbar from "@components/content/doctors/grid/Toolbar.astro";
+import Description from "@components/content/products/grid/Description.astro";
+import Grid from "@components/content/products/grid/Grid.astro";
+import Toolbar from "@components/content/products/grid/Toolbar.astro";
 import Container from "@components/section/Container.astro";
 import SectionMuted from "@components/section/SectionMuted.astro";
 import SectionTitle from "@components/section/SectionTitle.astro";
+import { t, getCurrentLocale } from '@utils/i18n';
+const currentLocale = getCurrentLocale(Astro.url);
 ---
 
   <SectionMuted class="'border-b border-muted-200 dark:border-muted-800'">
     <Container>
       <SectionTitle
-        title="Katalog Produk Karet"
-        subtitle="Jelajahi berbagai produk karet berkualitas tinggi kami untuk industri otomotif, kereta api, dan aplikasi industri lainnya."
-        minititle="Product Catalog"
+        title={t(currentLocale, 'section.catalog_product.title')}
+        subtitle={t(currentLocale, 'section.catalog_product.subtitle')}
+        minititle={t(currentLocale, 'section.catalog_product.minititle')}
         class="'mx-auto text-center'"
       />
 

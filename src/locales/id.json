@@ -1,0 +1,287 @@
+{
+  "site": {
+    "title": "PT. Sonamoo Rubber Tech",
+    "description": "Solusi Produk Karet Berkualitas Tinggi"
+  },
+  "nav": {
+    "home": "Beranda",
+    "about": "Tentang",
+    "products": "Produk",
+    "contact": "Kontak",
+    "contact_us": "Hubungi Kami"
+  },
+  "hero": {
+    "title": "Solusi Produk Karet Berkualitas Tinggi",
+    "subtitle": "PT. Sonamoo Rubber Tech menyediakan berbagai produk karet untuk industri otomotif, kereta api, dan industri lainnya dengan teknologi Korea yang handal.",
+    "minititle": "Specialist Rubber Product"
+  },
+  "common": {
+    "read_more": "Baca Selengkapnya",
+    "contact_us": "Hubungi Kami",
+    "learn_more": "Pelajari Lebih Lanjut"
+  },
+  "content": {
+    "features": {
+      "right": {
+        "badge": "Kontrol Kualitas & Inspeksi",
+        "title": "Sistem Kontrol Kualitas Terdepan untuk Produk Karet",
+        "description": "Sistem kontrol kualitas komprehensif kami memastikan setiap produk karet memenuhi standar tertinggi melalui proses pengujian dan inspeksi yang ketat.",
+        "cta": "Jelajahi sistem kualitas kami"
+      },
+      "left": {
+        "badge": "Proses Manufaktur",
+        "title": "Teknologi Manufaktur Karet Modern",
+        "description": "Proses produksi karet menggunakan mesin-mesin canggih di dalam pabrik untuk menghasilkan produk berkualitas tinggi dengan standar internasional.",
+        "cta": "Pelajari proses produksi"
+      }
+    },
+    "products": {
+      "descriptions": {
+        "title": "Tentang Produk",
+        "categories": {
+          "all": {
+            "paragraph1": "Sonamoo Rubber Tech memproduksi produk karet berkualitas tinggi untuk berbagai industri. Dengan pengalaman lebih dari 7 tahun dan teknologi dari Korea, kami berkomitmen memberikan solusi terbaik.",
+            "paragraph2": "Produk kami mencakup komponen otomotif, railway, dan industri dengan standar internasional yang memenuhi kebutuhan pelanggan global."
+          },
+          "otomotif": {
+            "paragraph1": "Produk otomotif kami dirancang khusus untuk industri kendaraan bermotor dengan fokus pada keamanan dan durabilitas. Meliputi car stopper, tire stopper, speed bump, dan komponen lainnya.",
+            "paragraph2": "Semua produk otomotif dilengkapi dengan teknologi anti-slip dan tahan cuaca untuk memastikan performa optimal di berbagai kondisi."
+          },
+          "railway": {
+            "paragraph1": "Komponen railway kami diproduksi dengan standar kereta api internasional. Mencakup duct untuk kendaraan kereta api dan komponen penghubung dengan daya tahan tinggi.",
+            "paragraph2": "Setiap produk railway telah melalui pengujian ketat untuk memastikan keandalan dan keamanan dalam operasional transportasi kereta api."
+          },
+          "industrial": {
+            "paragraph1": "Produk industrial kami melayani kebutuhan industri berat, elektronik, dan manufaktur. Termasuk O-ring silikon, NBR float, seal, dan komponen elektronik presisi.",
+            "paragraph2": "Dibuat dengan material berkualitas tinggi dan teknologi canggih untuk memenuhi spesifikasi teknis yang ketat dalam aplikasi industri modern."
+          }
+        }
+      },
+      "grid": {
+        "categories": {
+          "otomotif": "Otomotif",
+          "railway": "Railway", 
+          "industrial": "Industrial"
+        },
+        "products": {
+          "car_stopper": {
+            "title": "Car Stopper",
+            "description": "Pembatas parkir mobil dengan desain hazard strip untuk area parkir komersial."
+          },
+          "tire_stopper": {
+            "title": "Tire Stopper", 
+            "description": "Pembatas roda dengan ukuran (1kg, 3kg, 8kg) untuk kendaraan ringan hingga berat."
+          },
+          "speed_bump": {
+            "title": "Speed Bump",
+            "description": "Peredam kecepatan dengan profil berlian anti-slip untuk jalan dan area parkir."
+          },
+          "connecting_rod": {
+            "title": "Connecting Rod",
+            "description": "Batang penghubung untuk sistem speed bump modular dengan lubang mounting."
+          },
+          "rubber_step_floor": {
+            "title": "Rubber Step Floor",
+            "description": "Lantai karet anti-slip ergonomis untuk area pijakan kendaraan bermotor."
+          },
+          "dumper_components": {
+            "title": "Dumper Components",
+            "description": "Komponen karet untuk kendaraan berat, dump truck, dan aplikasi otomotif khusus."
+          },
+          "railway_duct": {
+            "title": "Duct for Railway Vehicles",
+            "description": "Saluran udara khusus untuk kendaraan kereta api dengan standar internasional."
+          },
+          "railway_connecting": {
+            "title": "Railway Connecting Components",
+            "description": "Komponen penghubung untuk sistem kereta api dengan daya tahan tinggi."
+          },
+          "silicon_oring": {
+            "title": "Silicon O-Ring & Seals",
+            "description": "O-ring silikon berkualitas tinggi untuk aplikasi industri dan elektronik."
+          },
+          "nbr_float": {
+            "title": "NBR Float & Connectors",
+            "description": "Pelampung NBR dan konektor untuk aplikasi industri berat."
+          },
+          "electronic_components": {
+            "title": "Electronic Components",
+            "description": "Komponen elektronik dan seal silikon untuk peralatan industri presisi."
+          }
+        }
+      },
+      "toolbar": {
+        "categories": {
+          "all": "Semua",
+          "otomotif": "Otomotif",
+          "railway": "Kereta Api",
+          "industrial": "Industri"
+        }
+      }
+    },
+    "cta": {
+      "title_line1": "Siap untuk memulai?",
+      "title_line2": "Konsultasi gratis dengan ahli kami.",
+      "description": "Dapatkan solusi karet berkualitas tinggi untuk kebutuhan industri Anda. Tim ahli kami siap membantu memilih produk yang tepat.",
+      "button": "Konsultasi Sekarang"
+    },
+    "faq": {
+      "title": "Pertanyaan yang Sering Diajukan",
+      "subtitle": "Temukan jawaban untuk pertanyaan umum tentang produk dan layanan kami",
+      "minititle": "FAQ",
+      "questions": {
+        "products": {
+          "question": "Apa saja produk utama yang diproduksi PT. Sonamoo Rubber Tech?",
+          "answer": "Kami memproduksi berbagai produk karet berkualitas tinggi termasuk: Car Stopper, Tire Stopper (1kg, 3kg, 5kg), Speed Bump, Connecting Rod, Rubber Step Floor untuk motor, NBR Float, Duct for Railway Vehicles, Silicon O-Ring & Seals, serta berbagai komponen karet untuk industri elektronik dan otomotif."
+        },
+        "quality": {
+          "question": "Bagaimana kualitas produk dijamin dengan teknologi Korea?",
+          "answer": "Kami bekerjasama secara teknis dengan DH Industry Co.,Ltd Korea yang memiliki pengalaman puluhan tahun. Teknologi produksi, standar kualitas, dan proses manufacturing mengikuti standar internasional Korea. Semua produk melalui quality control ketat untuk memastikan konsistensi dan durabilitas."
+        },
+        "custom": {
+          "question": "Apakah tersedia layanan custom manufacturing?",
+          "answer": "Ya, kami menyediakan layanan custom manufacturing sesuai spesifikasi dan kebutuhan pelanggan. Tim engineering kami dapat membantu mengembangkan produk karet khusus dengan berbagai material seperti NBR, Silicon, dan compound lainnya sesuai aplikasi industri yang dibutuhkan."
+        },
+        "ordering": {
+          "question": "Bagaimana proses pemesanan dan lead time produksi?",
+          "answer": "Proses pemesanan dimulai dengan konsultasi untuk memahami kebutuhan Anda. Setelah spesifikasi final, kami akan memberikan quotation dan timeline produksi. Lead time bervariasi tergantung kompleksitas produk, umumnya 2-4 minggu untuk produk standard dan 4-8 minggu untuk custom products."
+        }
+      }
+    },
+    "pricing": {
+      "title": "Harga yang Disesuaikan",
+      "description": "Setiap produk karet memiliki spesifikasi yang berbeda. Kami memberikan penawaran harga terbaik berdasarkan volume, spesifikasi, dan kebutuhan Anda.",
+      "cta_link": "Pelajari lebih lanjut di FAQ",
+      "standard_quote": {
+        "title": "Quote Standar",
+        "description": "Untuk pesanan dengan spesifikasi standar dan volume reguler.",
+        "price_label": "Request",
+        "price_sublabel": "Quote",
+        "features": {
+          "consultation": "Konsultasi produk",
+          "quick_quote": "Quote dalam 24 jam",
+          "sample": "Sample tersedia"
+        },
+        "primary_button": "Request Quote",
+        "secondary_button": "Download Katalog"
+      },
+      "custom_quote": {
+        "title": "Quote Kustom",
+        "description": "Untuk produk khusus dengan spesifikasi dan volume besar.",
+        "price_label": "Custom",
+        "price_sublabel": "Design",
+        "features": {
+          "deep_consultation": "Konsultasi teknis mendalam",
+          "custom_design": "Desain khusus sesuai kebutuhan",
+          "volume_pricing": "Volume pricing tersedia"
+        },
+        "primary_button": "Konsultasi Sekarang",
+        "secondary_button": "Hubungi Sales"
+      }
+    },
+    "products_category": {
+      "title": "Kategori Produk Kami",
+      "subtitle": "Solusi lengkap produk karet untuk berbagai kebutuhan industri dengan kualitas internasional",
+      "minititle": "Product Categories",
+      "automotive": {
+        "title": "Produk Otomotif",
+        "description": "Komponen karet berkualitas tinggi untuk industri otomotif termasuk ganjalan ban, speed bump, dan aksesori kendaraan.",
+        "products": {
+          "car_tire_stopper": "Car & Tire Stopper",
+          "speed_bump_connecting": "Speed Bump & Connecting Rod",
+          "rubber_step_floor": "Rubber Step Floor"
+        },
+        "button": "Hubungi Kami"
+      },
+      "railway": {
+        "title": "Produk Kereta Api",
+        "description": "Komponen khusus untuk industri perkeretaapian dengan standar keamanan dan kualitas tinggi.",
+        "products": {
+          "duct_railway": "Duct for Railway Vehicles",
+          "corrugated_bellow": "Corrugated Bellow",
+          "replacement_components": "Replacement Components"
+        },
+        "button": "Hubungi Kami"
+      },
+      "industrial": {
+        "title": "Produk Industri",
+        "description": "Solusi karet untuk berbagai aplikasi industri berat, elektronik, dan peralatan khusus yang berbahan dasar rubber.",
+        "products": {
+          "silicon_oring": "Silicon O-Ring & Seals",
+          "nbr_float": "NBR Float & Connectors",
+          "electronic_components": "Electronic Components"
+        },
+        "button": "Hubungi Kami"
+      }
+    },
+    "testimonials": {
+      "reviews": [
+        {
+          "text": "Kualitas produk karet dari PT Sonamoo sangat memuaskan. Delivery tepat waktu dan spesifikasi sesuai dengan kebutuhan industri kami. Highly recommended!",
+          "name": "Budi Santoso",
+          "position": "Direktur Operasi, PT Automotive Jaya"
+        },
+        {
+          "text": "Sudah 5 tahun bekerja sama dengan PT Sonamoo untuk kebutuhan seal dan gasket. Produknya tahan lama dan service excellent. Partner terpercaya!",
+          "name": "Sari Wahyuni",
+          "position": "Procurement, PT Industri Mesin"
+        },
+        {
+          "text": "Tim technical support yang sangat membantu dalam pemilihan material karet yang tepat untuk aplikasi high temperature. Hasil akhirnya sangat memuaskan.",
+          "name": "Ahmad Hidayat",
+          "position": "Engineering Manager, PT Kimia Farma"
+        },
+        {
+          "text": "Produk rubber sheet dengan berbagai ketebalan tersedia lengkap. Kualitas konsisten dan harga kompetitif. Sangat puas dengan pelayanannya.",
+          "name": "Rina Sari",
+          "position": "Purchasing, PT Elektronik Indonesia"
+        },
+        {
+          "text": "Custom rubber parts sesuai drawing yang kami berikan. Toleransi presisi dan finishing yang baik. Recommended untuk industrial needs.",
+          "name": "Dedi Kurniawan",
+          "position": "Tech Lead, PT Manufacturing Solution"
+        },
+        {
+          "text": "Supplier terpercaya untuk kebutuhan rubber compound berbagai grade. Response time cepat dan ready stock untuk item-item yang sering dibutuhkan.",
+          "name": "Indra Wijaya",
+          "position": "Operations, PT Heavy Machinery"
+        }
+      ]
+    }
+  },
+  "section": {
+    "catalog_product": {
+      "title": "Katalog Produk Karet",
+      "subtitle": "Jelajahi berbagai produk karet berkualitas tinggi kami untuk industri otomotif, kereta api, dan aplikasi industri lainnya.",
+      "minititle": "Product Catalog"
+    },
+    "footer": {
+      "description": "PT Sonamoo Rubber Tech - Leading rubber manufacturing solutions with quality and innovation at the forefront.",
+      "company": {
+        "title": "COMPANY",
+        "links": {
+          "about": "About Us",
+          "products": "Products",
+          "contact": "Contact"
+        }
+      },
+      "services": {
+        "title": "SERVICES",
+        "links": {
+          "manufacturing": "Rubber Manufacturing",
+          "custom": "Custom Solutions",
+          "consultation": "Consultation"
+        }
+      },
+      "support": {
+        "title": "SUPPORT",
+        "links": {
+          "contact_support": "Contact Support",
+          "technical_help": "Technical Help"
+        }
+      },
+      "copyright": "All Rights Reserved.",
+      "built_by": "Built by"
+    }
+  }
+}

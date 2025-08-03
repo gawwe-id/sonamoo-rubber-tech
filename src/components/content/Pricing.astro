@@ -1,21 +1,24 @@
+---
+import { t, getCurrentLocale } from '@utils/i18n';
+const currentLocale = getCurrentLocale(Astro.url);
+---
+
 <div id="quote-request" class="w-full max-w-6xl mx-auto" x-intersect="activeStep = 'spy-3'">
   <div class="p-6 md:p-10 rounded-2xl bg-muted-200 dark:bg-muted-900">
     <div class="grid md:grid-cols-2 ltablet:grid-cols-3 lg:grid-cols-3 gap-6">
       <div class="ptablet:hidden">
         <div class="h-full flex items-center justify-center">
           <div class="font-sans md:px-4">
-            <h3 class="text-2xl mb-3 text-muted-800 dark:text-muted-100">Harga yang Disesuaikan</h3>
+            <h3 class="text-2xl mb-3 text-muted-800 dark:text-muted-100">{t(currentLocale, 'content.pricing.title')}</h3>
             <p class="mb-3 text-sm text-muted-500 dark:text-muted-400">
-              Setiap produk karet memiliki spesifikasi yang berbeda. Kami memberikan
-              penawaran harga terbaik berdasarkan volume, spesifikasi, dan kebutuhan
-              Anda.
+              {t(currentLocale, 'content.pricing.description')}
             </p>
             <a
               href="#faq"
               class="group inline-flex items-center gap-4 text-primary-500 hover:text-primary-400 transition-colors duration-300"
             >
               <span class="font-sans font-medium text-sm">
-                Pelajari lebih lanjut di FAQ
+                {t(currentLocale, 'content.pricing.cta_link')}
               </span>
               <iconify-icon class="iconify w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" icon="lucide:arrow-right"></iconify-icon>
             </a>
@@ -41,51 +44,51 @@
             <h3
               class="font-heading text-2xl font-medium text-muted-800 dark:text-white"
             >
-              Quote Standar
+              {t(currentLocale, 'content.pricing.standard_quote.title')}
             </h3>
           </div>
 
           <p
             class="font-sans text-sm py-2 mt-1 text-muted-500 dark:text-muted-400"
           >
-            Untuk pesanan dengan spesifikasi standar dan volume reguler.
+            {t(currentLocale, 'content.pricing.standard_quote.description')}
           </p>
           <div class="flex items-center mt-2 mb-4">
             <h4
               class="font-heading text-3xl font-semibold text-muted-800 dark:text-white mr-4"
             >
-              Request
+              {t(currentLocale, 'content.pricing.standard_quote.price_label')}
             </h4>
             <span class="font-sans text-xs text-muted-500 dark:text-muted-400">
-              <span>Quote</span>
+              <span>{t(currentLocale, 'content.pricing.standard_quote.price_sublabel')}</span>
             </span>
           </div>
           <ul class="pb-4 space-y-1 text-muted-400">
             <li class="flex items-center">
               <iconify-icon class="iconify block mr-1" icon="lucide:check"></iconify-icon>
-              <span class="font-sans text-sm">Konsultasi produk</span>
+              <span class="font-sans text-sm">{t(currentLocale, 'content.pricing.standard_quote.features.consultation')}</span>
             </li>
             <li class="flex items-center">
               <iconify-icon class="iconify block mr-1" icon="lucide:check"></iconify-icon>
-              <span class="font-sans text-sm">Quote dalam 24 jam</span>
+              <span class="font-sans text-sm">{t(currentLocale, 'content.pricing.standard_quote.features.quick_quote')}</span>
             </li>
             <li class="flex items-center">
               <iconify-icon class="iconify block mr-1" icon="lucide:check"></iconify-icon>
-              <span class="font-sans text-sm">Sample tersedia</span>
+              <span class="font-sans text-sm">{t(currentLocale, 'content.pricing.standard_quote.features.sample')}</span>
             </li>
           </ul>
           <a
             href="/contact"
             class="block w-full text-sm text-center font-sans my-2 py-4 font-medium text-primary-600 hover:text-muted-100 hover:bg-primary-500 hover:shadow-lg hover:shadow-primary-500/30 rounded-lg border border-primary-600/25 transition-all duration-300"
           >
-            Request Quote
+            {t(currentLocale, 'content.pricing.standard_quote.primary_button')}
           </a>
           <a
             href="/pdf/company-profile-2025.pdf"
             class="block w-full text-sm text-center font-sans mb-2 py-4 font-medium text-muted-500 hover:text-muted-600 dark:text-muted-300 dark:hover:text-muted-100 rounded-lg border border-solid border-transparent hover:bg-muted-100 dark:hover:bg-muted-700 transition-colors duration-300"
             download
           >
-            Download Katalog
+            {t(currentLocale, 'content.pricing.standard_quote.secondary_button')}
           </a>
         </div>
       </div>
@@ -108,50 +111,50 @@
             <h3
               class="font-heading text-2xl font-medium text-muted-800 dark:text-white"
             >
-              Quote Kustom
+              {t(currentLocale, 'content.pricing.custom_quote.title')}
             </h3>
           </div>
 
           <p
             class="font-sans text-sm py-2 mt-1 text-muted-500 dark:text-muted-400"
           >
-            Untuk produk khusus dengan spesifikasi dan volume besar.
+            {t(currentLocale, 'content.pricing.custom_quote.description')}
           </p>
           <div class="flex items-center mt-2 mb-4">
             <h4
               class="font-heading text-3xl font-semibold text-muted-800 dark:text-white mr-4"
             >
-              Custom
+              {t(currentLocale, 'content.pricing.custom_quote.price_label')}
             </h4>
             <span class="font-sans text-xs text-muted-500 dark:text-muted-400">
-              <span>Design</span>
+              <span>{t(currentLocale, 'content.pricing.custom_quote.price_sublabel')}</span>
             </span>
           </div>
           <ul class="pb-4 space-y-1 text-muted-400">
             <li class="flex items-center">
               <iconify-icon class="iconify block mr-1" icon="lucide:check"></iconify-icon>
-              <span class="font-sans text-sm">Konsultasi teknis mendalam</span>
+              <span class="font-sans text-sm">{t(currentLocale, 'content.pricing.custom_quote.features.deep_consultation')}</span>
             </li>
             <li class="flex items-center">
               <iconify-icon class="iconify block mr-1" icon="lucide:check"></iconify-icon>
-              <span class="font-sans text-sm">Desain khusus sesuai kebutuhan</span>
+              <span class="font-sans text-sm">{t(currentLocale, 'content.pricing.custom_quote.features.custom_design')}</span>
             </li>
             <li class="flex items-center">
               <iconify-icon class="iconify block mr-1" icon="lucide:check"></iconify-icon>
-              <span class="font-sans text-sm">Volume pricing tersedia</span>
+              <span class="font-sans text-sm">{t(currentLocale, 'content.pricing.custom_quote.features.volume_pricing')}</span>
             </li>
           </ul>
           <a
              href="/contact"
             class="block w-full text-sm text-center font-sans my-2 py-4 font-medium text-primary-600 hover:text-muted-100 hover:bg-primary-500 hover:shadow-lg hover:shadow-primary-500/30 rounded-lg border border-primary-600/25 transition-all duration-300"
           >
-            Konsultasi Sekarang
+            {t(currentLocale, 'content.pricing.custom_quote.primary_button')}
           </a>
           <a
              href="/contact"
             class="block w-full text-sm text-center font-sans mb-2 py-4 font-medium text-muted-500 hover:text-muted-600 dark:text-muted-300 dark:hover:text-muted-100 rounded-lg border border-solid border-transparent hover:bg-muted-100 dark:hover:bg-muted-700 transition-colors duration-300"
           >
-            Hubungi Sales
+            {t(currentLocale, 'content.pricing.custom_quote.secondary_button')}
           </a>
         </div>
       </div>

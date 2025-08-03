@@ -1,5 +1,7 @@
 ---
 import Card from "@components/base/Card.astro";
+import { t, getCurrentLocale } from '@utils/i18n';
+const currentLocale = getCurrentLocale(Astro.url);
 ---
 
 <div class="grid md:grid-cols-3 ltablet:grid-cols-3 lg:grid-cols-3 gap-x-6 ptablet:gap-x-4 gap-y-16 pt-10" x-data="{ activeCategory: 'all', activeRating: 'all', activeApplication: 'all', showModal: false, modalImage: '', modalAlt: '' }">
@@ -12,19 +14,19 @@ import Card from "@components/base/Card.astro";
         <img
           class="w-full h-full object-cover cursor-pointer hover:opacity-90 transition-opacity duration-300"
           src="/img/products/oto-carstopper.png"
-          alt="Car Stopper"
-          @click="showModal = true; modalImage = '/img/products/oto-carstopper.png'; modalAlt = 'Car Stopper'"
+          alt={t(currentLocale, 'content.products.grid.products.car_stopper.title')}
+          @click={`showModal = true; modalImage = '/img/products/oto-carstopper.png'; modalAlt = '${t(currentLocale, 'content.products.grid.products.car_stopper.title')}'`}
         />
       </div>
       <div class="font-sans mt-3">
         <h4 class="font-semibold text-muted-800 dark:text-muted-100">
-          Car Stopper
+          {t(currentLocale, 'content.products.grid.products.car_stopper.title')}
         </h4>
-        <p class="text-sm text-muted-400">Otomotif</p>
+        <p class="text-sm text-muted-400">{t(currentLocale, 'content.products.grid.categories.otomotif')}</p>
       </div>
       <div class="mt-2">
         <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
-          Pembatas parkir mobil dengan desain hazard strip untuk area parkir komersial.
+          {t(currentLocale, 'content.products.grid.products.car_stopper.description')}
         </p>
       </div>
       <div class="flex items-center justify-between font-sans mt-3">
@@ -63,19 +65,19 @@ import Card from "@components/base/Card.astro";
         <img
           class="w-full h-full object-cover cursor-pointer hover:opacity-90 transition-opacity duration-300"
           src="/img/products/oto-tirestopper.png"
-          alt="Tire Stopper"
-          @click="showModal = true; modalImage = '/img/products/oto-tirestopper.png'; modalAlt = 'Tire Stopper'"
+          alt={t(currentLocale, 'content.products.grid.products.tire_stopper.title')}
+          @click={`showModal = true; modalImage = '/img/products/oto-tirestopper.png'; modalAlt = '${t(currentLocale, 'content.products.grid.products.tire_stopper.title')}'`}
         />
       </div>
       <div class="font-sans mt-3">
         <h4 class="font-semibold text-muted-800 dark:text-muted-100">
-          Tire Stopper
+          {t(currentLocale, 'content.products.grid.products.tire_stopper.title')}
         </h4>
-        <p class="text-sm text-muted-400">Otomotif</p>
+        <p class="text-sm text-muted-400">{t(currentLocale, 'content.products.grid.categories.otomotif')}</p>
       </div>
       <div class="mt-2">
         <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
-          Pembatas roda dengan ukuran (1kg, 3kg, 8kg) untuk kendaraan ringan hingga berat.
+          {t(currentLocale, 'content.products.grid.products.tire_stopper.description')}
         </p>
       </div>
       <div class="flex items-center justify-between font-sans mt-3">
@@ -114,19 +116,19 @@ import Card from "@components/base/Card.astro";
         <img
           class="w-full h-full object-cover cursor-pointer hover:opacity-90 transition-opacity duration-300"
           src="/img/products/oto-speedbump.png"
-          alt="Speed Bump"
-          @click="showModal = true; modalImage = '/img/products/oto-speedbump.png'; modalAlt = 'Speed Bump'"
+          alt={t(currentLocale, 'content.products.grid.products.speed_bump.title')}
+          @click={`showModal = true; modalImage = '/img/products/oto-speedbump.png'; modalAlt = '${t(currentLocale, 'content.products.grid.products.speed_bump.title')}'`}
         />
       </div>
       <div class="font-sans mt-3">
         <h4 class="font-semibold text-muted-800 dark:text-muted-100">
-          Speed Bump
+          {t(currentLocale, 'content.products.grid.products.speed_bump.title')}
         </h4>
-        <p class="text-sm text-muted-400">Otomotif</p>
+        <p class="text-sm text-muted-400">{t(currentLocale, 'content.products.grid.categories.otomotif')}</p>
       </div>
       <div class="mt-2">
         <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
-          Peredam kecepatan dengan profil berlian anti-slip untuk jalan dan area parkir.
+          {t(currentLocale, 'content.products.grid.products.speed_bump.description')}
         </p>
       </div>
       <div class="flex items-center justify-between font-sans mt-3">
@@ -165,19 +167,19 @@ import Card from "@components/base/Card.astro";
         <img
           class="w-full h-full object-cover cursor-pointer hover:opacity-90 transition-opacity duration-300"
           src="/img/products/oto-connectingrod.png"
-          alt="Connecting Rod"
-          @click="showModal = true; modalImage = '/img/products/oto-connectingrod.png'; modalAlt = 'Connecting Rod'"
+          alt={t(currentLocale, 'content.products.grid.products.connecting_rod.title')}
+          @click={`showModal = true; modalImage = '/img/products/oto-connectingrod.png'; modalAlt = '${t(currentLocale, 'content.products.grid.products.connecting_rod.title')}'`}
         />
       </div>
       <div class="font-sans mt-3">
         <h4 class="font-semibold text-muted-800 dark:text-muted-100">
-          Connecting Rod
+          {t(currentLocale, 'content.products.grid.products.connecting_rod.title')}
         </h4>
-        <p class="text-sm text-muted-400">Otomotif</p>
+        <p class="text-sm text-muted-400">{t(currentLocale, 'content.products.grid.categories.otomotif')}</p>
       </div>
       <div class="mt-2">
         <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
-          Batang penghubung untuk sistem speed bump modular dengan lubang mounting.
+          {t(currentLocale, 'content.products.grid.products.connecting_rod.description')}
         </p>
       </div>
       <div class="flex items-center justify-between font-sans mt-3">
@@ -216,19 +218,19 @@ import Card from "@components/base/Card.astro";
         <img
           class="w-full h-full object-cover cursor-pointer hover:opacity-90 transition-opacity duration-300"
           src="/img/products/oto-stepfloor.jpg"
-          alt="Rubber Step Floor"
-          @click="showModal = true; modalImage = '/img/products/oto-stepfloor.jpg'; modalAlt = 'Rubber Step Floor'"
+          alt={t(currentLocale, 'content.products.grid.products.rubber_step_floor.title')}
+          @click={`showModal = true; modalImage = '/img/products/oto-stepfloor.jpg'; modalAlt = '${t(currentLocale, 'content.products.grid.products.rubber_step_floor.title')}'`}
         />
       </div>
       <div class="font-sans mt-3">
         <h4 class="font-semibold text-muted-800 dark:text-muted-100">
-          Rubber Step Floor
+          {t(currentLocale, 'content.products.grid.products.rubber_step_floor.title')}
         </h4>
-        <p class="text-sm text-muted-400">Otomotif</p>
+        <p class="text-sm text-muted-400">{t(currentLocale, 'content.products.grid.categories.otomotif')}</p>
       </div>
       <div class="mt-2">
         <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
-          Lantai karet anti-slip ergonomis untuk area pijakan kendaraan bermotor.
+          {t(currentLocale, 'content.products.grid.products.rubber_step_floor.description')}
         </p>
       </div>
       <div class="flex items-center justify-between font-sans mt-3">
@@ -267,19 +269,19 @@ import Card from "@components/base/Card.astro";
         <img
           class="w-full h-full object-cover cursor-pointer hover:opacity-90 transition-opacity duration-300"
           src="/img/products/oto-dumper.png"
-          alt="Dumper Components"
-          @click="showModal = true; modalImage = '/img/products/oto-dumper.png'; modalAlt = 'Dumper Components'"
+          alt={t(currentLocale, 'content.products.grid.products.dumper_components.title')}
+          @click={`showModal = true; modalImage = '/img/products/oto-dumper.png'; modalAlt = '${t(currentLocale, 'content.products.grid.products.dumper_components.title')}'`}
         />
       </div>
       <div class="font-sans mt-3">
         <h4 class="font-semibold text-muted-800 dark:text-muted-100">
-          Dumper Components
+          {t(currentLocale, 'content.products.grid.products.dumper_components.title')}
         </h4>
-        <p class="text-sm text-muted-400">Otomotif</p>
+        <p class="text-sm text-muted-400">{t(currentLocale, 'content.products.grid.categories.otomotif')}</p>
       </div>
       <div class="mt-2">
         <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
-          Komponen karet untuk kendaraan berat, dump truck, dan aplikasi otomotif khusus.
+          {t(currentLocale, 'content.products.grid.products.dumper_components.description')}
         </p>
       </div>
       <div class="flex items-center justify-between font-sans mt-3">
@@ -319,19 +321,19 @@ import Card from "@components/base/Card.astro";
         <img
           class="w-full h-full object-cover cursor-pointer hover:opacity-90 transition-opacity duration-300"
           src="/img/products/railway-duct.png"
-          alt="Railway Duct"
-          @click="showModal = true; modalImage = '/img/products/railway-duct.png'; modalAlt = 'Railway Duct'"
+          alt={t(currentLocale, 'content.products.grid.products.railway_duct.title')}
+          @click={`showModal = true; modalImage = '/img/products/railway-duct.png'; modalAlt = '${t(currentLocale, 'content.products.grid.products.railway_duct.title')}'`}
         />
       </div>
       <div class="font-sans mt-3">
         <h4 class="font-semibold text-muted-800 dark:text-muted-100">
-          Duct for Railway Vehicles
+          {t(currentLocale, 'content.products.grid.products.railway_duct.title')}
         </h4>
-        <p class="text-sm text-muted-400">Railway</p>
+        <p class="text-sm text-muted-400">{t(currentLocale, 'content.products.grid.categories.railway')}</p>
       </div>
       <div class="mt-2">
         <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
-          Saluran udara khusus untuk kendaraan kereta api dengan standar internasional.
+          {t(currentLocale, 'content.products.grid.products.railway_duct.description')}
         </p>
       </div>
       <div class="flex items-center justify-between font-sans mt-3">
@@ -370,19 +372,19 @@ import Card from "@components/base/Card.astro";
         <img
           class="w-full h-full object-cover cursor-pointer hover:opacity-90 transition-opacity duration-300"
           src="/img/products/railway-connecting.png"
-          alt="Railway Connecting Components"
-          @click="showModal = true; modalImage = '/img/products/railway-connecting.png'; modalAlt = 'Railway Connecting Components'"
+          alt={t(currentLocale, 'content.products.grid.products.railway_connecting.title')}
+          @click={`showModal = true; modalImage = '/img/products/railway-connecting.png'; modalAlt = '${t(currentLocale, 'content.products.grid.products.railway_connecting.title')}'`}
         />
       </div>
       <div class="font-sans mt-3">
         <h4 class="font-semibold text-muted-800 dark:text-muted-100">
-          Railway Connecting Components
+          {t(currentLocale, 'content.products.grid.products.railway_connecting.title')}
         </h4>
-        <p class="text-sm text-muted-400">Railway</p>
+        <p class="text-sm text-muted-400">{t(currentLocale, 'content.products.grid.categories.railway')}</p>
       </div>
       <div class="mt-2">
         <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
-          Komponen penghubung untuk sistem kereta api dengan daya tahan tinggi.
+          {t(currentLocale, 'content.products.grid.products.railway_connecting.description')}
         </p>
       </div>
       <div class="flex items-center justify-between font-sans mt-3">
@@ -422,19 +424,19 @@ import Card from "@components/base/Card.astro";
         <img
           class="w-full h-full object-cover cursor-pointer hover:opacity-90 transition-opacity duration-300"
           src="/img/products/industrial-oring.png"
-          alt="O-Ring"
-          @click="showModal = true; modalImage = '/img/products/industrial-oring.png'; modalAlt = 'O-Ring'"
+          alt={t(currentLocale, 'content.products.grid.products.silicon_oring.title')}
+          @click={`showModal = true; modalImage = '/img/products/industrial-oring.png'; modalAlt = '${t(currentLocale, 'content.products.grid.products.silicon_oring.title')}'`}
         />
       </div>
       <div class="font-sans mt-3">
         <h4 class="font-semibold text-muted-800 dark:text-muted-100">
-          Silicon O-Ring & Seals
+          {t(currentLocale, 'content.products.grid.products.silicon_oring.title')}
         </h4>
-        <p class="text-sm text-muted-400">Industrial</p>
+        <p class="text-sm text-muted-400">{t(currentLocale, 'content.products.grid.categories.industrial')}</p>
       </div>
       <div class="mt-2">
         <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
-          O-ring silikon berkualitas tinggi untuk aplikasi industri dan elektronik.
+          {t(currentLocale, 'content.products.grid.products.silicon_oring.description')}
         </p>
       </div>
       <div class="flex items-center justify-between font-sans mt-3">
@@ -473,19 +475,19 @@ import Card from "@components/base/Card.astro";
         <img
           class="w-full h-full object-cover cursor-pointer hover:opacity-90 transition-opacity duration-300"
           src="/img/products/industrial-nbrfloat.png"
-          alt="NBR Float"
-          @click="showModal = true; modalImage = '/img/products/industrial-nbrfloat.png'; modalAlt = 'NBR Float'"
+          alt={t(currentLocale, 'content.products.grid.products.nbr_float.title')}
+          @click={`showModal = true; modalImage = '/img/products/industrial-nbrfloat.png'; modalAlt = '${t(currentLocale, 'content.products.grid.products.nbr_float.title')}'`}
         />
       </div>
       <div class="font-sans mt-3">
         <h4 class="font-semibold text-muted-800 dark:text-muted-100">
-          NBR Float & Connectors
+          {t(currentLocale, 'content.products.grid.products.nbr_float.title')}
         </h4>
-        <p class="text-sm text-muted-400">Industrial</p>
+        <p class="text-sm text-muted-400">{t(currentLocale, 'content.products.grid.categories.industrial')}</p>
       </div>
       <div class="mt-2">
         <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
-          Pelampung NBR dan konektor untuk aplikasi industri berat.
+          {t(currentLocale, 'content.products.grid.products.nbr_float.description')}
         </p>
       </div>
       <div class="flex items-center justify-between font-sans mt-3">
@@ -524,19 +526,19 @@ import Card from "@components/base/Card.astro";
         <img
           class="w-full h-full object-cover cursor-pointer hover:opacity-90 transition-opacity duration-300"
           src="/img/products/industrial-siliconseal.png"
-          alt="Silicon Seal"
-          @click="showModal = true; modalImage = '/img/products/industrial-siliconseal.png'; modalAlt = 'Silicon Seal'"
+          alt={t(currentLocale, 'content.products.grid.products.electronic_components.title')}
+          @click={`showModal = true; modalImage = '/img/products/industrial-siliconseal.png'; modalAlt = '${t(currentLocale, 'content.products.grid.products.electronic_components.title')}'`}
         />
       </div>
       <div class="font-sans mt-3">
         <h4 class="font-semibold text-muted-800 dark:text-muted-100">
-          Electronic Components
+          {t(currentLocale, 'content.products.grid.products.electronic_components.title')}
         </h4>
-        <p class="text-sm text-muted-400">Industrial</p>
+        <p class="text-sm text-muted-400">{t(currentLocale, 'content.products.grid.categories.industrial')}</p>
       </div>
       <div class="mt-2">
         <p class="text-sm ptablet:text-xs text-muted-500 dark:text-muted-400">
-          Komponen elektronik dan seal silikon untuk peralatan industri presisi.
+          {t(currentLocale, 'content.products.grid.products.electronic_components.description')}
         </p>
       </div>
       <div class="flex items-center justify-between font-sans mt-3">

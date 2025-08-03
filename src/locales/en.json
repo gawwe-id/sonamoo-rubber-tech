@@ -1,0 +1,318 @@
+{
+  "site": {
+    "title": "PT. Sonamoo Rubber Tech",
+    "description": "High Quality Rubber Product Solutions"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "products": "Products",
+    "contact": "Contact",
+    "contact_us": "Contact Us"
+  },
+  "hero": {
+    "title": "High Quality Rubber Product Solutions",
+    "subtitle": "PT. Sonamoo Rubber Tech provides various rubber products for automotive, railway, and other industries with reliable Korean technology.",
+    "minititle": "Specialist Rubber Product"
+  },
+  "about": {
+    "hero_subtitle": "Specialist Rubber Product - producing rubber products for Automotive, Railway and Other Industries",
+    "company_title": "About Our Company",
+    "company_desc1": "Sonamoo Rubber Tech is a Manufacturing Company that produces rubber products for Automotive, Railway and Other Industries. Based on long-term product development and manufacturing experience, we strive to create the best products.",
+    "company_desc2": "By securing the highest level of human resources and extraordinary technology in various product fields, we are committed to providing high quality products, fast and accurate delivery and customer satisfaction.",
+    "company_desc3": "With DH Industry Co.,Ltd, a Korean company that has achieved high growth with the belief in symbiosis and growing together with its customers, we produce high quality products that meet customer needs.",
+    "vision_mission_title": "Company Vision & Mission",
+    "vision_mission_subtitle": "Our commitment to building a competitive and sustainable rubber component industry",
+    "vision_title": "Vision",
+    "vision_content": "To become one of the world-class Automotive, Electronic and Electric Rubber Component Suppliers supported by Reliable Human Resources and Technology Capabilities",
+    "mission_title": "Mission",
+    "mission_content": "Developing Automotive, Electronics and Electric Component Industries that are competitive and becoming a Strategic Partner for Industry players in Indonesia and Regional and responsibly providing Positive contributions to the Company",
+    "location_title": "Our Location",
+    "location_subtitle": "Visit our production facility or find us on the map for more information",
+    "address_title": "Complete Address:",
+    "address_content": "Kp. Tegal Pondoh RT.002/RW.003<br>Kelurahan Singabangsa<br>Kec. Tenjo, Kab. Bogor-16370<br>West Java, Indonesia",
+    "transport_title": "Transportation Access:",
+    "transport_content": "Can be accessed via Jl. Raya Tenjo from Jakarta or Bogor direction. Strategic location close to Tangerang-Bogor industrial area.",
+    "facility_title": "Facilities:",
+    "facility_content": "Complete production facilities with press machines, conveyor dryer ovens, and modern equipment for high-quality rubber production.",
+    "directions_title": "Directions",
+    "directions_jakarta": "• From Jakarta: Take Tangerang-Merak toll road, exit at West Balaraja",
+    "directions_bogor": "• From Bogor: Via Jl. Raya Tenjo towards Tangerang",
+    "directions_landmark": "• Landmark: Near Tigaraksa Golf & Tangerang Regency",
+    "map_title": "Location Map",
+    "open_maps": "Open in Google Maps",
+    "partnership_title": "Partnership",
+    "partnership_subtitle": "Collaborating with leading companies to provide the best solutions",
+    "partnership_content": "Technical cooperation with DH Industry Co.,Ltd Korea enables us to produce high quality products with cutting-edge technology and international standards."
+  },
+  "common": {
+    "read_more": "Read More",
+    "contact_us": "Contact Us",
+    "learn_more": "Learn More",
+    "years_experience": "Years Experience"
+  },
+  "content": {
+    "features": {
+      "right": {
+        "badge": "Quality Control & Inspection",
+        "title": "Advanced Quality Control System for Rubber Products",
+        "description": "Our comprehensive quality control system ensures every rubber product meets the highest standards through rigorous testing and inspection processes.",
+        "cta": "Explore our quality system"
+      },
+      "left": {
+        "badge": "Manufacturing Process",
+        "title": "Modern Rubber Manufacturing Technology",
+        "description": "Rubber production process using advanced machinery in the factory to produce high-quality products with international standards.",
+        "cta": "Learn production process"
+      }
+    },
+    "products": {
+      "descriptions": {
+        "title": "About Products",
+        "categories": {
+          "all": {
+            "paragraph1": "Sonamoo Rubber Tech produces high-quality rubber products for various industries. With over 7 years of experience and Korean technology, we are committed to providing the best solutions.",
+            "paragraph2": "Our products include automotive, railway, and industrial components with international standards that meet global customer needs."
+          },
+          "otomotif": {
+            "paragraph1": "Our automotive products are specifically designed for the motor vehicle industry with a focus on safety and durability. Including car stoppers, tire stoppers, speed bumps, and other components.",
+            "paragraph2": "All automotive products are equipped with anti-slip and weather-resistant technology to ensure optimal performance in various conditions."
+          },
+          "railway": {
+            "paragraph1": "Our railway components are produced with international railway standards. Including ducts for railway vehicles and high-durability connecting components.",
+            "paragraph2": "Every railway product has undergone rigorous testing to ensure reliability and safety in railway transportation operations."
+          },
+          "industrial": {
+            "paragraph1": "Our industrial products serve the needs of heavy industry, electronics, and manufacturing. Including silicone O-rings, NBR floats, seals, and precision electronic components.",
+            "paragraph2": "Made with high-quality materials and advanced technology to meet strict technical specifications in modern industrial applications."
+          }
+        }
+      },
+      "grid": {
+        "categories": {
+          "otomotif": "Automotive",
+          "railway": "Railway", 
+          "industrial": "Industrial"
+        },
+        "products": {
+          "car_stopper": {
+            "title": "Car Stopper",
+            "description": "Parking barrier for cars with hazard strip design for commercial parking areas."
+          },
+          "tire_stopper": {
+            "title": "Tire Stopper", 
+            "description": "Wheel barriers with sizes (1kg, 3kg, 8kg) for light to heavy vehicles."
+          },
+          "speed_bump": {
+            "title": "Speed Bump",
+            "description": "Speed reducer with anti-slip diamond profile for roads and parking areas."
+          },
+          "connecting_rod": {
+            "title": "Connecting Rod",
+            "description": "Connecting rod for modular speed bump system with mounting holes."
+          },
+          "rubber_step_floor": {
+            "title": "Rubber Step Floor",
+            "description": "Ergonomic anti-slip rubber flooring for motor vehicle stepping areas."
+          },
+          "dumper_components": {
+            "title": "Dumper Components",
+            "description": "Rubber components for heavy vehicles, dump trucks, and special automotive applications."
+          },
+          "railway_duct": {
+            "title": "Duct for Railway Vehicles",
+            "description": "Special air ducts for railway vehicles with international standards."
+          },
+          "railway_connecting": {
+            "title": "Railway Connecting Components",
+            "description": "Connecting components for railway systems with high durability."
+          },
+          "silicon_oring": {
+            "title": "Silicon O-Ring & Seals",
+            "description": "High-quality silicone O-rings for industrial and electronic applications."
+          },
+          "nbr_float": {
+            "title": "NBR Float & Connectors",
+            "description": "NBR floats and connectors for heavy industrial applications."
+          },
+          "electronic_components": {
+            "title": "Electronic Components",
+            "description": "Electronic components and silicone seals for precision industrial equipment."
+          }
+        }
+      },
+      "toolbar": {
+        "categories": {
+          "all": "All",
+          "otomotif": "Automotive",
+          "railway": "Railway",
+          "industrial": "Industrial"
+        }
+      }
+    },
+    "cta": {
+      "title_line1": "Ready to get started?",
+      "title_line2": "Free consultation with our experts.",
+      "description": "Get high-quality rubber solutions for your industrial needs. Our expert team is ready to help you choose the right products.",
+      "button": "Consult Now"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Find answers to common questions about our products and services",
+      "minititle": "FAQ",
+      "questions": {
+        "products": {
+          "question": "What are the main products manufactured by PT. Sonamoo Rubber Tech?",
+          "answer": "We manufacture various high-quality rubber products including: Car Stopper, Tire Stopper (1kg, 3kg, 5kg), Speed Bump, Connecting Rod, Rubber Step Floor for motorcycles, NBR Float, Duct for Railway Vehicles, Silicon O-Ring & Seals, and various rubber components for electronics and automotive industries."
+        },
+        "quality": {
+          "question": "How is product quality guaranteed with Korean technology?",
+          "answer": "We collaborate technically with DH Industry Co.,Ltd Korea which has decades of experience. Production technology, quality standards, and manufacturing processes follow Korean international standards. All products undergo strict quality control to ensure consistency and durability."
+        },
+        "custom": {
+          "question": "Is custom manufacturing service available?",
+          "answer": "Yes, we provide custom manufacturing services according to customer specifications and needs. Our engineering team can help develop special rubber products with various materials such as NBR, Silicon, and other compounds according to required industrial applications."
+        },
+        "ordering": {
+          "question": "How is the ordering process and production lead time?",
+          "answer": "The ordering process begins with consultation to understand your needs. After final specifications, we will provide quotation and production timeline. Lead time varies depending on product complexity, generally 2-4 weeks for standard products and 4-8 weeks for custom products."
+        }
+      }
+    },
+    "pricing": {
+      "title": "Customized Pricing",
+      "description": "Each rubber product has different specifications. We provide the best price quotes based on volume, specifications, and your needs.",
+      "cta_link": "Learn more in FAQ",
+      "standard_quote": {
+        "title": "Standard Quote",
+        "description": "For orders with standard specifications and regular volume.",
+        "price_label": "Request",
+        "price_sublabel": "Quote",
+        "features": {
+          "consultation": "Product consultation",
+          "quick_quote": "Quote within 24 hours",
+          "sample": "Samples available"
+        },
+        "primary_button": "Request Quote",
+        "secondary_button": "Download Catalog"
+      },
+      "custom_quote": {
+        "title": "Custom Quote",
+        "description": "For special products with custom specifications and large volume.",
+        "price_label": "Custom",
+        "price_sublabel": "Design",
+        "features": {
+          "deep_consultation": "In-depth technical consultation",
+          "custom_design": "Custom design according to needs",
+          "volume_pricing": "Volume pricing available"
+        },
+        "primary_button": "Consult Now",
+        "secondary_button": "Contact Sales"
+      }
+    },
+    "products_category": {
+      "title": "Our Product Categories",
+      "subtitle": "Complete rubber product solutions for various industrial needs with international quality standards",
+      "minititle": "Product Categories",
+      "automotive": {
+        "title": "Automotive Products",
+        "description": "High-quality rubber components for automotive industry including wheel stoppers, speed bumps, and vehicle accessories.",
+        "products": {
+          "car_tire_stopper": "Car & Tire Stopper",
+          "speed_bump_connecting": "Speed Bump & Connecting Rod",
+          "rubber_step_floor": "Rubber Step Floor"
+        },
+        "button": "Contact Us"
+      },
+      "railway": {
+        "title": "Railway Products",
+        "description": "Specialized components for railway industry with high safety and quality standards.",
+        "products": {
+          "duct_railway": "Duct for Railway Vehicles",
+          "corrugated_bellow": "Corrugated Bellow",
+          "replacement_components": "Replacement Components"
+        },
+        "button": "Contact Us"
+      },
+      "industrial": {
+        "title": "Industrial Products",
+        "description": "Rubber solutions for various heavy industry, electronics, and specialized equipment applications based on rubber materials.",
+        "products": {
+          "silicon_oring": "Silicon O-Ring & Seals",
+          "nbr_float": "NBR Float & Connectors",
+          "electronic_components": "Electronic Components"
+        },
+        "button": "Contact Us"
+      }
+    },
+    "testimonials": {
+      "reviews": [
+        {
+          "text": "PT Sonamoo's rubber product quality is very satisfying. On-time delivery and specifications meet our industrial needs. Highly recommended!",
+          "name": "Budi Santoso",
+          "position": "Operations Director, PT Automotive Jaya"
+        },
+        {
+          "text": "We have been cooperating with PT Sonamoo for 5 years for seal and gasket needs. The products are durable and service is excellent. Trusted partner!",
+          "name": "Sari Wahyuni",
+          "position": "Procurement, PT Industri Mesin"
+        },
+        {
+          "text": "Technical support team is very helpful in selecting the right rubber material for high temperature applications. The final results are very satisfying.",
+          "name": "Ahmad Hidayat",
+          "position": "Engineering Manager, PT Kimia Farma"
+        },
+        {
+          "text": "Rubber sheet products with various thicknesses are completely available. Consistent quality and competitive prices. Very satisfied with the service.",
+          "name": "Rina Sari",
+          "position": "Purchasing, PT Elektronik Indonesia"
+        },
+        {
+          "text": "Custom rubber parts according to the drawings we provided. Precision tolerance and good finishing. Recommended for industrial needs.",
+          "name": "Dedi Kurniawan",
+          "position": "Tech Lead, PT Manufacturing Solution"
+        },
+        {
+          "text": "Reliable supplier for various grade rubber compound needs. Fast response time and ready stock for frequently needed items.",
+          "name": "Indra Wijaya",
+          "position": "Operations, PT Heavy Machinery"
+        }
+      ]
+    }
+  },
+  "section": {
+    "catalog_product": {
+      "title": "Rubber Product Catalog",
+      "subtitle": "Explore our various high-quality rubber products for automotive, railway, and other industrial applications.",
+      "minititle": "Product Catalog"
+    },
+    "footer": {
+      "description": "PT Sonamoo Rubber Tech - Leading rubber manufacturing solutions with quality and innovation at the forefront.",
+      "company": {
+        "title": "COMPANY",
+        "links": {
+          "about": "About Us",
+          "products": "Products",
+          "contact": "Contact"
+        }
+      },
+      "services": {
+        "title": "SERVICES",
+        "links": {
+          "manufacturing": "Rubber Manufacturing",
+          "custom": "Custom Solutions",
+          "consultation": "Consultation"
+        }
+      },
+      "support": {
+        "title": "SUPPORT",
+        "links": {
+          "contact_support": "Contact Support",
+          "technical_help": "Technical Help"
+        }
+      },
+      "copyright": "All Rights Reserved.",
+      "built_by": "Built by"
+    }
+  }
+}

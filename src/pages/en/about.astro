@@ -1,0 +1,278 @@
+---
+import Layout from "@layouts/Default.astro";
+import Container from "@components/section/Container.astro";
+import Section from "@components/section/Section.astro";
+import SectionMuted from "@components/section/SectionMuted.astro";
+import SectionTitle from "@components/section/SectionTitle.astro";
+import Card from "@components/base/Card.astro";
+
+// Import translations
+import en from "../../locales/en.json";
+const t = en.about;
+const common = en.common;
+---
+
+<Layout title="About Us">
+  <!-- Hero Section -->
+  <div class="min-h-[70vh] w-full overflow-hidden bg-gradient-to-br from-primary-900 via-primary-800 to-primary-700 relative">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent transform -skew-y-12"></div>
+    </div>
+    
+    <Container>
+      <div class="min-h-[70vh] flex items-center justify-center px-4">
+        <div class="text-center space-y-6 animate-fadeIn">
+          <div class="inline-block">
+            <span class="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-white/90 text-sm font-medium border border-white/20 animate-pulse">
+              About Our Company
+            </span>
+          </div>
+          <h1 class="font-heading font-black text-5xl md:text-6xl lg:text-7xl text-white leading-tight">
+            PT. Sonamoo Rubber Tech
+          </h1>
+          <p class="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed">
+            {t.hero_subtitle}
+          </p>
+        </div>
+      </div>
+    </Container>
+  </div>
+
+  <!-- Company Introduction -->
+  <Section id="company">
+    <Container>
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="font-heading font-medium text-3xl text-muted-800 dark:text-muted-100 mb-6">
+            {t.company_title}
+          </h2>
+          <div class="space-y-4 text-muted-600 dark:text-muted-300">
+            <p>
+              {t.company_desc1}
+            </p>
+            <p>
+              {t.company_desc2}
+            </p>
+            <p>
+              {t.company_desc3}
+            </p>
+          </div>
+        </div>
+        <div class="relative">
+          <img 
+            src="/img/illustrations/hero.svg" 
+            alt="Company Illustration"
+            class="w-full max-w-lg mx-auto"
+          />
+          <div class="absolute -top-4 -right-4 bg-primary-500 text-white p-4 rounded-xl shadow-lg">
+            <div class="text-center">
+              <div class="text-2xl font-bold">7+</div>
+              <div class="text-xs">{common.years_experience}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </Section>
+
+  <!-- Vision & Mission -->
+  <SectionMuted>
+    <Container>
+      <SectionTitle
+        title={t.vision_mission_title}
+        subtitle={t.vision_mission_subtitle}
+        minititle="Vision & Mission"
+        class="'mx-auto text-center'"
+      />
+      
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Vision -->
+        <Card class="'p-8 h-full'">
+          <div class="text-center mb-6">
+            <div class="w-16 h-16 bg-primary-100 dark:bg-primary-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
+              <iconify-icon class="iconify w-8 h-8 text-primary-600" icon="ph:eye-duotone"></iconify-icon>
+            </div>
+            <h3 class="font-heading font-semibold text-xl text-muted-800 dark:text-muted-100">{t.vision_title}</h3>
+          </div>
+          <p class="text-muted-600 dark:text-muted-300 text-center leading-relaxed">
+            {t.vision_content}
+          </p>
+        </Card>
+
+        <!-- Mission -->
+        <Card class="'p-8 h-full'">
+          <div class="text-center mb-6">
+            <div class="w-16 h-16 bg-rose-100 dark:bg-rose-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
+              <iconify-icon class="iconify w-8 h-8 text-rose-600" icon="ph:target-duotone"></iconify-icon>
+            </div>
+            <h3 class="font-heading font-semibold text-xl text-muted-800 dark:text-muted-100">{t.mission_title}</h3>
+          </div>
+          <p class="text-muted-600 dark:text-muted-300 text-center leading-relaxed">
+            {t.mission_content}
+          </p>
+        </Card>
+      </div>
+    </Container>
+  </SectionMuted>
+
+  <!-- Location & Map -->
+  <SectionMuted>
+    <Container>
+      <div class="py-16">
+        <SectionTitle
+          title={t.location_title}
+          subtitle={t.location_subtitle}
+          minititle="Find Us"
+          class="'text-center mx-auto'"
+        />
+
+        <div class="grid lg:grid-cols-2 gap-12">
+          <!-- Location Details -->
+          <div class="space-y-6">
+            <h3 class="font-heading font-semibold text-xl text-muted-800 dark:text-muted-100">
+              PT. Sonamoo Rubber Tech
+            </h3>
+            
+            <div class="space-y-4">
+              <div class="flex items-start gap-3">
+                <iconify-icon class="iconify w-5 h-5 text-primary-600 mt-1" icon="ph:map-pin"></iconify-icon>
+                <div>
+                  <p class="font-medium text-muted-800 dark:text-muted-100">{t.address_title}</p>
+                  <p class="text-muted-600 dark:text-muted-300" set:html={t.address_content}>
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <iconify-icon class="iconify w-5 h-5 text-primary-600 mt-1" icon="ph:car"></iconify-icon>
+                <div>
+                  <p class="font-medium text-muted-800 dark:text-muted-100">Akses Transportasi:</p>
+                  <p class="text-muted-600 dark:text-muted-300">
+                    Dapat diakses melalui Jl. Raya Tenjo dari arah Jakarta atau Bogor. 
+                    Lokasi strategis dekat dengan kawasan industri Tangerang-Bogor.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <iconify-icon class="iconify w-5 h-5 text-primary-600 mt-1" icon="ph:factory"></iconify-icon>
+                <div>
+                  <p class="font-medium text-muted-800 dark:text-muted-100">Fasilitas:</p>
+                  <p class="text-muted-600 dark:text-muted-300">
+                    Fasilitas produksi lengkap dengan press machine, conveyor dryer oven, 
+                    dan peralatan modern untuk produksi karet berkualitas tinggi.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Directions -->
+            <Card class="'p-6 bg-gradient-to-r from-primary-50 to-primary-100 dark:from-primary-900/20 dark:to-primary-800/20'">
+              <h4 class="font-semibold text-muted-800 dark:text-muted-100 mb-3">Petunjuk Arah</h4>
+              <div class="space-y-2 text-sm text-muted-600 dark:text-muted-300">
+                <p>• Dari Jakarta: Ambil jalan tol Tangerang-Merak, keluar di Balaraja Barat</p>
+                <p>• Dari Bogor: Melalui Jl. Raya Tenjo menuju arah Tangerang</p>
+                <p>• Landmark: Dekat Tigaraksa Golf & Kabupaten Tangerang</p>
+              </div>
+            </Card>
+          </div>
+
+          <!-- Google Maps -->
+          <div>
+            <h3 class="font-heading font-semibold text-xl text-muted-800 dark:text-muted-100 mb-6">
+              Peta Lokasi
+            </h3>
+            <div class="rounded-xl overflow-hidden shadow-lg h-96">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.550832220949!2d106.46966147573251!3d-6.322573061869686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e420940044a7edb%3A0xe9b2696a66e0960d!2sKp%20Tegal%20pondoh!5e0!3m2!1sid!2sid!4v1753967850263!5m2!1sid!2sid" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                class="w-full h-full">
+              </iframe>
+            </div>
+            
+            <!-- Map Actions -->
+            <div class="flex gap-3 mt-4">
+              <a 
+                href="https://maps.app.goo.gl/cV6zMW22mmmAWrK69" 
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2 bg-blue-100 hover:bg-blue-200 text-blue-700 rounded-lg transition-colors duration-300"
+              >
+                <iconify-icon class="iconify w-4 h-4" icon="ph:navigation-arrow"></iconify-icon>
+                <span class="text-sm font-medium">Buka di Google Maps</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </SectionMuted>
+
+  <!-- Partnership -->
+  <Section>
+    <Container>
+      <div class="text-center">
+        <SectionTitle
+          title="Partnership"
+          subtitle="Berkolaborasi dengan perusahaan terkemuka untuk memberikan solusi terbaik"
+          minititle="Our Partnership"
+          class="'mx-auto text-center'"
+        />
+        
+        <Card class="'p-8 max-w-4xl mx-auto'">
+          <div class="flex items-center justify-center gap-8 flex-wrap">
+            <div class="text-center">
+              <div class="w-20 h-20 bg-primary-100 dark:bg-primary-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
+                <iconify-icon class="iconify w-10 h-10 text-primary-600" icon="flag:kr-4x3"></iconify-icon>
+              </div>
+              <h4 class="font-heading font-semibold text-lg text-muted-800 dark:text-muted-100 mb-2">
+                DH Industry Co.,Ltd
+              </h4>
+              <p class="text-muted-500 dark:text-muted-400">Korea</p>
+            </div>
+            <div class="text-6xl text-muted-300 dark:text-muted-600">
+              <iconify-icon class="iconify" icon="ph:arrow-right"></iconify-icon>
+            </div>
+            <div class="text-center">
+              <div class="w-20 h-20 bg-rose-100 dark:bg-rose-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
+                <iconify-icon class="iconify w-10 h-10 text-rose-600" icon="flag:id-4x3"></iconify-icon>
+              </div>
+              <h4 class="font-heading font-semibold text-lg text-muted-800 dark:text-muted-100 mb-2">
+                PT. Sonamoo Rubber Tech
+              </h4>
+              <p class="text-muted-500 dark:text-muted-400">Indonesia</p>
+            </div>
+          </div>
+          <div class="mt-8 text-center">
+            <p class="text-muted-600 dark:text-muted-300 max-w-2xl mx-auto">
+              Kerjasama teknis dengan DH Industry Co.,Ltd Korea memungkinkan kami untuk menghasilkan produk berkualitas tinggi dengan teknologi terdepan dan standar internasional.
+            </p>
+          </div>
+        </Card>
+      </div>
+    </Container>
+  </Section>
+</Layout>
+
+<style>
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fadeIn {
+    animation: fadeIn 1s ease-out;
+  }
+</style>

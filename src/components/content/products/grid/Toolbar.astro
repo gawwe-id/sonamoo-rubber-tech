@@ -1,3 +1,8 @@
+---
+import { t, getCurrentLocale } from '@utils/i18n';
+const currentLocale = getCurrentLocale(Astro.url);
+---
+
 <div
   class="sticky top-24 md:top-20 w-full flex bg-white dark:bg-muted-800 border border-muted-200 dark:border-muted-700 rounded divide-x divide-muted-200 dark:divide-muted-700 shadow-xl shadow-muted-300/30 dark:shadow-muted-900/30 overflow-x-auto z-30"
 >
@@ -12,7 +17,7 @@
     >
       <iconify-icon class="iconify w-6 h-6 flex items-center justify-center text-2xl" icon="ph:grid-four-duotone"></iconify-icon>
     </span>
-    <span>All</span>
+    <span>{t(currentLocale, 'content.products.toolbar.categories.all')}</span>
   </button>
   <button
     class="group flex-1 flex items-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300"
@@ -25,7 +30,7 @@
     >
       <iconify-icon class="iconify w-6 h-6 flex items-center justify-center text-2xl" icon="ph:car-duotone"></iconify-icon>
     </span>
-    <span>Otomotif</span>
+    <span>{t(currentLocale, 'content.products.toolbar.categories.otomotif')}</span>
   </button>
   <button
     class="group flex-1 flex items-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300"
@@ -38,7 +43,7 @@
     >
       <iconify-icon class="iconify w-6 h-6 flex items-center justify-center text-2xl" icon="ph:train-duotone"></iconify-icon>
     </span>
-    <span>Railway</span>
+    <span>{t(currentLocale, 'content.products.toolbar.categories.railway')}</span>
   </button>
   <button
     class="group flex-1 flex items-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300"
@@ -51,6 +56,6 @@
     >
       <iconify-icon class="iconify w-6 h-6 flex items-center justify-center text-2xl" icon="ph:factory-duotone"></iconify-icon>
     </span>
-    <span>Industrial</span>
+    <span>{t(currentLocale, 'content.products.toolbar.categories.industrial')}</span>
   </button>
 </div>
