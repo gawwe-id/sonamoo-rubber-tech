@@ -1,0 +1,48 @@
+<div class="px-2">
+  <!-- Product Description Section -->
+  <div class="pb-6 border-b border-muted-200 dark:border-muted-800">
+    <h3 class="font-sans font-light text-lg mb-4 text-muted-800 dark:text-muted-100">
+      Tentang Produk
+    </h3>
+    
+    <!-- All Products Description -->
+    <div x-show="activeCategory === 'all'" class="space-y-3">
+      <p class="text-sm text-muted-600 dark:text-muted-300 leading-relaxed">
+        Sonamoo Rubber Tech memproduksi produk karet berkualitas tinggi untuk berbagai industri. Dengan pengalaman lebih dari 7 tahun dan teknologi dari Korea, kami berkomitmen memberikan solusi terbaik.
+      </p>
+      <p class="text-sm text-muted-600 dark:text-muted-300 leading-relaxed">
+        Produk kami mencakup komponen otomotif, railway, dan industri dengan standar internasional yang memenuhi kebutuhan pelanggan global.
+      </p>
+    </div>
+
+    <!-- Otomotif Category Description -->
+    <div x-show="activeCategory === 'otomotif'" class="space-y-3">
+      <p class="text-sm text-muted-600 dark:text-muted-300 leading-relaxed">
+        Produk otomotif kami dirancang khusus untuk industri kendaraan bermotor dengan fokus pada keamanan dan durabilitas. Meliputi car stopper, tire stopper, speed bump, dan komponen lainnya.
+      </p>
+      <p class="text-sm text-muted-600 dark:text-muted-300 leading-relaxed">
+        Semua produk otomotif dilengkapi dengan teknologi anti-slip dan tahan cuaca untuk memastikan performa optimal di berbagai kondisi.
+      </p>
+    </div>
+
+    <!-- Railway Category Description -->
+    <div x-show="activeCategory === 'railway'" class="space-y-3">
+      <p class="text-sm text-muted-600 dark:text-muted-300 leading-relaxed">
+        Komponen railway kami diproduksi dengan standar kereta api internasional. Mencakup duct untuk kendaraan kereta api dan komponen penghubung dengan daya tahan tinggi.
+      </p>
+      <p class="text-sm text-muted-600 dark:text-muted-300 leading-relaxed">
+        Setiap produk railway telah melalui pengujian ketat untuk memastikan keandalan dan keamanan dalam operasional transportasi kereta api.
+      </p>
+    </div>
+
+    <!-- Industrial Category Description -->
+    <div x-show="activeCategory === 'industrial'" class="space-y-3">
+      <p class="text-sm text-muted-600 dark:text-muted-300 leading-relaxed">
+        Produk industrial kami melayani kebutuhan industri berat, elektronik, dan manufaktur. Termasuk O-ring silikon, NBR float, seal, dan komponen elektronik presisi.
+      </p>
+      <p class="text-sm text-muted-600 dark:text-muted-300 leading-relaxed">
+        Dibuat dengan material berkualitas tinggi dan teknologi canggih untuk memenuhi spesifikasi teknis yang ketat dalam aplikasi industri modern.
+      </p>
+    </div>
+  </div>
+</div>
