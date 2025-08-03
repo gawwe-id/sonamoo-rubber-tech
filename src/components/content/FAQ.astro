@@ -1,0 +1,119 @@
+---
+import Card from "@components/base/Card.astro";
+import Container from "@components/section/Container.astro";
+import Section from "@components/section/Section.astro";
+import SectionTitle from "@components/section/SectionTitle.astro";
+---
+
+<Section>
+    <Container>
+      <div class="py-16">
+        <SectionTitle
+          title="Pertanyaan yang Sering Diajukan"
+          subtitle="Temukan jawaban untuk pertanyaan umum tentang produk dan layanan kami"
+          minititle="FAQ"
+          class="'text-center mx-auto'"
+        />
+
+        <div class="max-w-4xl mx-auto">
+          <div x-data="{ activeTab: 1 }" class="space-y-4">
+            <!-- FAQ 1 -->
+            <Card class="'p-6'">
+              <button 
+                @click="activeTab = activeTab === 1 ? 0 : 1"
+                class="w-full flex items-center justify-between text-left"
+              >
+                <h4 class="font-semibold text-lg text-muted-800 dark:text-muted-100">
+                  Apa saja produk utama yang diproduksi PT. Sonamoo Rubber Tech?
+                </h4>
+                <iconify-icon 
+                  class="iconify w-5 h-5 text-muted-400 transition-transform duration-300"
+                  :class="activeTab === 1 ? 'rotate-180' : ''"
+                  icon="ph:caret-down"
+                ></iconify-icon>
+              </button>
+              <div x-show="activeTab === 1" x-collapse class="mt-4">
+                <p class="text-muted-600 dark:text-muted-300 leading-relaxed">
+                  Kami memproduksi berbagai produk karet berkualitas tinggi termasuk: Car Stopper, Tire Stopper (1kg, 3kg, 5kg), 
+                  Speed Bump, Connecting Rod, Rubber Step Floor untuk motor, NBR Float, Duct for Railway Vehicles, 
+                  Silicon O-Ring & Seals, serta berbagai komponen karet untuk industri elektronik dan otomotif.
+                </p>
+              </div>
+            </Card>
+
+            <!-- FAQ 2 -->
+            <Card class="'p-6'">
+              <button 
+                @click="activeTab = activeTab === 2 ? 0 : 2"
+                class="w-full flex items-center justify-between text-left"
+              >
+                <h4 class="font-semibold text-lg text-muted-800 dark:text-muted-100">
+                  Bagaimana kualitas produk dijamin dengan teknologi Korea?
+                </h4>
+                <iconify-icon 
+                  class="iconify w-5 h-5 text-muted-400 transition-transform duration-300"
+                  :class="activeTab === 2 ? 'rotate-180' : ''"
+                  icon="ph:caret-down"
+                ></iconify-icon>
+              </button>
+              <div x-show="activeTab === 2" x-collapse class="mt-4">
+                <p class="text-muted-600 dark:text-muted-300 leading-relaxed">
+                  Kami bekerjasama secara teknis dengan DH Industry Co.,Ltd Korea yang memiliki pengalaman puluhan tahun. 
+                  Teknologi produksi, standar kualitas, dan proses manufacturing mengikuti standar internasional Korea. 
+                  Semua produk melalui quality control ketat untuk memastikan konsistensi dan durabilitas.
+                </p>
+              </div>
+            </Card>
+
+            <!-- FAQ 3 -->
+            <Card class="'p-6'">
+              <button 
+                @click="activeTab = activeTab === 3 ? 0 : 3"
+                class="w-full flex items-center justify-between text-left"
+              >
+                <h4 class="font-semibold text-lg text-muted-800 dark:text-muted-100">
+                  Apakah tersedia layanan custom manufacturing?
+                </h4>
+                <iconify-icon 
+                  class="iconify w-5 h-5 text-muted-400 transition-transform duration-300"
+                  :class="activeTab === 3 ? 'rotate-180' : ''"
+                  icon="ph:caret-down"
+                ></iconify-icon>
+              </button>
+              <div x-show="activeTab === 3" x-collapse class="mt-4">
+                <p class="text-muted-600 dark:text-muted-300 leading-relaxed">
+                  Ya, kami menyediakan layanan custom manufacturing sesuai spesifikasi dan kebutuhan pelanggan. 
+                  Tim engineering kami dapat membantu mengembangkan produk karet khusus dengan berbagai material seperti NBR, 
+                  Silicon, dan compound lainnya sesuai aplikasi industri yang dibutuhkan.
+                </p>
+              </div>
+            </Card>
+
+            <!-- FAQ 4 -->
+            <Card class="'p-6'">
+              <button 
+                @click="activeTab = activeTab === 4 ? 0 : 4"
+                class="w-full flex items-center justify-between text-left"
+              >
+                <h4 class="font-semibold text-lg text-muted-800 dark:text-muted-100">
+                  Bagaimana proses pemesanan dan lead time produksi?
+                </h4>
+                <iconify-icon 
+                  class="iconify w-5 h-5 text-muted-400 transition-transform duration-300"
+                  :class="activeTab === 4 ? 'rotate-180' : ''"
+                  icon="ph:caret-down"
+                ></iconify-icon>
+              </button>
+              <div x-show="activeTab === 4" x-collapse class="mt-4">
+                <p class="text-muted-600 dark:text-muted-300 leading-relaxed">
+                  Proses pemesanan dimulai dengan konsultasi untuk memahami kebutuhan Anda. Setelah spesifikasi final, 
+                  kami akan memberikan quotation dan timeline produksi. Lead time bervariasi tergantung kompleksitas produk, 
+                  umumnya 2-4 minggu untuk produk standard dan 4-8 minggu untuk custom products.
+                </p>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </Section>
