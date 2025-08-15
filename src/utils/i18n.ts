@@ -3,10 +3,12 @@ import { getRelativeLocaleUrl } from 'astro:i18n';
 // Import translation files
 import id from '../locales/id.json';
 import en from '../locales/en.json';
+import ko from '../locales/ko.json';
 
 const translations = {
   id,
-  en
+  en,
+  ko
 } as const;
 
 export type Locale = keyof typeof translations;
@@ -64,7 +66,7 @@ export function getLocalizedUrl(locale: Locale, path: string): string {
 }
 
 export const defaultLocale: Locale = 'id';
-export const locales: Locale[] = ['id', 'en'];
+export const locales: Locale[] = ['id', 'en', 'ko'];
 
 export function getCurrentLocale(url: URL): Locale {
   const pathname = url.pathname;

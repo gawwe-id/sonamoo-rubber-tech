@@ -1,0 +1,163 @@
+---
+import Layout from "@layouts/Default.astro";
+import HeroMain from "@components/hero/HeroMain.astro";
+import SectionMuted from "@components/section/SectionMuted.astro";
+import Container from "@components/section/Container.astro";
+import SectionTitle from "@components/section/SectionTitle.astro";
+import IconBlock from "@components/content/IconBlock.astro";
+import SideStatsRight from "@components/content/features/SideStatsRight.astro";
+import SideStatsLeft from "@components/content/features/SideStatsLeft.astro";
+import Pricing from "@components/content/Pricing.astro";
+import Cta from "@components/content/Cta.astro";
+import Testimonials from "@components/content/Testimonials.astro";
+import ProductsCategory from "@components/content/ProductsCategory.astro";
+import FAQ from "@components/content/FAQ.astro";
+import CatalogProduct from "@components/section/CatalogProduct.astro";
+import { t, getCurrentLocale } from "@utils/i18n";
+
+const currentLocale = getCurrentLocale(Astro.url);
+---
+
+<Layout title="Home">
+  <HeroMain />
+
+  <SectionMuted>
+    <Container>
+      <SectionTitle
+        title={t(currentLocale, 'home.features.title')}
+        subtitle={t(currentLocale, 'home.features.subtitle')}
+        minititle={t(currentLocale, 'home.features.minititle')}
+      />
+
+      <div class="grid md:grid-cols-3 ltablet:grid-cols-4 lg:grid-cols-4 gap-x-6 gap-y-12" x-intersect="activeStep = ''">
+        <!-- Item 1 -->
+        <div>
+          <IconBlock
+            title={t(currentLocale, 'home.features.items.fast_response.title')}
+            text={t(currentLocale, 'home.features.items.fast_response.text')}
+            icon="ph:lightning-duotone"
+            class="'text-primary-600'"
+          />
+        </div>
+
+        <!-- Item 2 -->
+        <div>
+          <IconBlock
+            title={t(currentLocale, 'home.features.items.competitive_price.title')}
+            text={t(currentLocale, 'home.features.items.competitive_price.text')}
+            icon="ph:coins-duotone"
+            class="'text-rose-500'"
+          />
+        </div>
+
+        <!-- Item 3 -->
+        <div>
+          <IconBlock
+            title={t(currentLocale, 'home.features.items.best_product.title')}
+            text={t(currentLocale, 'home.features.items.best_product.text')}
+            icon="ph:medal-duotone"
+            class="'text-primary-600'"
+          />
+        </div>
+
+        <!-- Item 4 -->
+        <div>
+          <IconBlock
+            title={t(currentLocale, 'home.features.items.fast_delivery.title')}
+            text={t(currentLocale, 'home.features.items.fast_delivery.text')}
+            icon="ph:truck-duotone"
+            class="'text-rose-500'"
+          />
+        </div>
+
+        <!-- Item 5 -->
+        <div>
+          <IconBlock
+            title={t(currentLocale, 'home.features.items.automotive_components.title')}
+            text={t(currentLocale, 'home.features.items.automotive_components.text')}
+            icon="ph:car-duotone"
+            class="'text-primary-600'"
+          />
+        </div>
+
+        <!-- Item 6 -->
+        <div>
+          <IconBlock
+            title={t(currentLocale, 'home.features.items.railway_solutions.title')}
+            text={t(currentLocale, 'home.features.items.railway_solutions.text')}
+            icon="ph:train-duotone"
+            class="'text-primary-600'"
+          />
+        </div>
+
+        <!-- Item 7 -->
+        <div>
+          <IconBlock
+            title={t(currentLocale, 'home.features.items.korean_technology.title')}
+            text={t(currentLocale, 'home.features.items.korean_technology.text')}
+            icon="ph:gear-duotone"
+            class="'text-primary-600'"
+          />
+        </div>
+
+        <!-- Item 8 -->
+        <div>
+          <IconBlock
+            title={t(currentLocale, 'home.features.items.custom_manufacturing.title')}
+            text={t(currentLocale, 'home.features.items.custom_manufacturing.text')}
+            icon="ph:wrench-duotone"
+            class="'text-primary-600'"
+          />
+        </div>
+      </div>
+    </Container>
+  </SectionMuted>
+
+  <!-- Products Category -->
+  <ProductsCategory />
+
+  <!-- Catalog Section -->
+  <CatalogProduct />
+
+  <SectionMuted class="'overflow-hidden'">
+    <Container>
+      <div class="py-10">
+        <SideStatsRight />
+        <SideStatsLeft />
+      </div>
+    </Container>
+  </SectionMuted>
+
+  <SectionMuted>
+    <Container>
+      <SectionTitle
+        title={t(currentLocale, 'home.pricing_section.title')}
+        subtitle={t(currentLocale, 'home.pricing_section.subtitle')}
+        minititle={t(currentLocale, 'home.pricing_section.minititle')}
+        class="'mx-auto text-center'"
+      />
+      <Pricing />
+    </Container>
+  </SectionMuted>
+
+  <SectionMuted>
+    <Container>
+      <SectionTitle
+        title={t(currentLocale, 'home.testimonials_section.title')}
+        subtitle={t(currentLocale, 'home.testimonials_section.subtitle')}
+        minititle={t(currentLocale, 'home.testimonials_section.minititle')}
+        class="'mx-auto text-center'"
+      />
+      <Testimonials />
+    </Container>
+  </SectionMuted>
+
+  <SectionMuted>
+    <Container>
+      <Cta />
+    </Container>
+  </SectionMuted>
+
+  <!-- FAQ Section -->
+   <FAQ />
+</Layout>

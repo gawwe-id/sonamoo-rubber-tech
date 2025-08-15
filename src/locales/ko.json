@@ -1,0 +1,370 @@
+{
+  "site": {
+    "title": "PT. Sonamoo Rubber Tech",
+    "description": "고품질 고무 제품 솔루션"
+  },
+  "nav": {
+    "home": "홈",
+    "about": "회사소개",
+    "products": "제품",
+    "contact": "연락처",
+    "contact_us": "문의하기"
+  },
+  "hero": {
+    "title": "고품질 고무 제품 솔루션",
+    "subtitle": "PT. Sonamoo Rubber Tech는 신뢰할 수 있는 한국 기술로 자동차, 철도 및 기타 산업용 다양한 고무 제품을 제공합니다.",
+    "see_product": "제품 보기",
+    "about": "회사소개"
+  },
+  "home": {
+    "features": {
+      "title": "고품질 고무 제품 솔루션",
+      "subtitle": "PT. Sonamoo Rubber Tech는 신뢰할 수 있는 한국 기술로 자동차, 철도 및 기타 산업용 다양한 고무 제품을 제공합니다.",
+      "minititle": "고무 제품 전문",
+      "items": {
+        "fast_response": {
+          "title": "빠른 응답",
+          "text": "전문적인 기술 상담 서비스로 고객의 요구에 신속한 대응을 제공합니다."
+        },
+        "competitive_price": {
+          "title": "경쟁력 있는 가격",
+          "text": "생산 효율성과 한국 기술을 통해 품질을 보장하면서 경쟁력 있는 가격을 제공합니다."
+        },
+        "best_product": {
+          "title": "최고의 제품",
+          "text": "자동차 및 철도 산업을 위한 국제 표준을 갖춘 고품질 제품을 제공합니다."
+        },
+        "fast_delivery": {
+          "title": "빠른 배송",
+          "text": "효율적이고 신뢰할 수 있는 생산 시스템으로 빠르고 정확한 배송을 제공합니다."
+        },
+        "automotive_components": {
+          "title": "자동차 부품",
+          "text": "타이어 스토퍼, 과속방지턱, 고무 스텝 플로어 등 자동차용 고무 제품을 전문으로 합니다."
+        },
+        "railway_solutions": {
+          "title": "철도 솔루션",
+          "text": "고품질 덕트와 주름관을 포함한 철도 산업용 특수 제품을 제공합니다."
+        },
+        "korean_technology": {
+          "title": "한국 기술",
+          "text": "선도적인 기술과 품질을 위해 한국 DH Industry Co.,Ltd와 기술 협력을 하고 있습니다."
+        },
+        "custom_manufacturing": {
+          "title": "맞춤 제조",
+          "text": "완비된 시설과 현대적인 기술로 사양에 따른 맞춤 생산을 제공합니다."
+        }
+      }
+    },
+    "pricing_section": {
+      "title": "고무 제품 견적 요청",
+      "subtitle": "귀하의 산업에 맞는 사양으로 고품질 고무 제품에 대한 최적의 견적을 받아보세요.",
+      "minititle": "맞춤 견적"
+    },
+    "testimonials_section": {
+      "title": "고객 후기",
+      "subtitle": "고객의 신뢰와 만족이 저희의 최우선 과제입니다. PT Sonamoo Rubber Tech의 제품을 사용한 다양한 산업 분야의 후기를 소개합니다.",
+      "minititle": "고객 리뷰"
+    }
+  },
+  "about": {
+    "hero_subtitle": "고무 제품 전문 - 자동차, 철도 및 기타 산업용 고무 제품 생산",
+    "company_title": "회사 소개",
+    "company_desc1": "소나무 러버텍은 자동차, 철도 및 기타 산업용 고무 제품을 생산하는 제조업체입니다. 장기간의 제품 개발 및 제조 경험을 바탕으로 최고의 제품을 만들기 위해 노력하고 있습니다.",
+    "company_desc2": "다양한 제품 분야에서 최고 수준의 인적 자원과 뛰어난 기술력을 확보하여 고품질 제품, 신속하고 정확한 배송, 고객 만족을 제공하는 것을 약속합니다.",
+    "company_desc3": "고객과의 공생과 상생 발전이라는 신념으로 높은 성장을 이룬 한국 기업인 DH Industry Co.,Ltd와 함께 고객의 요구에 부응하는 고품질 제품을 생산합니다.",
+    "vision_mission_title": "기업 비전 및 미션",
+    "vision_mission_subtitle": "경쟁력 있고 지속 가능한 고무 부품 산업 구축에 대한 우리의 약속",
+    "vision_title": "비전",
+    "vision_content": "신뢰할 수 있는 인적 자원과 기술 역량을 바탕으로 세계적 수준의 자동차, 전자 및 전기 고무 부품 공급업체 중 하나가 되는 것",
+    "mission_title": "미션",
+    "mission_content": "경쟁력 있는 자동차, 전자 및 전기 부품 산업을 발전시키고 인도네시아와 지역의 산업 플레이어들에게 전략적 파트너가 되어 회사에 적극적인 기여를 책임감 있게 제공하는 것",
+    "location_title": "위치",
+    "location_subtitle": "생산 시설을 방문하거나 지도에서 더 많은 정보를 찾아보세요",
+    "address_title": "전체 주소:",
+    "address_content": "Kp. Tegal Pondoh RT.002/RW.003<br>Kelurahan Singabangsa<br>Kec. Tenjo, Kab. Bogor-16370<br>West Java, Indonesia",
+    "transport_title": "교통편:",
+    "transport_content": "자카르타 또는 보고르 방향에서 Jl. Raya Tenjo를 통해 접근 가능합니다. 탄게랑-보고르 산업 지역과 가까운 전략적 위치에 있습니다.",
+    "facility_title": "시설:",
+    "facility_content": "프레스 머신, 컨베이어 드라이어 오븐, 고품질 고무 생산을 위한 현대적인 장비를 갖춘 완전한 생산 시설입니다.",
+    "directions_title": "찾아오는 길",
+    "directions_jakarta": "• 자카르타에서: 탄게랑-메락 고속도로를 이용하여 West Balaraja에서 나가세요",
+    "directions_bogor": "• 보고르에서: Jl. Raya Tenjo를 통해 탄게랑 방향으로",
+    "directions_landmark": "• 랜드마크: Tigaraksa Golf & Tangerang Regency 근처",
+    "map_title": "위치 지도",
+    "open_maps": "구글 지도에서 열기",
+    "partnership_title": "파트너십",
+    "partnership_subtitle": "최고의 솔루션을 제공하기 위해 선도 기업들과 협력",
+    "partnership_content": "한국 DH Industry Co.,Ltd와의 기술 협력으로 최첨단 기술과 국제 표준으로 고품질 제품을 생산할 수 있습니다."
+  },
+  "common": {
+    "read_more": "더 읽기",
+    "contact_us": "문의하기",
+    "learn_more": "더 알아보기",
+    "years_experience": "년 경험"
+  },
+  "content": {
+    "features": {
+      "right": {
+        "badge": "품질 관리 및 검사",
+        "title": "고무 제품을 위한 첨단 품질 관리 시스템",
+        "description": "포괄적인 품질 관리 시스템으로 모든 고무 제품이 엄격한 테스트와 검사 과정을 통해 최고 표준을 충족하도록 보장합니다.",
+        "cta": "품질 시스템 살펴보기"
+      },
+      "left": {
+        "badge": "제조 공정",
+        "title": "현대적인 고무 제조 기술",
+        "description": "공장 내 첨단 기계를 사용한 고무 생산 공정으로 국제 표준의 고품질 제품을 생산합니다.",
+        "cta": "생산 공정 알아보기"
+      }
+    },
+    "products": {
+      "descriptions": {
+        "title": "제품 소개",
+        "categories": {
+          "all": {
+            "paragraph1": "소나무 러버텍은 다양한 산업을 위한 고품질 고무 제품을 생산합니다. 7년 이상의 경험과 한국 기술로 최고의 솔루션을 제공하는 것을 약속합니다.",
+            "paragraph2": "저희 제품은 글로벌 고객의 요구를 충족하는 국제 표준의 자동차, 철도 및 산업 부품을 포함합니다."
+          },
+          "otomotif": {
+            "paragraph1": "저희 자동차 제품은 안전성과 내구성에 중점을 둔 자동차 산업을 위해 특별히 설계되었습니다. 차량 정지대, 타이어 정지대, 과속방지턱 및 기타 부품을 포함합니다.",
+            "paragraph2": "모든 자동차 제품은 다양한 조건에서 최적의 성능을 보장하는 미끄럼 방지 및 내후성 기술을 갖추고 있습니다."
+          },
+          "railway": {
+            "paragraph1": "저희 철도 부품은 국제 철도 표준으로 생산됩니다. 철도 차량용 덕트와 높은 내구성을 가진 연결 부품을 포함합니다.",
+            "paragraph2": "모든 철도 제품은 철도 운송 운영에서 신뢰성과 안전성을 보장하기 위해 엄격한 테스트를 거쳤습니다."
+          },
+          "industrial": {
+            "paragraph1": "저희 산업용 제품은 중공업, 전자 및 제조업의 요구를 충족합니다. 실리콘 O-링, NBR 플로트, 씰 및 정밀 전자 부품을 포함합니다.",
+            "paragraph2": "현대적인 산업 응용 분야의 엄격한 기술 사양을 충족하기 위해 고품질 재료와 첨단 기술로 제작됩니다."
+          }
+        }
+      },
+      "grid": {
+        "categories": {
+          "otomotif": "자동차",
+          "railway": "철도",
+          "industrial": "산업용"
+        },
+        "products": {
+          "car_stopper": {
+            "title": "차량 정지대",
+            "description": "상업적 주차 지역을 위한 위험 줄무늬 디자인이 있는 주차 차단기입니다."
+          },
+          "tire_stopper": {
+            "title": "타이어 정지대",
+            "description": "경량에서 중량 차량까지 사용할 수 있는 크기(1kg, 3kg, 8kg)의 휠 차단기입니다."
+          },
+          "speed_bump": {
+            "title": "과속방지턱",
+            "description": "도로와 주차 지역용 미끄럼 방지 다이아몬드 프로파일이 있는 속도 감속기입니다."
+          },
+          "connecting_rod": {
+            "title": "연결봉",
+            "description": "장착 구멍이 있는 모듈식 과속방지턱 시스템용 연결봉입니다."
+          },
+          "rubber_step_floor": {
+            "title": "고무 스텝 플로어",
+            "description": "이륜차 발걸이 영역용 인체공학적 미끄럼 방지 고무 바닥재입니다."
+          },
+          "dumper_components": {
+            "title": "덤퍼 부품",
+            "description": "중량 차량, 덤프트럭 및 특수 자동차 응용 분야용 고무 부품입니다."
+          },
+          "railway_duct": {
+            "title": "철도 차량용 덕트",
+            "description": "국제 표준을 갖춘 철도 차량용 특수 공기 덕트입니다."
+          },
+          "railway_connecting": {
+            "title": "철도 연결 부품",
+            "description": "높은 내구성을 가진 철도 시스템용 연결 부품입니다."
+          },
+          "silicon_oring": {
+            "title": "실리콘 O-링 및 씰",
+            "description": "산업용 및 전자 응용 분야용 고품질 실리콘 O-링입니다."
+          },
+          "nbr_float": {
+            "title": "NBR 플로트 및 커넥터",
+            "description": "중공업 응용 분야용 NBR 플로트 및 커넥터입니다."
+          },
+          "electronic_components": {
+            "title": "전자 부품",
+            "description": "정밀 산업 장비용 전자 부품 및 실리콘 씰입니다."
+          }
+        }
+      },
+      "toolbar": {
+        "categories": {
+          "all": "전체",
+          "otomotif": "자동차",
+          "railway": "철도",
+          "industrial": "산업용"
+        }
+      }
+    },
+    "cta": {
+      "title_line1": "시작할 준비가 되셨나요?",
+      "title_line2": "저희 전문가와 무료 상담을 받아보세요.",
+      "description": "귀하의 산업적 요구에 맞는 고품질 고무 솔루션을 얻으세요. 저희 전문가 팀이 올바른 제품을 선택하는 데 도움을 드릴 준비가 되어 있습니다.",
+      "button": "지금 상담하기"
+    },
+    "faq": {
+      "title": "자주 묻는 질문",
+      "subtitle": "저희 제품과 서비스에 대한 일반적인 질문에 대한 답변을 찾아보세요",
+      "minititle": "FAQ",
+      "questions": {
+        "products": {
+          "question": "PT. Sonamoo Rubber Tech에서 제조하는 주요 제품은 무엇인가요?",
+          "answer": "저희는 다양한 고품질 고무 제품을 제조합니다: 차량 정지대, 타이어 정지대(1kg, 3kg, 5kg), 과속방지턱, 연결봉, 이륜차용 고무 스텝 플로어, NBR 플로트, 철도 차량용 덕트, 실리콘 O-링 및 씰, 그리고 전자 및 자동차 산업용 다양한 고무 부품을 포함합니다."
+        },
+        "quality": {
+          "question": "한국 기술로 제품 품질이 어떻게 보장되나요?",
+          "answer": "저희는 수십 년의 경험을 가진 한국의 DH Industry Co.,Ltd와 기술적으로 협력하고 있습니다. 생산 기술, 품질 표준 및 제조 공정은 한국의 국제 표준을 따릅니다. 모든 제품은 일관성과 내구성을 보장하기 위해 엄격한 품질 관리를 거칩니다."
+        },
+        "custom": {
+          "question": "맞춤 제조 서비스를 이용할 수 있나요?",
+          "answer": "네, 고객의 사양과 요구에 따른 맞춤 제조 서비스를 제공합니다. 저희 엔지니어링 팀은 필요한 산업 응용 분야에 따라 NBR, 실리콘 및 기타 화합물과 같은 다양한 재료로 특수 고무 제품을 개발하는 데 도움을 드릴 수 있습니다."
+        },
+        "ordering": {
+          "question": "주문 과정과 생산 리드 타임은 어떻게 되나요?",
+          "answer": "주문 과정은 귀하의 요구를 이해하기 위한 상담으로 시작됩니다. 최종 사양 후, 저희는 견적과 생산 일정을 제공할 것입니다. 리드 타임은 제품 복잡성에 따라 다르며, 일반적으로 표준 제품은 2-4주, 맞춤 제품은 4-8주입니다."
+        }
+      }
+    },
+    "pricing": {
+      "title": "맞춤형 가격",
+      "description": "각 고무 제품은 다른 사양을 가지고 있습니다. 저희는 볼륨, 사양 및 귀하의 요구에 기반한 최적의 견적을 제공합니다.",
+      "cta_link": "FAQ에서 더 알아보기",
+      "standard_quote": {
+        "title": "표준 견적",
+        "description": "표준 사양과 정규 볼륨의 주문용입니다.",
+        "price_label": "요청",
+        "price_sublabel": "견적",
+        "features": {
+          "consultation": "제품 상담",
+          "quick_quote": "24시간 내 견적",
+          "sample": "샘플 이용 가능"
+        },
+        "primary_button": "견적 요청",
+        "secondary_button": "카탈로그 다운로드"
+      },
+      "custom_quote": {
+        "title": "맞춤 견적",
+        "description": "맞춤 사양과 대량 주문을 위한 특수 제품용입니다.",
+        "price_label": "맞춤",
+        "price_sublabel": "디자인",
+        "features": {
+          "deep_consultation": "심층 기술 상담",
+          "custom_design": "요구에 따른 맞춤 디자인",
+          "volume_pricing": "볼륨 가격 이용 가능"
+        },
+        "primary_button": "지금 상담하기",
+        "secondary_button": "영업팀 연락"
+      }
+    },
+    "products_category": {
+      "title": "제품 카테고리",
+      "subtitle": "국제 품질 표준을 갖춘 다양한 산업 요구를 위한 완전한 고무 제품 솔루션",
+      "minititle": "제품 카테고리",
+      "automotive": {
+        "title": "자동차 제품",
+        "description": "휠 스토퍼, 과속방지턱, 차량 액세서리를 포함한 자동차 산업용 고품질 고무 부품입니다.",
+        "products": {
+          "car_tire_stopper": "차량 및 타이어 정지대",
+          "speed_bump_connecting": "과속방지턱 및 연결봉",
+          "rubber_step_floor": "고무 스텝 플로어"
+        },
+        "button": "문의하기"
+      },
+      "railway": {
+        "title": "철도 제품",
+        "description": "높은 안전성과 품질 표준을 갖춘 철도 산업용 특수 부품입니다.",
+        "products": {
+          "duct_railway": "철도 차량용 덕트",
+          "corrugated_bellow": "주름관",
+          "replacement_components": "교체 부품"
+        },
+        "button": "문의하기"
+      },
+      "industrial": {
+        "title": "산업용 제품",
+        "description": "고무 소재를 기반으로 한 다양한 중공업, 전자 및 특수 장비 응용 분야용 고무 솔루션입니다.",
+        "products": {
+          "silicon_oring": "실리콘 O-링 및 씰",
+          "nbr_float": "NBR 플로트 및 커넥터",
+          "electronic_components": "전자 부품"
+        },
+        "button": "문의하기"
+      }
+    },
+    "testimonials": {
+      "reviews": [
+        {
+          "text": "PT Sonamoo의 고무 제품 품질은 매우 만족스럽습니다. 정시 배송이며 사양이 저희 산업 요구에 맞습니다. 매우 추천합니다!",
+          "name": "부디 산토소",
+          "position": "운영 이사, PT Automotive Jaya"
+        },
+        {
+          "text": "씰과 가스켓 요구 사항으로 PT Sonamoo와 5년간 협력해 왔습니다. 제품이 내구성이 있고 서비스가 훌륭합니다. 신뢰할 수 있는 파트너입니다!",
+          "name": "사리 와히유니",
+          "position": "조달, PT Industri Mesin"
+        },
+        {
+          "text": "고온 응용 분야에 적합한 고무 재료 선택에 기술 지원팀이 매우 도움이 되었습니다. 최종 결과가 매우 만족스럽습니다.",
+          "name": "아흐마드 히다야트",
+          "position": "엔지니어링 매니저, PT Kimia Farma"
+        },
+        {
+          "text": "다양한 두께의 고무 시트 제품을 완전히 이용할 수 있습니다. 일관된 품질과 경쟁력 있는 가격입니다. 서비스에 매우 만족합니다.",
+          "name": "리나 사리",
+          "position": "구매, PT Elektronik Indonesia"
+        },
+        {
+          "text": "저희가 제공한 도면에 따른 맞춤 고무 부품입니다. 정밀한 허용 오차와 좋은 마감입니다. 산업용 요구에 추천합니다.",
+          "name": "데디 쿠르니아완",
+          "position": "기술 리드, PT Manufacturing Solution"
+        },
+        {
+          "text": "다양한 등급의 고무 화합물 요구를 위한 신뢰할 수 있는 공급업체입니다. 빠른 응답 시간과 자주 필요한 품목에 대한 재고 보유.",
+          "name": "인드라 위자야",
+          "position": "운영, PT Heavy Machinery"
+        }
+      ]
+    }
+  },
+  "section": {
+    "catalog_product": {
+      "title": "고무 제품 카탈로그",
+      "subtitle": "자동차, 철도 및 기타 산업 응용 분야를 위한 다양한 고품질 고무 제품을 살펴보세요.",
+      "minititle": "제품 카탈로그"
+    },
+    "footer": {
+      "description": "PT Sonamoo Rubber Tech - 품질과 혁신을 최전선에 둔 선도적인 고무 제조 솔루션.",
+      "company": {
+        "title": "회사",
+        "links": {
+          "about": "회사소개",
+          "products": "제품",
+          "contact": "연락처"
+        }
+      },
+      "services": {
+        "title": "서비스",
+        "links": {
+          "manufacturing": "고무 제조",
+          "custom": "맞춤 솔루션",
+          "consultation": "상담"
+        }
+      },
+      "support": {
+        "title": "지원",
+        "links": {
+          "contact_support": "지원 연락",
+          "technical_help": "기술 도움"
+        }
+      },
+      "copyright": "모든 권리 보유.",
+      "built_by": "제작:"
+    }
+  }
+}

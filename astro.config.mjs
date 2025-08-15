@@ -4,7 +4,7 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
   i18n: {
     defaultLocale: "id",
-    locales: ["id", "en"]
+    locales: ["id", "en", "ko"]
   },
   integrations: []
 });

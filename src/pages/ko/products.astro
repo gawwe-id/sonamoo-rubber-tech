@@ -1,0 +1,268 @@
+---
+import Layout from "@layouts/Default.astro";
+import Container from "@components/section/Container.astro";
+import SectionMuted from "@components/section/SectionMuted.astro";
+import Section from "@components/section/Section.astro";
+import SectionTitle from "@components/section/SectionTitle.astro";
+import Card from "@components/base/Card.astro";
+import ButtonMain from "@components/base/ButtonMain.astro";
+import ButtonSub from "@components/base/ButtonSub.astro";
+import CatalogProduct from "@components/section/CatalogProduct.astro";
+---
+
+<Layout title="Products">
+  <!-- Hero Section -->
+  <div class="min-h-[70vh] w-full overflow-hidden bg-gradient-to-br from-primary-900 via-primary-800 to-primary-700 relative">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent transform -skew-y-12"></div>
+    </div>
+    
+    <Container>
+      <div class="min-h-[70vh] flex items-center justify-center px-4 pt-24 md:pt-6">
+        <div class="text-center space-y-6 animate-fadeIn">
+          <div class="inline-block">
+            <span class="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-white/90 text-sm font-medium border border-white/20 animate-pulse">
+              고무 제품 전문
+            </span>
+          </div>
+          <h1 class="font-heading font-black text-5xl md:text-6xl lg:text-7xl text-white leading-tight">
+            프리미엄 고무 솔루션
+          </h1>
+          <p class="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed">
+            자동차, 철도, 전자 및 기타 산업 응용 분야를 위한 포괄적인 고품질 고무 제품 솔루션
+          </p>
+        </div>
+      </div>
+    </Container>
+  </div>
+
+  <!-- Company Highlights -->
+  <SectionMuted>
+    <Container>
+      <div class="py-16">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-muted-800  mb-4">
+            왜 소나무 러버텍을 선택해야 할까요?
+          </h2>
+          <p class="text-lg text-muted-600  max-w-2xl mx-auto">
+            한국 기술과 최고 품질에 대한 약속으로 산업계의 신뢰를 받고 있습니다
+          </p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="group text-center p-6 rounded-xl hover:bg-white  transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+            <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-primary-100 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <iconify-icon class="iconify w-8 h-8 text-primary-600" icon="ph:lightning-duotone"></iconify-icon>
+            </div>
+            <h3 class="font-semibold text-lg text-muted-800  mb-2">빠른 응답</h3>
+            <p class="text-muted-600  text-sm">모든 고객 요구에 신속한 응답</p>
+          </div>
+
+          <div class="group text-center p-6 rounded-xl hover:bg-white  transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+            <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-green-100 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <iconify-icon class="iconify w-8 h-8 text-green-600" icon="ph:currency-dollar-duotone"></iconify-icon>
+            </div>
+            <h3 class="font-semibold text-lg text-muted-800  mb-2">경쟁력 있는 가격</h3>
+            <p class="text-muted-600  text-sm">품질 보장과 함께하는 경쟁력 있는 가격</p>
+          </div>
+
+          <div class="group text-center p-6 rounded-xl hover:bg-white  transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+            <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-blue-100 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <iconify-icon class="iconify w-8 h-8 text-blue-600" icon="ph:medal-duotone"></iconify-icon>
+            </div>
+            <h3 class="font-semibold text-lg text-muted-800  mb-2">최고의 제품</h3>
+            <p class="text-muted-600  text-sm">한국 기술의 고품질 제품</p>
+          </div>
+
+          <div class="group text-center p-6 rounded-xl hover:bg-white  transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+            <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-orange-100 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <iconify-icon class="iconify w-8 h-8 text-orange-600" icon="ph:truck-duotone"></iconify-icon>
+            </div>
+            <h3 class="font-semibold text-lg text-muted-800  mb-2">빠른 배송</h3>
+            <p class="text-muted-600  text-sm">인도네시아 전역에 빠르고 정확한 배송</p>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </SectionMuted>
+
+ <!-- Catalog Section -->
+  <CatalogProduct />
+
+  <!-- Industrial & Railway Products -->
+  <Section id="industrial">
+    <Container>
+      <div class="py-16">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <!-- Content -->
+          <div class="space-y-6">
+            <div>
+              <span class="px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm font-medium">
+                산업용 솔루션
+              </span>
+            </div>
+            <h2 class="text-4xl font-bold text-muted-800  leading-tight">
+              통합 산업 
+              <span class="text-primary-600">솔루션</span>
+            </h2>
+            <p class="text-lg text-muted-600  leading-relaxed">
+              철도 부품부터 전자 응용 분야까지, 국제 품질 표준으로 다양한 산업적 요구에 맞는 신뢰할 수 있는 고무 솔루션을 제공합니다.
+            </p>
+            
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div class="flex items-start space-x-3 p-4 rounded-lg hover:bg-primary-50  transition-colors duration-300">
+                <div class="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center mt-1">
+                  <iconify-icon class="iconify w-4 h-4 text-white" icon="lucide:check"></iconify-icon>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-muted-800 ">NBR 플로트</h4>
+                  <p class="text-sm text-muted-600 ">고품질 부품</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start space-x-3 p-4 rounded-lg hover:bg-primary-50  transition-colors duration-300">
+                <div class="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center mt-1">
+                  <iconify-icon class="iconify w-4 h-4 text-white" icon="lucide:check"></iconify-icon>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-muted-800 ">실리콘 O-링</h4>
+                  <p class="text-sm text-muted-600 ">고압 응용</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start space-x-3 p-4 rounded-lg hover:bg-primary-50  transition-colors duration-300">
+                <div class="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center mt-1">
+                  <iconify-icon class="iconify w-4 h-4 text-white" icon="lucide:check"></iconify-icon>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-muted-800 ">그로멧</h4>
+                  <p class="text-sm text-muted-600 ">전자 응용 분야</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start space-x-3 p-4 rounded-lg hover:bg-primary-50  transition-colors duration-300">
+                <div class="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center mt-1">
+                  <iconify-icon class="iconify w-4 h-4 text-white" icon="lucide:check"></iconify-icon>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-muted-800 ">벨로우즈</h4>
+                  <p class="text-sm text-muted-600 ">자동차 부품</p>
+                </div>
+              </div>
+            </div>
+
+            <ButtonMain to="/ko/contact" class="'group hover:scale-105 transition-all duration-300'">
+              <span>요구사항 상담하기</span>
+              <iconify-icon class="iconify w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" icon="lucide:arrow-right"></iconify-icon>
+            </ButtonMain>
+          </div>
+
+          <!-- Visual Grid -->
+          <div class="grid grid-cols-2 gap-4">
+            <div class="space-y-4">
+              <Card class="'p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 bg-gradient-to-br from-blue-50 to-blue-100  '">
+                <iconify-icon class="iconify w-12 h-12 text-blue-600 mb-3" icon="ph:train-duotone"></iconify-icon>
+                <h4 class="font-semibold text-muted-800  mb-2">철도 부품</h4>
+                <p class="text-sm text-muted-600 ">덕트 및 주름관</p>
+              </Card>
+              
+              <Card class="'p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 bg-gradient-to-br from-green-50 to-green-100  '">
+                <iconify-icon class="iconify w-12 h-12 text-green-600 mb-3" icon="ph-lightning-duotone"></iconify-icon>
+                <h4 class="font-semibold text-muted-800  mb-2">전자 부품</h4>
+                <p class="text-sm text-muted-600 ">그로멧 및 임플란트</p>
+              </Card>
+            </div>
+            
+            <div class="space-y-4 mt-8">
+              <Card class="'p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 bg-gradient-to-br from-purple-50 to-purple-100  '">
+                <iconify-icon class="iconify w-12 h-12 text-purple-600 mb-3" icon="ph:gear-duotone"></iconify-icon>
+                <h4 class="font-semibold text-muted-800  mb-2">산업용 씰</h4>
+                <p class="text-sm text-muted-600 ">O-링 및 커넥터</p>
+              </Card>
+              
+              <Card class="'p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 bg-gradient-to-br from-orange-50 to-orange-100  '">
+                <iconify-icon class="iconify w-12 h-12 text-orange-600 mb-3" icon="ph:wrench-duotone"></iconify-icon>
+                <h4 class="font-semibold text-muted-800  mb-2">맞춤 솔루션</h4>
+                <p class="text-sm text-muted-600 ">맞춤 사양</p>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </Section>
+
+  <!-- Call to Action -->
+  <SectionMuted>
+    <Container>
+      <div class="py-16">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-4xl font-bold text-muted-800  mb-6">
+            <span class="text-primary-600">소나무 러버텍과</span> 
+            협력할 준비가 되셨나요?
+          </h2>
+          <p class="text-xl text-muted-600  mb-8 leading-relaxed">
+            제품 상담, 특별 제안 또는 맞춤형 요구사항 논의를 위해 저희 전문가 팀에게 연락하세요. 
+            저희는 고품질 고무 솔루션을 위한 신뢰할 수 있는 파트너가 될 준비가 되어 있습니다.
+          </p>
+          
+          <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+            <ButtonMain to="/ko/contact" class="'group text-lg px-8 py-4 hover:scale-105 hover:shadow-xl transition-all duration-300'">
+              <iconify-icon class="iconify w-5 h-5 group-hover:rotate-12 transition-transform duration-300" icon="ph:phone-duotone"></iconify-icon>
+              <span>지금 연락하기</span>
+            </ButtonMain>
+            <ButtonSub to="/ko/about" class="'text-lg px-8 py-4 hover:scale-105 transition-all duration-300'">
+              <span>회사소개</span>
+              <iconify-icon class="iconify w-5 h-5" icon="lucide:arrow-right"></iconify-icon>
+            </ButtonSub>
+          </div>
+
+
+        </div>
+      </div>
+    </Container>
+  </SectionMuted>
+</Layout>
+
+<style>
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .animate-fadeIn {
+    animation: fadeIn 1s ease-out;
+  }
+
+  .animate-slideInRight {
+    animation: slideInRight 0.8s ease-out;
+  }
+
+  /* Custom hover effects */
+  .hover-lift {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+</style>
