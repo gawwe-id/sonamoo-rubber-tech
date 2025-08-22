@@ -13,9 +13,9 @@ const currentLocale = getCurrentLocale(Astro.url);
       >
         <img
           class="w-full h-full object-cover cursor-pointer hover:opacity-90 transition-opacity duration-300"
-          src="https://ik.imagekit.io/gawwe/sonamoo/oto-carstopper.png?updatedAt=1754229259415"
+          src="https://ik.imagekit.io/gawwe/sonamoo/car%20stopper.jpg?updatedAt=1755858888629"
           alt={t(currentLocale, 'content.products.grid.products.car_stopper.title')}
-          @click={`showModal = true; modalImage = 'https://ik.imagekit.io/gawwe/sonamoo/oto-carstopper.png?updatedAt=1754229259415'; modalAlt = '${t(currentLocale, 'content.products.grid.products.car_stopper.title')}'`}
+          @click={`showModal = true; modalImage = 'https://ik.imagekit.io/gawwe/sonamoo/car%20stopper.jpg?updatedAt=1755858888629'; modalAlt = '${t(currentLocale, 'content.products.grid.products.car_stopper.title')}'`}
         />
       </div>
       <div class="font-sans mt-3">
@@ -66,9 +66,9 @@ const currentLocale = getCurrentLocale(Astro.url);
       >
         <img
           class="w-full h-full object-cover cursor-pointer hover:opacity-90 transition-opacity duration-300"
-          src="https://ik.imagekit.io/gawwe/sonamoo/oto-speedbump.png?updatedAt=1754229249845"
+          src="https://ik.imagekit.io/gawwe/sonamoo/speed-bumpb.jpg?updatedAt=1755858888654"
           alt={t(currentLocale, 'content.products.grid.products.speed_bump.title')}
-          @click={`showModal = true; modalImage = 'https://ik.imagekit.io/gawwe/sonamoo/oto-speedbump.png?updatedAt=1754229249845'; modalAlt = '${t(currentLocale, 'content.products.grid.products.speed_bump.title')}'`}
+          @click={`showModal = true; modalImage = 'https://ik.imagekit.io/gawwe/sonamoo/speed-bumpb.jpg?updatedAt=1755858888654'; modalAlt = '${t(currentLocale, 'content.products.grid.products.speed_bump.title')}'`}
         />
       </div>
       <div class="font-sans mt-3">
@@ -329,7 +329,7 @@ const currentLocale = getCurrentLocale(Astro.url);
       />
       
       <!-- Image Title -->
-      <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4 rounded-b-lg">
+      <div class="absolute -bottom-12 left-0 right-0 text-white text-center">
         <h3 class="text-lg font-semibold" x-text="modalAlt"></h3>
       </div>
     </div>
